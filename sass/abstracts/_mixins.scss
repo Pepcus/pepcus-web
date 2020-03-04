@@ -1,0 +1,10 @@
+//transform mixin
+//Ex:
+//@include transform (rotate(20deg));
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+

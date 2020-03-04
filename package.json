@@ -1,0 +1,21 @@
+{
+  "name": "Pepcus-Website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch sass/main.scss css/style.css",
+    "compile-sass": "node-sass  sass/main.scss css/style.css",
+    "test": ""
+  },
+  "author": "Pepcus",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "angular": "^1.7.9",
+    "jquery": "^3.4.1",
+    "sass-watch": "^0.1.0"
+  }
+}
