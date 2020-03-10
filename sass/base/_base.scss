@@ -21,3 +21,62 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+body {
+  min-width: 320px;
+  font-family: Ubuntu,Arial,Helvetica,sans-serif;
+  font-size: 19px;
+  line-height: 1.57894737;
+  color: #234;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  @media (max-width: 767px){
+    font-size: 16px;
+  }
+}
+
+a:hover,
+a:link {
+  text-decoration: none;
+}
+
+::selection {
+  background: #4CC528;
+  color: #fff;
+  text-shadow: none;
+}
+
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.row:after, .row:before {
+  content: " ";
+  display: table;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-v-align  {
+  display: flex;
+  align-items: center;
+}
+
+.flex-h-align  {
+  display: flex;
+  justify-content: center;
+}
