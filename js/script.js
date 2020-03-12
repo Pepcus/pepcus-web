@@ -17,8 +17,7 @@ $(function() {
 
   $('.smallMenu-icon').click(function() {
     $(this).toggleClass('smallMenu-icon--active');
-    $('.mobile-menu-background').toggleClass('active');
-    $('.mfp-bg').toggleClass('active');
+    $('.mobileNavigation-bg').toggleClass('active');
     $('body').toggleClass('no-scroll');
   });
 
@@ -35,4 +34,33 @@ $(function() {
     $(this).children('div.mobileNavigation__wrapper').removeClass("active");
   });
 
+  //owl carousel start
+
+  $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1170: {
+          items: 3
+        }
+      }
+    });
+
+  $("#clients").owlCarousel({
+    items: 5,
+  });
+
+  //owl carousel end
 });

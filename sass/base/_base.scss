@@ -23,7 +23,7 @@ time, mark, audio, video {
 
 body {
   min-width: 320px;
-  font-family: Ubuntu,Arial,Helvetica,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 19px;
   line-height: 1.57894737;
   color: #234;
@@ -79,4 +79,13 @@ a:link {
 .flex-h-align  {
   display: flex;
   justify-content: center;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-dark {
+  background: #f2f2f2;
 }

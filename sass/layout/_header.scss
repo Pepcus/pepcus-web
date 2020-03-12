@@ -9,8 +9,7 @@
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
   z-index: 9995;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  @include transition (all .4s ease-in-out);
   .logo {
     float: left;
     position: relative;
@@ -53,10 +52,4 @@
     background-color: #fff;
     padding: 10px 5px;
   }
-  .container {
-    width: 95% !important;
-  }
 }
-
-
-
