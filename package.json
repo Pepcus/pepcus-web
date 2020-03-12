@@ -1,5 +1,5 @@
 {
-  "name": "Pepcus-Website",
+  "name": "pepcus-website",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,21 @@
   },
   "author": "Pepcus",
   "license": "ISC",
-  "description": "",
+  "description": "Pepcus new website.",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "angular": "^1.7.9",
     "jquery": "^3.4.1",
     "sass-watch": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pepcus/pepcus-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pepcus/pepcus-web/issues"
+  },
+  "homepage": "https://github.com/Pepcus/pepcus-web#readme"
 }

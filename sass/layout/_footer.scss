@@ -43,6 +43,7 @@ footer {
         font-size: 14px;
         color: #999;
         @media (max-width: 767px) {
+          padding: 1px 5px;
           margin-bottom: 20px;
         }
       }
@@ -87,7 +88,107 @@ footer {
           text-align: center;
         }
         span {
+          color: #eee;
+          margin-bottom: 30px;
+          font-size: 14px;
+          color: #bbb;
+          text-decoration: none;
+          line-height: 1.5em;
+          font-weight: 300;
+          border-bottom: 1px solid transparent;
+          opacity: .8;
+          @media (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          a {
+            color: #bbb;
+            opacity: .8;
+            &:hover {
+              opacity: 1;
+            }
+          }
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .page-footer-container-child-50 {
+      -webkit-box-flex: 0;
+      max-width: 50%;
+      flex: 50%;
+      @media (max-width: 767px) {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+        text-align: center;
+      }
+      h4 {
+        padding: 0 0 0 15px;
+        color: #eee;
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+          margin-top: 30px;
+        }
+      }
+      img {
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        color: #999;
+        @media (max-width: 767px) {
+          padding: 1px 5px;
+          margin-bottom: 20px;
+        }
+      }
+      ul {
+        width: 50%;
+        float: left;
+        @media (max-width: 767px) {
+          width: 100%;
+          border-top: 1px solid #aaa;
+        }
+        li {
           padding: 0 0 0 15px;
+          display: block;
+          margin: 0 0 12px;
+          @media (max-width: 767px) {
+            padding: 0 5px 10px 15px;
+            border-bottom: 1px solid #aaa;
+            margin: 10px;
+          }
+          a {
+            font-size: 14px;
+            color: #bbb;
+            text-decoration: none;
+            line-height: 1.5em;
+            font-weight: 300;
+            border-bottom: 1px solid transparent;
+            opacity: .8;
+            @media (max-width: 767px) {
+              padding: 10px;
+            }
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+        li + li {
+          margin-top: 15px;
+        }
+
+      }
+      .link-boxes {
+        text-align: left;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+        span {
           color: #eee;
           margin-bottom: 30px;
           font-size: 14px;
@@ -173,6 +274,8 @@ footer {
     -webkit-align-content: center;
   }
 }
-
-
+.footer-container .link-boxes p{
+  padding: 0;
+  margin-bottom: 20px;
+}
 
