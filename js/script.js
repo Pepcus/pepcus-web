@@ -59,7 +59,17 @@ $(function() {
     });
 
   $("#clients").owlCarousel({
-    items: 5,
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 5
+      }
+    }
   });
 
   //owl carousel end

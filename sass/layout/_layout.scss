@@ -44,6 +44,7 @@
         padding-left: 20px;
         padding-right: 20px;
         line-height: 80px;
+        text-transform: uppercase;
       }
     }
     .title-bg {
@@ -205,6 +206,10 @@
     .cards-icon {
       margin-bottom: 25px;
       line-height: 130px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .icon {
         height: 100px;
         vertical-align: middle;

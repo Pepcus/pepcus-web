@@ -6,7 +6,7 @@
   &:before {
     position: absolute;
     left: -200px;
-    top: -55%;
+    top: -65%;
     background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -120,9 +120,10 @@
 
 
 .client-list {
-  background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/48770/business-time-clock-clocks-48770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-position: center;
-  background-attachment: fixed;
+  //background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/48770/business-time-clock-clocks-48770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  //background-position: center;
+  //background-attachment: fixed;
+  background: url(../assets/image/red-graph.PNG);
   color: #fff;
   .clientSlider-item {
     width: 160px;
@@ -142,9 +143,161 @@
   }
 }
 
+
+.expert-team-section  {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  box-shadow: 0 0 black;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section.expert-team-section {
+  color: #fff;
+}
+
+
+.cards11__card {
+  width: 50%;
+  margin: 0 15px 30px;
+  padding: 30px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.services__content {
+  max-width: 500px;
+}
+
+.cards11 ul li {
+  list-style: none;
+  padding-left: 47px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.cards11 ul li:after {
+  content: "\f00c";
+  font-family: 'Line Awesome Free';
+  font-weight: bold;
+ font-size: 22px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+}
+
+
+.cards11 ul li:before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .process-section {
+  background: #ffffff;
   background-image: url(https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  min-height: 1000px;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  @media(max-width: 768px) {
+    background-size: cover;
+    background-position:left;
+  }
+}
+
+
+.cards--process .cards-name {
+  position: relative;
+}
+
+.cards--process.card-item-01 {
+  padding-top: 158px;
+  @media(max-width: 768px) {
+    padding-top: 20px;
+  }
+}
+
+.cards--process.card-item-02 {
+  padding-top: 80px;
+  @media(max-width: 768px) {
+    padding-top: 20px;
+  }
+}
+
+.cards--process.card-item-03 {
+  @media(max-width: 768px) {
+    padding-top: 20px;
+  }
+}
+
+
+.cards--process .cards-name h4 {
+  position: relative;
+  margin-bottom: 68px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+  @media(max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.cards--process .cards-name h4:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 99px;
+  bottom: -109px;
+  left: -29px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(https://www.iflexion.com/sites/all/themes/iflexion/images/xdedicated-development-teams-title-after.png.pagespeed.ic.AhKgodMKOg.webp);
+  background-size: contain;
+  @media (max-width: 786px) {
+    left: auto;
+    background-position: center;
+  }
+}
+
+.cards--process .cards-name:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 110px;
+  top: -10px;
+  left: -160px;
+  font-weight: 500;
+  font-size: 106px;
+  line-height: 106px;
+  color: #000;
+  opacity: .1;
+}
+
+//.cards--process.card-item-01 .cards-name:after {
+//  content: '01';
+//}
+//
+//.cards--process.card-item-02 .cards-name:after {
+//  content: '02';
+//}
+//
+//.cards--process.card-item-03 .cards-name:after {
+//  content: '03';
+//}
+
+.cards--process .cards-text {
+  position: relative;
+  font-size: 17px;
+  line-height: 30px;
+  @media(max-width: 768px) {
+    text-align: center;
+  }
 }
 
 
