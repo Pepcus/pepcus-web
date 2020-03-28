@@ -227,6 +227,29 @@
     }
   }
 }
+
+.contact-page {
+  .navigationList-link {
+    color: #000 !important;
+    &:after {
+      background-color: #000 !important;
+    }
+  }
+    .navigationList-item--border {
+      .navigationList-link {
+        border: 1px solid #000 !important;
+        color: #000 !important;
+        background-color: transparent !important;
+        &:hover {
+          color: #fff !important;
+          background-color: #000 !important;
+       }
+     }
+  }
+}
+
+
+
 .header-small {
   .navigation {
     float: right;
@@ -240,24 +263,18 @@
     }
     .navigationList-item--border {
       .navigationList-link {
-        border: 1px solid #f00;
+        border: 1px solid #f00 !important;
         color: #fff !important;
         background-color: #f00 !important;
         &:hover {
           color: #fff !important;
-          background-color: #f00;
+          background-color: #f00 !important;
         }
       }
+
     }
   }
 }
-
-
-
-
-
-
-
 
 .mobileNavigation-bg {
   position: fixed;
@@ -314,6 +331,7 @@
               line-height: 30px;
               color: #000;
               text-transform: uppercase;
+              cursor: pointer;
               @include transition (all .2s ease-in-out);
               &:after {
                 display: block;

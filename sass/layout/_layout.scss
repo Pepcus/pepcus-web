@@ -21,7 +21,7 @@
   position: relative;
   padding-top: 130px;
   padding-bottom: 100px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -35,6 +35,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   &.title-banner-big {
     .title-banner-name {
@@ -45,6 +48,9 @@
         padding-right: 20px;
         line-height: 80px;
         text-transform: uppercase;
+        @media(max-width: 768px) {
+          line-height: 60px;
+        }
       }
     }
     .title-bg {
@@ -85,6 +91,9 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  @media(max-width: 768px) {
+    width: 100%;
+  }
   h2 {
     font-size: 38px;
     line-height: 60px;
@@ -92,6 +101,10 @@
     text-transform: uppercase;
     margin: 0;
     position: relative;
+    @media(max-width: 768px) {
+      font-size: 26px;
+      line-height: 40px;
+    }
   }
   p {
     max-width: 1170px;
@@ -102,184 +115,7 @@
   }
 }
 
-.form-wrapper {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  .form_label {
-    position: absolute;
-    display: block;
-    top: 20px;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: #9b9b9b;
-    left: 0;
-    padding-left: 18px;
-  }
-  .form_input {
-    position: relative;
-    width: 100%;
-    padding: 30px 18px 5px 18px;
-    border: 1px solid #d9d9d9;
-    font-size: 1rem;
-    &::placeholder {
-      color: transparent;
-    }
-    &:placeholder-shown ~ .form_label {
-      font-size: 1rem;
-      cursor: text;
-      top: 35px;
-    }
-    &:focus {
-      ~ .form_label {
-        position: absolute;
-        top: 20px;
-        display: block;
-        transition: 0.2s;
-        font-size: .9rem;
-      }
-    }
-    &.with-placeholder {
-      ~ .form_label {
-        position: absolute;
-        top: 20px !important;
-        display: block;
-        transition: 0.2s;
-        font-size: .9rem !important;
-      }
-      &::placeholder {
-        color: initial;
-      }
-    }
-  }
-  textarea {
-    resize: none;
-    min-height: 150px;
-  }
-  .form-button {
-    background: transparent;
-    color: #f00;
-    font-size: 18px;
-    line-height: 22px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    min-width: 170px;
-    text-transform: uppercase;
-    font-weight: 300;
-    border: 2px solid #f00;
-    cursor: pointer;
-    @include transition (all .2s ease-in-out);
-    &:hover {
-      background: #f00;
-      color: #fff;
-      border: 2px solid transparent;
-    }
-  }
-  .small-description {
-    text-align: center;
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-}
-
-.cards {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #FFF;
-  .cards-item {
-    position: relative;
-    text-align: center;
-    &:after {
-      content: '';
-      position: absolute;
-      display: none;
-      width: 1px;
-      height: 70%;
-      top: 15%;
-      left: -15px;
-      border-left: 1px solid rgba(200,200,200 ,.5);
-    }
-    .cards-icon {
-      margin-bottom: 25px;
-      line-height: 130px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .icon {
-        height: 100px;
-        vertical-align: middle;
-        max-height: 100px;
-        max-width: 100%;
-        width: 100%;
-      }
-    }
-    .cards-name {
-      h4 {
-        margin-top: 0;
-        margin-bottom: 34px;
-        font-weight: 300;
-        font-size: 26px;
-        color: #232323;
-        text-transform: uppercase;
-      }
-    }
-    .cards-text {
-      p {
-        padding-left: 40px;
-        padding-right: 40px;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 30px;
-        color: #232323;
-        margin: 0 auto;
-      }
-    }
-  }
-
-}
-
-.cards .col-lg-4+.col-lg-4 .cards-item:after {
-  display: block;
-}
 
 
-.kenburns-top {
-  -webkit-animation: kenburns-top 40s ease-out both;
-  animation: kenburns-top 40s ease-out both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
 
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.45) translateY(-15px);
-    transform: scale(1.45) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-}
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.60) translateY(-15px);
-    transform: scale(1.60) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-}
+
