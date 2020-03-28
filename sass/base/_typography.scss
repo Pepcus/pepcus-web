@@ -1,4 +1,31 @@
+.title-btn .btn, body, h1, h3 {
+  font-weight: 300;
+}
+
 h1 {
-  background: $base-primary;
-  color: $color-primary;
+  font-size: 62px;
+  line-height: 68px;
+  margin: .67em 0;
+  @media (max-width:768px) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.btn, h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-banner-name p {
+  font-size: 30px;
+  line-height: 40px;
+  @media (max-width:768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
