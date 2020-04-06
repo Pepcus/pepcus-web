@@ -17,6 +17,14 @@
   fill: #ff0000;
 }
 
+.cards {
+  margin-top: 74px;
+  .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .title-banner {
   position: relative;
   padding-top: 130px;
@@ -54,7 +62,6 @@
       }
     }
     .title-bg {
-      //background-image: url(https://www.iflexion.com/files/webp/xbg-page-home-1_4.webp.pagespeed.ic.J7H7LWCJkq.webp);
       background:
               linear-gradient(
                               rgba(0, 0, 0, 0.75),
@@ -88,30 +95,37 @@
 .section-title {
   text-align: center;
   margin-bottom: 30px;
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  @media(max-width: 768px) {
+  @media(max-width: 1200px) {
     width: 100%;
   }
   h2 {
-    font-size: 38px;
-    line-height: 60px;
+    font-size: 52px;
+    line-height: 70px;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
     position: relative;
     @media(max-width: 768px) {
-      font-size: 26px;
-      line-height: 40px;
+      font-size: 40px;
+      line-height: 42px;
+    }
+    @media(max-width: 768px) {
+      font-size: 32px;
+      line-height: 39px;
     }
   }
   p {
-    max-width: 1170px;
-    margin: 0 auto 20px;
-    padding-top: 10px;
+    margin: 20px auto 0;
     position: relative;
     font-size: 20px;
+    line-height: 35px;
+    &.big {
+      font-size: 25px;
+      line-height: 40px;
+    }
   }
 }
 

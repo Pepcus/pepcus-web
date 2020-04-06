@@ -8,6 +8,19 @@
   transform: $property;
 }
 
+//transform-origin mixin
+//Ex:
+//@include transform-origin (0 100%);
+
+@mixin transformOrigin($property) {
+  -webkit-transform-origin: $property;
+  -ms-transform-origin: $property;
+  transform-origin: $property;
+}
+
+
+
+
 //transition mixin
 //Ex:
 //@include transition (all .3s ease-out);
@@ -17,6 +30,8 @@
   -ms-transition: $property;
   transition: $property;
 }
+
+
 
 
 //box-shadow mixin

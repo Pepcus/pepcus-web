@@ -42,7 +42,7 @@ a:link {
 }
 
 ::selection {
-  background: #4CC528;
+  background: #ff0000;
   color: #fff;
   text-shadow: none;
 }
@@ -88,4 +88,9 @@ a:link {
 
 .section-dark {
   background: #f2f2f2;
+}
+
+.section-light {
+  background-color: #f7f7f7;
+  color: #000;
 }
