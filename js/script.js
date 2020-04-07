@@ -84,6 +84,21 @@ $(function() {
     smartSpeed: 450,
   });
 
+  $("#mobile-expertise-carousel").owlCarousel({
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 5
+      }
+    }
+  });
+
+
 
   //owl carousel end
 
