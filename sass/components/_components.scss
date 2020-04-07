@@ -65,7 +65,6 @@
   }
 }
 
-
 //--------------------------animation title zoom--------------------------
 .kenburns-top {
   -webkit-animation: kenburns-top 40s ease-out both;
@@ -255,7 +254,7 @@ form {
   }
 }
 
-//----------------------------- input-file----------------------------
+//------------------------------------------------------input-file--------------------------------------
 
 .input-file-container {
   position: relative;
@@ -308,12 +307,7 @@ form {
   }
 }
 
-//.file-name:not(:empty):before {
-//  content: "Selected file: ";
-//  font-style: normal;
-//  font-weight: normal;
-//}
-
+//----------------------------------------------------- cards start ------------------------------------
 
 .cards1__card {
   width: 50%;
@@ -351,21 +345,26 @@ form {
   }
 }
 
+//simple icon heading card -- ex: index page
+
 .cards2__card {
   position: relative;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-
+  &:first-child {
+    &:after {
+      display: none;
+    }
+  }
   &:after {
     content: '';
     position: absolute;
-    display: none;
     width: 1px;
     height: 70%;
     top: 15%;
-    left: -15px;
-    border-left: 1px solid rgba(200, 200, 200, .5);
+    left: -10px;
+    border-left: 1px solid rgba(200, 200, 200, 0.5);
   }
 
   .cards2__card-icon {
@@ -395,7 +394,7 @@ form {
       margin-top: 0;
       margin-bottom: 24px;
       font-weight: 300;
-      font-size: 30px;
+      font-size: 26px;
       color: #232323;
       text-transform: uppercase;
     }
@@ -413,6 +412,8 @@ form {
     }
   }
 }
+
+//stairs card -- ex: index --process section
 
 .cards3__card {
   .cards3__card-wrapper {
@@ -505,6 +506,8 @@ form {
   }
 }
 
+// boder-card -- ex: use in enterprise-software-development page -- web security section
+
 .cards4__card {
   border-bottom: 0!important;
   text-align: center;
@@ -589,7 +592,7 @@ form {
   }
 }
 
-//card with side icon heading and detail ex: use in enterprise-software-development page.
+//card with side icon heading and detail ex: enterprise-software-development page.
 
 .cards5__card {
   display: flex;
@@ -887,7 +890,7 @@ form {
   }
 }
 
-
+// simple card heading and detail --- ex:mobile-development -- cross and native section
 .cards7__card {
   text-align: center;
   margin: 0 0 50px;
@@ -934,6 +937,110 @@ form {
     }
   }
 }
+
+//card with small icon heading and detail ex: qa-and-test-automation page.
+
+.cards8__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  max-width: 33%;
+  min-width: 33%;
+  margin-bottom: 60px;
+  padding: 0 30px;
+  @media(max-width: 768px) {
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+    min-width: auto;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .cards8__card-icon {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: block;
+    max-width: 80px;
+    min-width: 80px;
+    svg {
+      width: 80px;
+      height: 80px;
+      fill:#ff0000;
+    }
+    i {
+      font-size: 22px;
+    }
+  }
+  .cards8__card-text {
+    width: 100%;
+    .cards8__card-heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 30px;
+      margin-top: 0;
+      @media(max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    .cards8__card-description {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+
+
+.cards9__card {
+  display: flex;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 40px 65px;
+  background: #fff;
+  @media(max-width: 768px) {
+    display: block;
+    margin-bottom: 30px;
+    padding: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .cards9__card-icon {
+    display: block;
+    max-width: 110px;
+    min-width: 110px;
+    margin-right: 50px;
+    @media(max-width: 768px) {
+      margin: 0 auto;
+    }
+    svg {
+      width: 110px;
+      height: 110px;
+      fill:#ff0000;
+    }
+    i {
+      font-size: 22px;
+    }
+  }
+  .cards9__card-text {
+    width: 100%;
+    .cards9__card-heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .cards9__card-description {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+//----------------------------------------------------- cards end ------------------------------------
+
+//List with red round icon with heading -- ex: enterprise-software-development -- essential expertise section
 
 .list_1-wrapper {
   position: relative;
@@ -1078,7 +1185,6 @@ form {
     margin-top: 30px;
   }
 }
-
 
 .dark-graph-bg {
   background: url(../assets/image/red-graph.PNG);

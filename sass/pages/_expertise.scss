@@ -178,6 +178,17 @@
     top: 0;
     background-position: left;
   }
+  .qa-software-security {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/3714318/pexels-photo-3714318.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center center;
+    color: #fff;
+
+  }
 }
 
 .cloud-infrastructure-page {
