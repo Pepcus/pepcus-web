@@ -802,6 +802,9 @@ footer {
 
 .cards {
   margin-top: 74px; }
+  @media (max-width: 768px) {
+    .cards {
+      margin-top: 50px; } }
   .cards .cards-row {
     display: flex;
     flex-wrap: wrap; }
@@ -861,7 +864,7 @@ footer {
 .section-title {
   text-align: center;
   margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
   @media (max-width: 1200px) {
@@ -1171,14 +1174,15 @@ form {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px; }
+  .cards2__card:first-child:after {
+    display: none; }
   .cards2__card:after {
     content: '';
     position: absolute;
-    display: none;
     width: 1px;
     height: 70%;
     top: 15%;
-    left: -15px;
+    left: -10px;
     border-left: 1px solid rgba(200, 200, 200, 0.5); }
   .cards2__card .cards2__card-icon {
     margin-bottom: 25px;
@@ -1201,7 +1205,7 @@ form {
     margin-top: 0;
     margin-bottom: 24px;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 26px;
     color: #232323;
     text-transform: uppercase; }
   .cards2__card .cards2__card-text p {
@@ -1628,6 +1632,87 @@ form {
       min-height: auto; }
       .cards7__card:last-child {
         margin: 50px 0 0; } }
+
+.cards8__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  max-width: 33%;
+  min-width: 33%;
+  margin-bottom: 60px;
+  padding: 0 30px; }
+  @media (max-width: 768px) {
+    .cards8__card {
+      display: block;
+      width: 93%;
+      margin: 0 auto;
+      min-width: auto;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 40px; } }
+  .cards8__card .cards8__card-icon {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: block;
+    max-width: 80px;
+    min-width: 80px; }
+    .cards8__card .cards8__card-icon svg {
+      width: 80px;
+      height: 80px;
+      fill: #ff0000; }
+    .cards8__card .cards8__card-icon i {
+      font-size: 22px; }
+  .cards8__card .cards8__card-text {
+    width: 100%; }
+    .cards8__card .cards8__card-text .cards8__card-heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 30px;
+      margin-top: 0; }
+      @media (max-width: 768px) {
+        .cards8__card .cards8__card-text .cards8__card-heading {
+          margin-bottom: 20px; } }
+    .cards8__card .cards8__card-text .cards8__card-description {
+      font-size: 18px;
+      line-height: 28px; }
+
+.cards9__card {
+  display: flex;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 40px 65px;
+  background: #fff; }
+  @media (max-width: 768px) {
+    .cards9__card {
+      display: block;
+      margin-bottom: 30px;
+      padding: 30px; }
+      .cards9__card:last-child {
+        margin-bottom: 0; } }
+  .cards9__card .cards9__card-icon {
+    display: block;
+    max-width: 110px;
+    min-width: 110px;
+    margin-right: 50px; }
+    @media (max-width: 768px) {
+      .cards9__card .cards9__card-icon {
+        margin: 0 auto; } }
+    .cards9__card .cards9__card-icon svg {
+      width: 110px;
+      height: 110px;
+      fill: #ff0000; }
+    .cards9__card .cards9__card-icon i {
+      font-size: 22px; }
+  .cards9__card .cards9__card-text {
+    width: 100%; }
+    .cards9__card .cards9__card-text .cards9__card-heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      margin-top: 0; }
+    .cards9__card .cards9__card-text .cards9__card-description {
+      font-size: 18px;
+      line-height: 28px; }
 
 .list_1-wrapper {
   position: relative;
@@ -2348,6 +2433,11 @@ article {
   position: absolute;
   top: 0;
   background-position: left; }
+
+.qa-test-page .qa-software-security {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3714318/pexels-photo-3714318.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center center;
+  color: #fff; }
 
 .cloud-infrastructure-page .cloud-infrastructure-title-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
