@@ -162,7 +162,7 @@ $(function() {
       $(htmlRender).appendTo("#teamMembers");
     });
   };
-var renderThirdTeam1 = function (data2) {
+  var renderThirdTeam1 = function (data2) {
   $.each(data2, function(key, value) {
     var htmlRender =  "<div class='team-members'>" +
       "<div class='team-member-img'>" +
@@ -181,4 +181,17 @@ var renderThirdTeam1 = function (data2) {
   });
 };
 
+// ------------------------------------ tabs start-------------------------------------------
 
+$(document).ready(function(){
+
+  $('.tabs1__tab-list li').click(function(){
+    const tab_id = $(this).attr('data-tab');
+    $('.tabs1__tab-list li').removeClass('current');
+    $('.tab-content').removeClass('current');
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  });
+})
+
+// ------------------------------------ tabs end-------------------------------------------
