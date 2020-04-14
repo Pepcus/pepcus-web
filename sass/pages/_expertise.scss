@@ -2,10 +2,10 @@
   .api-title-bg {
     background:
             linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
+                            rgba(0, 0, 0, 0.6),
+                            rgba(0, 0, 0, 0.6)
             ),
-            url(https://images.pexels.com/photos/374879/pexels-photo-374879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            url(https://images.unsplash.com/photo-1506878206813-92402b8ded23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -86,18 +86,14 @@
 
 .legacy-app-page {
   .legacy-app-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/3779201/pexels-photo-3779201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1574027542338-98e75acfd385?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
     background-size: cover;
     height: 100%;
     width: 100%;
     z-index: 1000;
     position: absolute;
     top: 0;
+    background-position: center center;
   }
 }
 
@@ -219,7 +215,193 @@
   }
 }
 
+.partner-integrations-page {
+  .partner-integrations-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924_960_720.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+  .partner-integration-half {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: center center;
+    color: #fff;
+    min-height: 500px;
+    top: 0;
+  }
+  .partner-integration-half-detail {
+    background: #f2f2f2;
+    min-height: 500px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    h2 {
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #ff0000;
+      font-size: 26px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        list-style: none;
+        padding-left: 47px;
+        position: relative;
+        margin-bottom: 14px;
+        font-size: 16px;
+        &:after {
+          content: "\f00c";
+          font-family: 'Line Awesome Free';
+          font-weight: bold;
+          font-size: 22px;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: red;
+        }
+        &:before {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
+}
 
+.hr-compliances-page {
+  .hr-compliances-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
 
+.wealth-management-page {
+  .wealth-management-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/129492/pexels-photo-129492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
 
+.technology-partnership-page {
+  .technology-partnership-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
 
+.software-development-page {
+  .software-development-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
+
+.technology-spectrum-page {
+  .technology-spectrum-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.9),
+                            rgba(0, 0, 0, 0.9)
+            ),
+            url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
+
+.dev-and-cloud-page {
+  .dev-and-cloud-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
+
+.support-and-maintenance-page {
+  .support-and-maintenance-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.3),
+                            rgba(0, 0, 0, 0.3)
+            ),
+            url(https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+}
