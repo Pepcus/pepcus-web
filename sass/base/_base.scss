@@ -36,6 +36,8 @@ body {
   }
 }
 
+html {width: 100%}
+
 a:hover,
 a:link {
   text-decoration: none;
@@ -101,4 +103,18 @@ a:link {
 
 .no-padding-bottom {
   padding-bottom: 0 !important;
+}
+
+
+.color-1 {
+  color: #c74c31;
+}
+.color-2 {
+  color: #4596ab;
+}
+.color-3 {
+  color: #4f79ce;
+}
+.color-4 {
+  color: #51c336;
 }
