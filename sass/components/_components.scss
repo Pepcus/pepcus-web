@@ -890,6 +890,68 @@ form {
   }
 }
 
+.statistics1__card {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  .statistics1__card-col {
+    position: relative;
+    width: 20%;
+    .statistics1__card-item {
+      font-weight: 300;
+      .statistics1__card-number {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: -.05em;
+        white-space: nowrap;
+      }
+      .statistics1__card-description {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 30px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        @media(max-width: 768px) {
+          width: 95%;
+        }
+      }
+    }
+    &:first-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 70%;
+      top: 15%;
+      left: -10px;
+      border-left: 1px solid rgba(200, 200, 200, 0.5);
+    }
+    @media(max-width: 768px) {
+      margin-top: 70px;
+      width: 100%;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        height: 1px;
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top: 1px solid rgba(200, 200, 200, 0.5);
+      }
+    }
+  }
+}
+
 // simple card heading and detail --- ex:mobile-development -- cross and native section
 .cards7__card {
   text-align: center;
@@ -1218,8 +1280,9 @@ form {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
   @media(max-width: 768px) {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
   .cards12__card-wrapper {
     position: relative;
@@ -1293,7 +1356,128 @@ form {
   }
 }
 
+//big card use in devops and cloud
 
+.cards13__card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  color: #555;
+  .cards13__card {
+    margin-top: 50px;
+    border: 1px solid #ebebeb;
+    width: calc(50% - 40px);
+    margin: 0 20px;
+    background: #fff;
+    position: relative;
+    &:before, &:after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      background: #1d1c1c;
+      @include box-shadow (0 25px 10px #1d1c1c);
+      @include transform (rotate(-3deg));
+    }
+    &:after {
+      @include transform (rotate(3deg));
+      right: 10px;
+      left: auto;
+    }
+    @media(max-width: 768px) {
+      width: calc(100% - 40px);
+      margin-bottom: 60px;
+    }
+    &:last-child {
+      @media(max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    .cards13__card-item {
+      text-align: center;
+      position: relative;
+      text-align: left;
+      padding: 24px 16px 28px;
+      padding-bottom: 24px !important;
+      .cards13__card-name {
+        background: #51c336;
+        color: #fff;
+        margin: -37px -32px 40px;
+        padding: 37px 41px 12px;
+        text-align: left;
+        h4 {
+          margin-top: 0;
+          margin-bottom: 22px;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 35px!important;
+          line-height: 40px;
+          @media(max-width: 1500px) {
+            font-size: 26px;
+            line-height: 32px;
+          }
+        }
+
+      }
+      .cards13__card-text {
+        position: relative;
+        font-size: 17px;
+        line-height: 30px;
+        p {
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
+        ul {
+          li {
+            list-style: none;
+            padding-left: 47px;
+            position: relative;
+            margin-bottom: 15px;
+            &:after {
+              content: "\f00c";
+              font-family: 'Line Awesome Free';
+              font-weight: bold;
+              font-size: 22px;
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 0;
+              color: red;
+            }
+            &:before {
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+        }
+      }
+      &.cloud-card {
+        .cards13__card-name {
+          background: #0c74a0;
+        }
+        li {
+          &:after {
+            color: #0c74a0 !important;
+          }
+        }
+      }
+      &.devops {
+        .cards13__card-name {
+          background: #0ca01b;
+        }
+        li {
+          &:after {
+            color: #0ca01b !important;
+          }
+        }
+      }
+    }
+  }
+}
 
 //----------------------------------------------------- cards end ------------------------------------
 
@@ -1699,4 +1883,43 @@ form {
   }
 }
 
+//slider multiple item
+.small-slider-item {
+  width: 160px;
+  margin: 0 auto;
+  a {
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    img {
+      display: inline-block;
+      max-width: 100%;
+    }
+  }
+}
 
+
+.owl-dots {
+  .owl-dot {
+    &:focus {
+      outline: none;
+    }
+    display: inline-block;
+    span {
+      background: #ff0000;
+      display: inline-block;
+      height: 30px !important;
+      margin: 0 2px 5px !important;
+      transform: translate3d(0px, -50%, 0px) scale(0.3);
+      transform-origin: 50% 50% 0;
+      transition: all 250ms ease-out 0s;
+      width: 30px !important;
+      border-radius: 100%;
+    }
+  }
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
