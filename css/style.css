@@ -2431,6 +2431,56 @@ form {
       width: 30px !important;
       border-radius: 100%; }
 
+.tech-table-style {
+  padding: 0 0 100px;
+  overflow: hidden; }
+  .tech-table-style .row {
+    border-bottom: 1px solid #d0cece;
+    display: flex;
+    flex-wrap: wrap; }
+    .tech-table-style .row .table-cell--header {
+      padding-left: 60px; }
+      .tech-table-style .row .table-cell--header .img {
+        position: absolute;
+        display: block;
+        float: left;
+        width: 60px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center; }
+        .tech-table-style .row .table-cell--header .img svg {
+          fill: #234;
+          width: 80px;
+          height: 80px; }
+      .tech-table-style .row .table-cell--header h4 {
+        display: block;
+        margin: 0;
+        padding-left: 1em;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative; }
+    .tech-table-style .row .table-cell {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+      margin-right: -4px; }
+      .tech-table-style .row .table-cell.backend svg {
+        fill: #39424b !important; }
+      .tech-table-style .row .table-cell.frontend svg {
+        fill: #4f79ce !important; }
+      .tech-table-style .row .table-cell.mobileapp svg {
+        fill: #c74c31 !important; }
+      .tech-table-style .row .table-cell.database svg {
+        fill: #51c336 !important; }
+
 .testimonial-section {
   position: relative;
   overflow: hidden;
