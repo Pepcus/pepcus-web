@@ -24,15 +24,16 @@ time, mark, audio, video {
 body {
   min-width: 320px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.57894737;
-  color: #234;
+  color: #232323;
+  font-weight: 400;
   background-color: #fff;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   @media (max-width: 767px){
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

@@ -105,87 +105,37 @@
 
 form {
   color: #000;
-
   .form-row {
     position: relative;
-    padding: 15px 0 0;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @media(max-width: 768px) {
       margin-bottom: 10px;
     }
-    .form_label {
-      position: absolute;
-      display: block;
-      top: 20px;
-      transition: 0.2s;
-      font-size: 18px;
-      color: #9b9b9b;
-      left: 0;
-      padding-left: 18px;
-      @media(max-width: 768px) {
-        font-size: 16px;
-      }
-    }
-
     .form_input {
-      position: relative;
       width: 100%;
-      padding: 30px 18px 5px 18px;
+      height: auto;
+      padding: 4px 10px 4px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
       border: 1px solid #d9d9d9;
-      font-size: 20px;
-      @media(max-width: 768px) {
-        padding: 20px 18px 5px 18px;
-        font-size: 16px;
-      }
-      &::placeholder {
-        color: transparent;
-      }
-      &:placeholder-shown ~ .form_label {
-        font-size: 18px;
-        cursor: text;
-        top: 35px;
-        @media(max-width: 768px) {
-          top: 30px;
-          font-size: 16px;
-        }
-      }
-
       &:focus {
         outline: none;
-        ~ .form_label {
-          position: absolute;
-          top: 20px;
-          display: block;
-          transition: 0.2s;
-          font-size: 18px;
-          @media(max-width: 768px) {
-            font-size: 12px;
-          }
-        }
+        border-color: $brandColor;
+        box-shadow: 0 0 3px 0.5px $brandColor;
       }
-
-      &.with-placeholder {
-        ~ .form_label {
-          position: absolute;
-          top: 20px !important;
-          display: block;
-          transition: 0.2s;
-          font-size: 18px !important;
-          @media(max-width: 768px) {
-            font-size: 16px;
-          }
-        }
-        &::placeholder {
-          color: initial;
-        }
+      @media(max-width: 768px) {
+        font-size: 14px;
       }
-
     }
 
     textarea {
       resize: none;
-      min-height: 150px;
+      width: 100%;
+      height: auto;
+      padding: 4px 10px 4px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
       &:focus {
         outline: none;
       }
@@ -193,33 +143,29 @@ form {
   }
 
   .form-row-button {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    margin-bottom: 30px;
-
     .button-container {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       text-align: center;
-
       .form-button {
         background: transparent;
         color: #f00;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        min-width: 170px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        min-width: 100px;
         text-transform: uppercase;
-        font-weight: 300;
-        border: 2px solid #f00;
+        border: 1px solid #f00;
         cursor: pointer;
         @include transition (all .2s ease-in-out);
 
         &:hover {
           background: #f00;
           color: #fff;
-          border: 2px solid transparent;
+          border: 1px solid transparent;
+        }
+        &:focus {
+          outline: none;
         }
         @media(max-width: 768px) {
           font-size: 16px;
@@ -263,14 +209,14 @@ form {
   align-items: center;
   .input-file-button {
     display: block;
-    padding: 14px 25px;
-    background: #ff0000;
+    padding: 6px 25px;
+    background: $brandColor;
     color: #fff;
     font-size: 1em;
     transition: all .4s;
     cursor: pointer;
     @media (max-width: 768px) {
-      padding: 10px 10px;
+      padding: 5px 10px;
       font-size: 16px;
     }
   }
@@ -283,25 +229,21 @@ form {
     cursor: pointer;
   }
   .file-name {
-    font-style: italic;
-    font-size: 18px;
-    font-weight: bold;
-    border: 1px solid #d9d9d9;
-    padding: 14px;
-    width: calc(100% - 167px);
+    border: 1px solid $inputBorder;
+    padding: 5px;
+    width: calc(100% - 150px);
     margin: 0;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    color: #000;
+    font-size: 16px;
     @media (max-width: 768px) {
-      font-size: 16px;
       width: calc(100% - 120px);
     }
     &:empty {
-      padding: 27px;
+      padding: 17.5px;
       @media (max-width: 768px) {
-        padding: 21px;
+        padding: 16.5px;
       }
     }
   }
@@ -310,7 +252,7 @@ form {
 //----------------------------------------------------- cards start ------------------------------------
 
 .cards1__card {
-  width: 50%;
+  width: 90%;
   margin: 0 15px 30px;
   padding: 30px 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -393,8 +335,7 @@ form {
     h4 {
       margin-top: 0;
       margin-bottom: 24px;
-      font-weight: 300;
-      font-size: 26px;
+      font-size: 20px;
       color: #232323;
       text-transform: uppercase;
     }
@@ -404,7 +345,6 @@ form {
     p {
       padding-left: 40px;
       padding-right: 40px;
-      font-weight: 300;
       font-size: 17px;
       line-height: 30px;
       color: #232323;
@@ -1479,6 +1419,54 @@ form {
   }
 }
 
+//card with top icon heading and detail ex: enterprise-software-development page 3 column .
+
+.cards14__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33.33%;
+  max-width: 33.33%;
+  min-width: 33.33%;
+  margin-bottom: 60px;
+  padding: 0 10px;
+  @media(max-width: 768px) {
+    display: block;
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .cards14__card-icon {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: block;
+    max-width: 80px;
+    min-width: 80px;
+    svg {
+      width: 80px;
+      height: 80px;
+      fill:#ff0000;
+    }
+    i {
+      font-size: 22px;
+    }
+  }
+  .cards14__card-text {
+    .cards14__card-heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .cards14__card-description {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+
 //----------------------------------------------------- cards end ------------------------------------
 
 //List with red round icon with heading -- ex: enterprise-software-development -- essential expertise section
@@ -1992,5 +1980,124 @@ form {
         }
       }
     }
+  }
+}
+
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  .modal-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto;
+      padding: 1.75rem;
+      .close {
+        float: right;
+        font-size: 2.40625rem;
+        font-weight: 100;
+        line-height: 1;
+        color: #000;
+        text-shadow: none;
+        filter: alpha(opacity=20);
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.5rem 0.75rem;
+        z-index: 1;
+      }
+      .close:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+    }
+    .modal-footer {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      padding: 1rem 1.75rem;
+      border-top: 1px solid #f1f2f3;
+      .btn {
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        line-height: 1.9;
+        border-radius: 0.25rem;
+        font-size: 11px;
+        padding: 8px 26px 6px;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        outline: none;
+        -webkit-transition: 0.15s linear;
+        transition: 0.15s linear;
+        cursor: pointer;
+        &.btn-primary {
+          color: #fff;
+          border: 1px solid;
+          background: $brandColor;
+          font-size: 14px;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  opacity: 0.5;
+  background-color: #fff;
+  z-index: 99999;
+  text-align: center;
+  .loading-image {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    > img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  &.show {
+    display: block;
   }
 }
