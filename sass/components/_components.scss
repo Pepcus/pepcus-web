@@ -196,6 +196,10 @@ form {
       max-width: 640px;
       margin: 0 auto;
       color: #555;
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
   }
 }
@@ -294,7 +298,15 @@ form {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
   &:first-child {
+    @media (max-width: 767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     &:after {
       display: none;
     }
@@ -307,6 +319,13 @@ form {
     top: 15%;
     left: -10px;
     border-left: 1px solid rgba(200, 200, 200, 0.5);
+    @media (max-width: 767px) {
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-top: 1px solid rgba(200, 200, 200, 0.5);
+      border-left: transparent;
+    }
   }
 
   .cards2__card-icon {
@@ -1929,8 +1948,6 @@ form {
         float: left;
         width: 60px;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
         text-align: center;
         svg {
           fill: #234;
@@ -1959,6 +1976,7 @@ form {
       vertical-align: middle;
       float: none;
       margin-right: -4px;
+      display: flex;
       &.backend {
         svg {
           fill: #39424b !important;

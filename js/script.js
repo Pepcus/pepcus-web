@@ -89,7 +89,6 @@ $(function() {
     }
   });
 
-
   $('#owl').owlCarousel({
     loop: true,
     center: true,
@@ -115,7 +114,43 @@ $(function() {
     }
   });
 
+  // workspace slider
+  $('#workspace-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: false,
+    autoplay: false,
+    responsive:{
+      0: {
+        items:1
+      },
+      767:{
+        items:2
+      },
+      768:{
+        items:3
+      }
+    }
+  });
 
+  $('#fun-gallery').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: false,
+    autoplay: false,
+    responsive:{
+      0: {
+        items:1
+
+      },
+      767:{
+        items:2
+      },
+      768:{
+        items:3
+      }
+    }
+  });
 
   //owl carousel end
 
@@ -141,62 +176,6 @@ $(function() {
 
 });
 
-
-  var fetchTeamJson = function () {
-  $.ajax({
-    url: 'json/team.json',
-    dataType: 'json',
-    success: function (data) {
-      renderTeamJson(data);
-    },
-    error: function (data) {
-      alert("ERROR: Not received JSON file  " + data);
-      $("#error-wrapper").css("display", "none");
-    }
-  });
-  };
-  fetchTeamJson();
-
-  var renderTeamJson = function (data) {
-    renderThirdTeam(data.thirdTeam);
-    renderThirdTeam1(data.thirdTeam)
-  }
-  var renderThirdTeam = function (data1) {
-    $.each(data1, function(key, value) {
-      var htmlRender =  "<div class='team-members'>" +
-        "<div class='team-member-img'>" +
-        "<div class='team-img-border'>" +
-        "<div class='team-member-image'>" +
-        "<img src='"+value.img1+"' alt='"+value.name+"'>" +
-        "</div>"+
-        "</div>"+
-        "</div>"+
-        "<div class='team-member-info'>" +
-        "<h4 class='team-member-name'>"+value.name+"</h4>" +
-        "<span class='designation'>"+value.role+"</span>" +
-        "</div>"+
-        "</div>";
-      $(htmlRender).appendTo("#teamMembers");
-    });
-  };
-  var renderThirdTeam1 = function (data2) {
-  $.each(data2, function(key, value) {
-    var htmlRender =  "<div class='team-members'>" +
-      "<div class='team-member-img'>" +
-      "<div class='team-img-border'>" +
-      "<div class='team-member-image'>" +
-      "<img src='"+value.img1+"' alt='"+value.name+"'>" +
-      "</div>"+
-      "</div>"+
-      "</div>"+
-      "<div class='team-member-info'>" +
-      "<h4 class='team-member-name'>"+value.name+"</h4>" +
-      "<span class='designation'>"+value.role+"</span>" +
-      "</div>"+
-      "</div>";
-    $("#new_team").append(htmlRender);
-  });
-};
 
 // ------------------------------------ tabs start-------------------------------------------
 

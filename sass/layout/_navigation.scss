@@ -131,7 +131,10 @@
         &.navigationDropdown--big {
           &.navigationDropdown--col-2 {
             width: 100vw !important;
-            left: -120px;
+            left: -110px;
+            @media (max-width: 1190px) {
+              left: 0;
+            }
             .navigationDropdown__container {
               max-width: 1460px;
               margin: 0 auto;

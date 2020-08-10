@@ -267,6 +267,14 @@ article {
       }
     }
   }
+  .owl-dots {
+    .owl-dot.active {
+      background: #ffffff !important;
+    }
+    .owl-dot {
+      border: 2px solid #ffffff !important;
+    }
+  }
 }
 
 .expert-team-section  {

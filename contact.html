@@ -128,6 +128,9 @@
       $('.loading').removeClass('show');
       $('#submit').prop('disabled',false);
     }).fail(function(error) {
+      $("#submit").text("Send");
+      $('.loading').removeClass('show');
+      $('#submit').prop('disabled',false);
       bootbox.alert({
         message: JSON.stringify(error),
         backdrop: true,
