@@ -28,14 +28,14 @@
         display: block;
         padding-top: 12px;
         padding-bottom: 32px;
-        font-weight: 300;
+        font-weight: 400;
+        letter-spacing: 1px;
         font-size: 14px;
         line-height: 14px;
         color: #FFF;
         text-decoration: none;
         text-transform: uppercase;
         @include transition (all .2s ease-in-out);
-        font-family: 'Montserrat', sans-serif;
         &:hover {
           color: #FFF;
         }
@@ -131,7 +131,10 @@
         &.navigationDropdown--big {
           &.navigationDropdown--col-2 {
             width: 100vw !important;
-            left: -120px;
+            left: -110px;
+            @media (max-width: 1190px) {
+              left: 0;
+            }
             .navigationDropdown__container {
               max-width: 1460px;
               margin: 0 auto;
