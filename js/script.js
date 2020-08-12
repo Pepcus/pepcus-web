@@ -1,5 +1,4 @@
 $(function() {
-  console.log( "ready!" );
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 90) {
@@ -36,29 +35,9 @@ $(function() {
 
   //owl carousel start
 
-  $('#customers-testimonials').owlCarousel({
-      loop: true,
-      center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots:true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        1170: {
-          items: 3
-        }
-      }
-    });
-
   $("#clients").owlCarousel({
+    autoplay: true,
+    loop: true,
     responsive: {
       0: {
         items: 2
@@ -89,12 +68,12 @@ $(function() {
     }
   });
 
-  $('#owl').owlCarousel({
+  $('#customers-testimonials').owlCarousel({
     loop: true,
     center: true,
     items: 1,
     margin: 0,
-    autoplay: true,
+    autoplay: false,
     dots:true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
@@ -191,3 +170,105 @@ $(document).ready(function(){
 })
 
 // ------------------------------------ tabs end-------------------------------------------
+
+
+// ------------------------------------ scroll to spacific section start-------------------------------------------
+$(function () {
+  $("#footer-contact-action").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#smaller-contact-form").offset().top-50},
+      'slow');
+  });
+});
+// ------------------------------------ scroll to spacific section end-------------------------------------------
+
+
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 1500, density: { enable: true, value_area: 1400 } },
+    color: { value: "#FFFFFF" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 3 },
+      image: { src: "img/github.svg", width: 100, height: 100 }
+    },
+    opacity: {
+      value: 0.35,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 8,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: { enable: false, speed: 1, size_min: 0.1, sync: true }
+    },
+    line_linked: {
+      enable: false,
+      distance: 30,
+      color: "#FFFFFF",
+      opacity: 0.3,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "right",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: true, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false, mode: "repulse" },
+      onclick: { enable: true, mode: "bubble" },
+      resize: true
+    },
+    modes: {
+      grab: { distance: 50, line_linked: { opacity: 1 } },
+      bubble: {
+        distance: 20,
+        size: 6,
+        duration: 2,
+        opacity: 0.3,
+        speed: 10
+      },
+      repulse: { distance: 20, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 }
+    }
+  },
+  retina_detect: true
+});
+var count_particles, stats, update;
+stats = new Stats();
+stats.setMode(0);
+stats.domElement.style.position = "absolute";
+stats.domElement.style.left = "0px";
+stats.domElement.style.top = "0px";
+stats.domElement.style.display = "none";
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector(".js-count-particles");
+update = function () {
+  stats.begin();
+  stats.end();
+  if (
+    window.pJSDom[0].pJS.particles &&
+    window.pJSDom[0].pJS.particles.array
+  ) {
+    count_particles.innerText =
+      window.pJSDom[0].pJS.particles.array.length;
+  }
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+

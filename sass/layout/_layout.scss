@@ -20,7 +20,7 @@
 .cards {
   margin-top: 74px;
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 0;
   }
   .cards-row {
     display: flex;
@@ -120,7 +120,6 @@
   h2 {
     font-size: 38px;
     line-height: 70px;
-    text-transform: uppercase;
     margin: 0;
     position: relative;
     font-weight: 300;
