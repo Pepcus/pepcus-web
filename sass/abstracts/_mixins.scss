@@ -94,3 +94,52 @@
   -ms-box-sizing: $property;
   box-sizing: $property;
 }
+
+//display flex
+//Ex:
+//@include flex-box;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+//display flex-direction
+//Ex:
+//@include flex-direction(column);
+
+@mixin flex-direction($property) {
+  -webkit-flex-direction: $property;
+  -moz-flex-direction: $property;
+  -ms-flex-direction: $property;
+  -o-flex-direction: $property;
+  flex-direction: $property;
+}
+
+
+//display justify-content
+//Ex:
+//@include justify-content(center);
+
+@mixin justify-content($property) {
+  -moz-justify-content: $property;
+  -ms-justify-content: $property;
+  -o-justify-content: $property;
+  -webkit-justify-content: $property;
+  -ms-flex-pack: $property;
+  justify-content: $property;
+}
+
+//display justify-content
+//Ex:
+//@include flex-grow(1);
+
+@mixin flex-grow($property) {
+  -webkit-box-flex: $property;
+  -webkit-flex-grow: $property;
+  -ms-flex-positive: $property;
+  flex-grow: $property;
+}

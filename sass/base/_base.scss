@@ -21,12 +21,14 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {width: 100%}
+
 body {
   min-width: 320px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.57894737;
-  color: #232323;
+  color: rgb(80, 80, 80);
   font-weight: 400;
   background-color: #fff;
   overflow-x: hidden;
@@ -36,8 +38,6 @@ body {
     font-size: 14px;
   }
 }
-
-html {width: 100%}
 
 a:hover,
 a:link {
@@ -126,4 +126,21 @@ a:link {
 }
 .color-4 {
   color: #51c336;
+}
+
+
+.pe-web-row {
+  position: relative;
+  margin: 0 -15px;
+  @include box-sizing (border-box);
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  *,
+  &:before,
+  &:after {
+    @include box-sizing (border-box);
+  }
 }

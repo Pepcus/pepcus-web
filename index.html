@@ -22,13 +22,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <!--//for animation on scroll css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" >
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="loading">
-  <div class="loading-image"><img src="./assets/image/loader.gif" alt="loader" /></div>
+
+<div class="loading-wrapper">
+  <div class="loading-wrapper__container">
+    <div class="loading-wrapper__circle"></div>
+    <div class="loading-wrapper__circle"></div>
+    <div class="loading-wrapper__circle"></div>
+    <div class="loading-wrapper__shadow"></div>
+    <div class="loading-wrapper__shadow"></div>
+    <div class="loading-wrapper__shadow"></div>
+    <span>Loading</span>
+  </div>
 </div>
+
+
 <div class="mobileNavigation-bg"></div>
 <div class="mobileNavigation-bg mobileNavigation-wrap">
   <div class="mobileNavigation-container" style="padding-top: 0px;">
@@ -182,52 +195,123 @@
     <div class="header-banner__title-banner kenburns-top"></div>
     <!-- particles container -->
     <div id="particles-js"></div>
-    <div class="container">
-      <div class="header-banner__content">
-        Since our inception in 2013, Pepcus is known for delivering high quality & enterprise grade software. With a combination of our proven project management practices and rock solid architectural skills, we have earned trust of several clients & established a long term technical partnership with them. So..
-      </div>
-      <div class="header-banner__content-title-mobile">
-        <div>
-          If you struggle hiring the technical talent locally?
-        </div>
-        <div>
-          Let’s expand your engineering team with us...
+    <div class="header-banner__container">
+      <div class="container">
+
+        <div class="header-banner__container-content">
+          <p class="clearfix" data-aos="fade-up"
+             data-aos-duration="3000">
+            Since our inception in 2013, Pepcus is known for delivering high quality & enterprise grade software. With a combination of our proven project management practices and rock solid architectural skills, we have earned trust of several clients & established a long term technical partnership with them. So..
+          </p>
+          <div class="header-banner__container-title__desktop">
+            <div class="text-animation-02 title">
+             <span class="text-wrapper">
+               <span class="letters">
+                 If you struggle hiring the technical talent locally?
+               </span>
+             </span>
+            </div>
+            <div class="text-animation-03 title title-2">
+             <span class="text-wrapper">
+               <span class="letters">
+                   Let’s expand your engineering team with us...
+               </span>
+             </span>
+            </div>
+          </div>
+          <div class="header-banner__container-title__mobile">
+            <div class="title fadeInUp">
+              If you struggle hiring the technical talent locally?
+            </div>
+            <div class="title title-2 fadeInUp">
+              Let’s expand your engineering team with us...
+            </div>
+          </div>
+          <div class="header-banner__container-bulit">
+            <span>
+             <h1 class="ml1">
+              <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">It’s Quick</span>
+              <span class="line line2"></span>
+              </span>
+             </h1>
+           </span>
+            <span>
+             <h1 class="ml1">
+              <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">Simple</span>
+              <span class="line line2"></span>
+              </span>
+             </h1>
+          </span>
+            <span>
+             <h1 class="ml1">
+              <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">Highly Efficient</span>
+              <span class="line line2"></span>
+              </span>
+             </h1>
+           </span>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="header-banner__content-title-desktop">
-      <div class="text-animation-02">
-          <span class="text-wrapper">
-            <span class="letters">If you struggle hiring the technical talent locally?</span>
-          </span>
-      </div>
-      <div class="text-animation-03">
-          <span class="text-wrapper">
-            <span class="letters">Let’s expand your engineering team with us...</span>
-          </span>
-      </div>
-    </div>
+
+
+
+<!--    <div class="container">-->
+<!--      <div class="header-banner__content">-->
+<!--        Since our inception in 2013, Pepcus is known for delivering high quality & enterprise grade software. With a combination of our proven project management practices and rock solid architectural skills, we have earned trust of several clients & established a long term technical partnership with them. So..-->
+<!--      </div>-->
+<!--      <div class="header-banner__content-title-mobile">-->
+<!--        <div>-->
+<!--          If you struggle hiring the technical talent locally?-->
+<!--        </div>-->
+<!--        <div>-->
+<!--          Let’s expand your engineering team with us...-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="header-banner__content-title-desktop">-->
+<!--      <div class="text-animation-02">-->
+<!--          <span class="text-wrapper">-->
+<!--            <span class="letters">If you struggle hiring the technical talent locally?</span>-->
+<!--          </span>-->
+<!--      </div>-->
+<!--      <div class="text-animation-03">-->
+<!--          <span class="text-wrapper">-->
+<!--            <span class="letters">Let’s expand your engineering team with us...</span>-->
+<!--          </span>-->
+<!--      </div>-->
+<!--    </div>-->
   </section>
-  <section class="header-banner__bullet-section">
-    <div class="clearfix">
-      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">
-        <h1 class="text-animation-01">
-          <span class="text-animation-01__word">It’s Quick</span>
-        </h1>
-      </div>
-      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">
-        <h1 class="text-animation-01">
-          <span class="text-animation-01__word">Simple</span>
-        </h1>
-      </div>
-      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">
-        <h1 class="text-animation-01">
-          <span class="text-animation-01__word">Highly Efficient</span>
-        </h1>
-      </div>
-    </div>
-  </section>
+<!--  <section class="header-banner__bullet-section">-->
+<!--    <div class="clearfix">-->
+<!--      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">-->
+<!--        <h1 class="text-animation-01">-->
+<!--          <span class="text-animation-01__word">It’s Quick</span>-->
+<!--        </h1>-->
+<!--      </div>-->
+<!--      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">-->
+<!--        <h1 class="text-animation-01">-->
+<!--          <span class="text-animation-01__word">Simple</span>-->
+<!--        </h1>-->
+<!--      </div>-->
+<!--      <div class="col-sm-4 col-xs-4 header-banner__bullet-section__col">-->
+<!--        <h1 class="text-animation-01">-->
+<!--          <span class="text-animation-01__word">Highly Efficient</span>-->
+<!--        </h1>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  // old banner style-->
 <!--  <section class="title-banner  title-banner-big" style="-->
 <!--    display: none;-->
 <!--">-->
@@ -243,16 +327,20 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--  </section>-->
+  <!--  // old banner style-->
 
   <section  class="section">
     <div class="container">
-      <div class="section-title">
-        <h2>Benefits of an extended team with us </h2>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="1500">
+        <h2>Benefits of an <strong>extended team</strong> with us </h2>
       </div>
       <section class="cards">
           <div class="container-fluid">
             <div class="row cards-row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cards2__card">
+              <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 cards2__card" data-aos="fade-up"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500">
                 <div class="cards2__card-icon icon-red">
                     <svg viewBox="0 0 337 331">
                       <g transform="translate(0 331) scale(.1 -.1)">
@@ -266,13 +354,15 @@
                     </svg>
                   </div>
                 <div class="cards2__card-name">
-                    <h4>zero liabilities</h4>
+                    <h4>Zero Liabilities</h4>
                   </div>
                 <div class="cards2__card-text">
                     <p>A team with zero liabilities</p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cards2__card">
+              <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 cards2__card" data-aos="fade-up"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500">
                 <div class="cards2__card-icon icon-red">
                     <svg enable-background="new 0 0 480 480" viewBox="0 0 480 480">
 			<path d="m432 280h-56v-272c0-4.418-3.582-8-8-8h-256c-4.418 0-8 3.582-8 8v272h-56c-2.181 0-4.268 0.89-5.777 2.465-3.057 3.19-2.949 8.254 0.241 11.311l192 184c1.49 1.427 3.473 2.224 5.536 2.224s4.047-0.797 5.536-2.224l192-184c1.575-1.509 2.465-3.596 2.465-5.777-1e-3 -4.418-3.583-7.999-8.001-7.999zm-192 180.92-172.1-164.92h44.096c4.418 0 8-3.582 8-8v-272h240v272c0 4.418 3.582 8 8 8h44.096l-172.1 164.92z"/>
@@ -290,10 +380,12 @@
                   <h4>Low Cost Location</h4>
                 </div>
                 <div class="cards2__card-text">
-                  <p>Economy of scale at low cost location  </p>
+                  <p>Economy of scale at low cost location </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cards2__card">
+              <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 cards2__card" data-aos="fade-up"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500">
                 <div class="cards2__card-icon icon-red">
                   <svg viewBox="0 0 1024 1024">
                     <path d="M691.2 460.8c-70.579 0-128-57.421-128-128s57.421-128 128-128 128 57.421 128 128-57.421 128-128 128zM691.2 256c-42.347 0-76.8 34.453-76.8 76.8s34.453 76.8 76.8 76.8 76.8-34.453 76.8-76.8-34.453-76.8-76.8-76.8z"></path><path class="path2" d="M25.603 1024c-6.675 0-13.219-2.613-18.106-7.499-7.034-7.034-9.355-17.502-5.957-26.85 78.781-216.648 161.613-326.499 246.195-326.499 27.883 0 53.979 11.96 77.566 35.546 37.283 37.283 38.611 74.394 33.162 98.96-17.125 77.187-126.171 152.822-324.115 224.802-2.853 1.038-5.813 1.541-8.746 1.541zM247.736 714.354c-25.354 0-55.19 22.214-86.282 64.237-30.578 41.33-61.274 100.205-91.525 175.477 68.352-27.478 123.302-55.379 163.806-83.205 54.648-37.542 70.808-66.562 74.742-84.294 3.944-17.779-2.395-34.682-19.382-51.667-13.826-13.826-27.354-20.547-41.36-20.547z"></path><path class="path3" d="M998.4 0c-132.848 0-251.256 22.534-351.939 66.981-82.997 36.638-154.075 88.075-211.258 152.882-10.674 12.098-20.552 24.334-29.691 36.586-44.142 2.942-89.275 20.47-134.362 52.221-38.13 26.851-76.459 64.014-113.923 110.458-62.965 78.054-101.706 154.987-103.325 158.226-5.605 11.211-2.25 24.814 7.904 32.166 4.501 3.258 9.758 4.856 14.992 4.856 6.573 0 13.109-2.52 18.064-7.434 0.243-0.24 24.714-24.299 66.469-47.926 34.41-19.474 87.461-42.336 151.613-46.384 16.219 41.541 62.662 91.181 84.954 113.47 22.291 22.291 71.931 68.734 113.472 84.955-4.046 64.152-26.91 117.202-46.382 151.611-23.629 41.757-47.686 66.227-47.89 66.432-8.878 8.878-10.006 22.885-2.666 33.070 4.952 6.87 12.77 10.634 20.782 10.634 3.867 0 7.779-0.877 11.434-2.704 3.237-1.619 80.17-40.36 158.226-103.325 46.443-37.464 83.606-75.794 110.458-113.922 31.75-45.088 49.278-90.221 52.221-134.363 12.251-9.139 24.49-19.019 36.586-29.693 64.806-57.181 116.243-128.259 152.883-211.258 44.443-100.682 66.979-219.091 66.979-351.939v-25.6h-25.6zM159.102 502.187c48.797-70.8 123.384-158.595 207.446-186.232-33.222 58.203-50.422 111.691-56.611 145.555-59.323 3.626-110.467 20.89-150.835 40.677zM521.87 864.781c19.762-40.35 36.995-91.453 40.619-150.718 33.859-6.187 87.336-23.384 145.528-56.597-27.658 83.92-115.381 158.49-186.147 207.315zM770.262 550.405c-106.48 93.952-216.794 115.195-232.662 115.195-0.102 0-10.581-0.23-38.867-20.136-19.728-13.883-42.682-33.618-64.63-55.566-21.95-21.95-41.683-44.902-55.566-64.632-19.906-28.285-20.136-38.763-20.136-38.866 0-15.869 21.243-126.182 115.197-232.662 112.416-127.406 284.533-197.059 498.894-202.227-5.17 214.358-74.822 386.477-202.229 498.894z">
@@ -304,7 +396,23 @@
                   <h4>Rapid Development</h4>
                 </div>
                 <div class="cards2__card-text">
-                  <p>Rapid Development for time to market </p>
+                  <p>Rapid Development for time to market</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 cards2__card" data-aos="fade-up"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500">
+                <div class="cards2__card-icon icon-red">
+                  <svg viewBox="0 0 80 80">
+                    <rect></rect>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M40 17.458L60.5 26.0307V50.8928L40 65.6156L19.5 50.8928V26.0307L40 17.458ZM20.5 27.2228L39.5 38.0182V43.658L20.5 32.1501V27.2228ZM20.5 33.3192V38.2271L39.5 50.4475V44.8271L20.5 33.3192ZM39.5 51.6365L20.5 39.416V44.7307L39.5 57.2534V51.6365ZM40.5 58.4463L59.5 45.5133V47.3418L40.5 60.631V58.4463ZM40.5 61.8513V64.0253L59.5 50.3798V48.5621L40.5 61.8513ZM39.5 64.0253V58.4511L20.5 45.9283V50.3798L39.5 64.0253ZM59.5 44.3036L40.5 57.2366V55.0413L59.5 42.4646V44.3036ZM59.5 41.2654V39.416L40.5 51.6365V53.8421L59.5 41.2654ZM40.5 50.4475L59.5 38.2271V36.3676L40.5 48.2318V50.4475ZM40.5 47.0528L59.5 35.1886V33.3192L40.5 44.8271V47.0528ZM40.5 43.658L59.5 32.1501V30.2709L40.5 41.4226V43.658ZM40.5 40.2631L59.5 29.1114V27.2228L40.5 38.0182V40.2631ZM40 37.1522L58.8675 26.432L40 18.5419L21.1325 26.432L40 37.1522Z"></path>
+                  </svg>
+                </div>
+                <div class="cards2__card-name">
+                  <h4>Knowledge Retention</h4>
+                </div>
+                <div class="cards2__card-text">
+                  <p>Training and knowledge retention at our cost.</p>
                 </div>
               </div>
             </div>
@@ -312,91 +420,295 @@
         </section>
     </div>
   </section>
-  <section class="section section-dark expert-team-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>You get excellent engineers who are</h2>
-      </div>
-      <div>
-
-        <div class="cards1__card">
-           <div>
-             <ul>
-               <li>Domain Experts: Quickly grasp your domain knowledge</li>
-
-               <li>Requirement Experts : Fine tune requirements having minimal clarity</li>
-
-               <li>Risk Experts : Assess risks early and mitigate them</li>
-
-               <li>Code Experts : High quality & rapid development</li>
-
-               <li>Practices Experts : Strong Project Management Practices</li>
-
-               <li>Cost Experts : Economic rates & zero rework</li>
-
-               <li>Consultants NOT labours</li>
-             </ul>
-           </div>
+  <section class="section section-dark expert-team-section no-padding" data-aos="zoom-in">
+    <div class="ex-engineers-container">
+      <div class="ex-engineers__row">
+        <div class="ex-engineers__column heading-section col-sm-3 col-xs-12">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container" data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+              <h2>
+                You get excellent <strong>engineers</strong> who are
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Domain Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Quickly grasp your domain knowledge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Requirement Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Fine tune requirements having minimal clarity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Risk Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Assess risks early and mitigate them</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-up"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Code Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>High quality & rapid development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-up"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Practices Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Strong Project Management Practices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-up"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Cost Experts
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Economic rates & zero rework</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-engineers__column col-sm-3 col-xs-12" data-aos="fade-up"
+             data-aos-duration="3000">
+          <div class="ex-engineers__column-wrapper">
+            <div class="ex-engineers__column-container">
+              <div class="ex-engineers__column-top">
+                <div class="ex-engineers__column-top-title">
+                  Consultants NOT labours
+                </div>
+              </div>
+              <div class="ex-engineers__column-body">
+                <p>Consultants NOT labours</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>Why do you choose us? </h2>
+  <section class="section">
+    <div class="container choose-us-container">
+      <div class="col-sm-6 col-xs-12 choose-us-container__col choose-us-container__title" data-aos="fade-up"
+           data-aos-duration="2000">
+        <h2><span>Why do you</span><span><strong>choose us</strong> ?</span> </h2>
       </div>
-      <div>
-
-        <div class="cards1__card">
-          <div>
-            <ul>
-              <li> 7+ Years with international customers</li>
-              <li>Team of highly experienced professionals</li>
-              <li>Excellent Project Management Practices</li>
-              <li>Solid Architectures</li>
-              <li>Complete Transparency</li>
-              <li>Dedicated Partnership</li>
-            </ul>
+      <div class="col-sm-6 col-xs-12 choose-us-container__col">
+        <div class="choose-us-container__row">
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-right"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>7+ Years with international customers</h2>
+            </div>
+          </div>
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-left"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>Team of highly experienced professionals</h2>
+            </div>
           </div>
         </div>
+        <div class="choose-us-container__row">
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-right"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>Excellent Project Management Practices</h2>
+            </div>
+          </div>
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-left"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>Solid Architectures</h2>
+            </div>
+          </div>
+        </div>
+        <div class="choose-us-container__row">
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-right"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>Complete Transparency</h2>
+            </div>
+          </div>
+          <div class="choose-us-container__column col-sm-6 col-xs-12" data-aos="fade-left"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+            <div class="choose-us-container__column-wrapper">
+              <h2>Dedicated Partnership</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
       </div>
     </div>
     </div>
   </section>
   <section class="section section-dark">
     <div class="container">
-      <div class="section-title">
-        <h2>Our Business Philosophy </h2>
-      </div>
-      <div>
-        <div>
-          <h1>It’s our business </h1>
-          <p>We consider clients’ business and their success as ours. We carefully study each requirement and ask relevant questions to fine tune exact needs and objectives. We carefully analyse all possibilities and provide our valuable suggestions for product development. In a nut shell, we treat every product lifecycle problem as ours and strive towards an efficient solution </p>
-        </div>
-        <div>
-          <h1>Deliver Maximum Value </h1>
-          <p>It’s not about just coding a solution but architecting it in a way that results maximum value of client’s investment. Out team of experts take best advantage of proven project management practices, build a solid architecture and produce a high quality solutions with a futuristic approach. We asses risks early, communicate well and mitigate on time. With a proven record of no surprises & zero rework, we helped our clients to reduce their cost up to 40%. </p>
-        </div>
-        <div>
-          <h1>Partner with clients </h1>
-          <p>We always work with a goal of establishing a long term partnership with our clients. Along with delivering the required solution, we work hard understanding clients’ business, their domain and their revenue model. We focus on identifying areas those could be improved and optimized to engage more customers and eventually help generating more revenue. We understand our success is tied up with our client’s success.</p>
-        </div>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="2000">
+        <h2>Our Business <span class="big">Philosophy</span></h2>
       </div>
     </div>
+    <div class="clearfix">
+      <div class="ps-container">
+        <div class="ps-container-inner">
+          <div class="ps-container-inner__row col-sm-12 col-xs-12 no-padding">
+            <div class="ps-container-inner__column col-sm-6 col-xs-12 no-padding" >
+              <div class="ps-container-inner__column-inner" data-aos="fade-right"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__image-container">
+                  <img src="./assets/image/bg-philosophy.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ps-container-inner__column col-sm-6 col-xs-12">
+              <div class="ps-container-inner__column-inner" data-aos="fade-left"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__content">
+                  <div class="ps-container-inner__content-heading">
+                    <h2><span>It’s our </span> <span><strong>business</strong></span></h2>
+                  </div>
+                  <div class="ps-container-inner__content-body">
+                    <p>We consider clients’ business and their success as ours. We carefully study each requirement and ask relevant questions to fine tune exact needs and objectives. We carefully analyse all possibilities and provide our valuable suggestions for product development. In a nut shell, we treat every product lifecycle problem as ours and strive towards an efficient solution </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-container-inner__row right-image__row  col-sm-12 col-xs-12 no-padding">
+            <div class="ps-container-inner__column ps-container-inner__right-column col-sm-6 col-xs-12" >
+              <div class="ps-container-inner__column-inner" data-aos="fade-right"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__content">
+                  <div class="ps-container-inner__content-heading">
+                    <h2><span>Deliver Maximum</span> <span><strong>Value</strong></span></h2>
+                  </div>
+                  <div class="ps-container-inner__content-body">
+                    <p>It’s not about just coding a solution but architecting it in a way that results maximum value of client’s investment. Out team of experts take best advantage of proven project management practices, build a solid architecture and produce a high quality solutions with a futuristic approach. We asses risks early, communicate well and mitigate on time. With a proven record of no surprises & zero rework, we helped our clients to reduce their cost up to 40%. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ps-container-inner__column col-sm-6 col-xs-12 no-padding" >
+              <div class="ps-container-inner__column-inner" data-aos="fade-left"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__image-container right-image">
+                  <img src="./assets/image/bg-philosophy.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-container-inner__row col-sm-12 col-xs-12 no-padding">
+            <div class="ps-container-inner__column col-sm-6 col-xs-12 no-padding">
+              <div class="ps-container-inner__column-inner" data-aos="fade-right"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__image-container">
+                  <img src="./assets/image/bg-philosophy.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ps-container-inner__column col-sm-6 col-xs-12">
+              <div class="ps-container-inner__column-inner" data-aos="fade-left"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
+                <div class="ps-container-inner__content">
+                  <div class="ps-container-inner__content-heading">
+                    <h2><span>Partner with </span> <span><strong>clients</strong></span></h2>
+                  </div>
+                  <div class="ps-container-inner__content-body">
+                    <p>We always work with a goal of establishing a long term partnership with our clients. Along with delivering the required solution, we work hard understanding clients’ business, their domain and their revenue model. We focus on identifying areas those could be improved and optimized to engage more customers and eventually help generating more revenue. We understand our success is tied up with our client’s success.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
   <section class="section process-section">
     <div class="container">
-      <div class="section-title">
-        <h2>Short & Simple Process of engagement</h2>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="2000">
+        <h2>Short & Simple <strong>Process</strong> of engagement</h2>
       </div>
       <div>
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="cards3__card cards3__card-item-01">
-              <div class="cards3__card-wrapper">
+              <div class="cards3__card-wrapper" data-aos="fade-right"
+                   data-aos-offset="100"
+                   data-aos-easing="ease-in-sine">
                 <div class="cards3__card-name">
                   <h4>CONNECT</h4>
                 </div>
@@ -410,7 +722,9 @@
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="cards3__card cards3__card-item-02">
-              <div class="cards3__card-wrapper">
+              <div class="cards3__card-wrapper" data-aos="fade-right"
+                   data-aos-offset="200"
+                   data-aos-easing="ease-in-sine">
                 <div class="cards3__card-name">
                   <h4>TRY</h4>
                 </div>
@@ -424,7 +738,9 @@
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="cards3__card cards3__card-item-03">
-              <div class="cards3__card-wrapper">
+              <div class="cards3__card-wrapper" data-aos="fade-right"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
                 <div class="cards3__card-name">
                   <h4>ENGANGE</h4>
                 </div>
@@ -450,8 +766,9 @@
   </section>
   <section id="" class="section section-dark client-list">
     <div class="container">
-      <div class="section-title">
-        <h2>Clients already extended a team with us </h2>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="2000">
+        <h2>Clients already <strong>extended a team</strong> with us </h2>
       </div>
       <div>
         <div id="clients" class="owl-carousel owl-theme">
@@ -476,14 +793,18 @@
           <div class="clientSlider-item">
             <a href="https://www.newvisionsoftware.in/" target="_blank" title="NewVision"><img src="assets/image/clients/newvision-white.png"></a>
           </div>
+          <div class="clientSlider-item">
+            <a href="http://www.mincron.com/page/home.aspx" target="_blank" title="Mincron"><img src="assets/image/clients/mincron-white.png"></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <section class="section testimonial-section">
     <div class="container">
-      <div class="section-title">
-        <h2>Our clients speak for us.</h2>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="3000">
+        <h2>Our <strong>clients</strong> speak for us.</h2>
         <div class="testimonial__quote-icon">
           <svg viewBox="0 0 1664 1408">
             <path d="M768 832v384q0 80-56 136t-136 56H192q-80 0-136-56T0 1216V512q0-104 40.5-198.5T150 150 313.5 40.5 512 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136V512q0-104 40.5-198.5T1046 150t163.5-109.5T1408 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z">
@@ -556,8 +877,9 @@
   </section>
   <section id="smaller-contact-form" class="contact-form-small contact-form-small--bg">
     <div class="container">
-      <div class="section-title">
-        <h2>Tell us your requirement right now</h2>
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="3000">
+        <h2>Tell us your <strong>requirement</strong> right now</h2>
       </div>
       <div class="contact-form-small--body">
         <form id="myform" name="cform" class="clearfix"  method="post">
@@ -589,9 +911,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
-<script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-<script type="text/javascript" src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!--//for animation on scroll js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript">
   (function(){
     emailjs.init("user_QjC9ZSKm2Rl96TpEZy1Ov");
@@ -629,7 +953,7 @@
     return false;
   });
 </script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
   $(function () {
     $("#footerContent").load("footer.html")
@@ -693,48 +1017,202 @@
     if (!smallScreen.matches) { // If media query matches
       textAnimation01 = () => {
         setTimeout(function () {
-          $('.text-animation-01').addClass('show');
+          $('.ml1').addClass('show');
+          // Wrap every letter in a span
+          var textWrapper = document.querySelector('.ml1 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
           anime.timeline({loop: false})
             .add({
-              targets: '.text-animation-01 .text-animation-01__word',
-              scale: [14,1],
+              targets: '.ml1 .letter',
+              scale: [0.3,1],
               opacity: [0,1],
-              easing: "easeOutCirc",
-              duration: 800,
-              delay: (el, i) => 800 * i
+              translateZ: 0,
+              easing: "easeOutExpo",
+              duration: 600,
+              delay: (el, i) => 70 * (i+1)
             }).add({
-            targets: '.text-animation-01',
+            targets: '.ml1 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 700,
+            offset: '-=875',
+            delay: (el, i, l) => 80 * (l - i)
+          }).add({
+            targets: '.ml1',
             opacity: 1,
             duration: 1000,
             easing: "easeOutExpo",
             delay: 1000
           });
+
+
+
+
+          // $('.text-animation-01').addClass('show');
+          // anime.timeline({loop: false})
+          //   .add({
+          //     targets: '.text-animation-01 .text-animation-01__word',
+          //     scale: [14,1],
+          //     opacity: [0,1],
+          //     easing: "easeOutCirc",
+          //     duration: 800,
+          //     delay: (el, i) => 800 * i
+          //   }).add({
+          //   targets: '.text-animation-01',
+          //   opacity: 1,
+          //   duration: 1000,
+          //   easing: "easeOutExpo",
+          //   delay: 1000
+          // });
         }, 1000);
       }
     } else {
       setTimeout(function () {
-        $('.text-animation-01').addClass('show');
+        $('.ml1').addClass('show');
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
         anime.timeline({loop: false})
           .add({
-            targets: '.text-animation-01 .text-animation-01__word',
-            scale: [14,1],
+            targets: '.ml1 .letter',
+            scale: [0.3,1],
             opacity: [0,1],
-            easing: "easeOutCirc",
-            duration: 800,
-            delay: (el, i) => 800 * i
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 600,
+            delay: (el, i) => 70 * (i+1)
           }).add({
-          targets: '.text-animation-01',
+          targets: '.ml1 .line',
+          scaleX: [0,1],
+          opacity: [0.5,1],
+          easing: "easeOutExpo",
+          duration: 700,
+          offset: '-=875',
+          delay: (el, i, l) => 80 * (l - i)
+        }).add({
+          targets: '.ml1',
           opacity: 1,
           duration: 1000,
           easing: "easeOutExpo",
           delay: 1000
         });
+        // $('.text-animation-01').addClass('show');
+        // anime.timeline({loop: false})
+        //   .add({
+        //     targets: '.text-animation-01 .text-animation-01__word',
+        //     scale: [14,1],
+        //     opacity: [0,1],
+        //     easing: "easeOutCirc",
+        //     duration: 800,
+        //     delay: (el, i) => 800 * i
+        //   }).add({
+        //   targets: '.text-animation-01',
+        //   opacity: 1,
+        //   duration: 1000,
+        //   easing: "easeOutExpo",
+        //   delay: 1000
+        // });
       }, 100);
     }
   }
 
   let findSmallSizeScreen = window.matchMedia("(max-width: 700px)")
   getSmallSizeScreen(findSmallSizeScreen) // Call listener function at run time
+
+
+
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 1500, density: { enable: true, value_area: 1400 } },
+      color: { value: "#FFFFFF" },
+      shape: {
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 3 },
+        image: { src: "img/github.svg", width: 100, height: 100 }
+      },
+      opacity: {
+        value: 0.35,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 6,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: { enable: false, speed: 1, size_min: 0.1, sync: true }
+      },
+      line_linked: {
+        enable: false,
+        distance: 30,
+        color: "#FFFFFF",
+        opacity: 0.3,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "right",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: { enable: true, rotateX: 600, rotateY: 1200 }
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: false, mode: "repulse" },
+        onclick: { enable: true, mode: "bubble" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 50, line_linked: { opacity: 1 } },
+        bubble: {
+          distance: 20,
+          size: 8,
+          duration: 2,
+          opacity: 0.3,
+          speed: 10
+        },
+        repulse: { distance: 20, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: { particles_nb: 2 }
+      }
+    },
+    retina_detect: true
+  });
+  var count_particles, stats, update;
+  stats = new Stats();
+  stats.setMode(0);
+  stats.domElement.style.position = "absolute";
+  stats.domElement.style.left = "0px";
+  stats.domElement.style.top = "0px";
+  stats.domElement.style.display = "none";
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector(".js-count-particles");
+  update = function () {
+    stats.begin();
+    stats.end();
+    if (
+      window.pJSDom[0].pJS.particles &&
+      window.pJSDom[0].pJS.particles.array
+    ) {
+      count_particles.innerText =
+        window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+
 </script>
 
 </body>
