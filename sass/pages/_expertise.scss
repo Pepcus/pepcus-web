@@ -15,31 +15,6 @@
   }
 }
 
-.enterprise-software-page {
-  .enterprise-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-  }
-  .expertise-to-build {
-    background:
-            linear-gradient(rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)),
-    url(https://images.pexels.com/photos/2855294/pexels-photo-2855294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position: center center;
-    color: #fff;
-  }
-}
-
 .custom-integrations-page {
   .custom-integrations-title-bg {
     background:
