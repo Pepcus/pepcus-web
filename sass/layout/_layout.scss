@@ -124,12 +124,11 @@
     position: relative;
     font-weight: 300;
     @media(max-width: 768px) {
-      font-size: 28px;
-      line-height: 42px;
-    }
-    @media(max-width: 768px) {
       font-size: 32px;
       line-height: 39px;
+    }
+    span.big {
+      font-weight: 600;
     }
   }
   p {
