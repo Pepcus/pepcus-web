@@ -719,10 +719,16 @@ canvas {
       @include justify-content(center);
       -webkit-justify-content: center;
       -ms-flex-pack: center;
+      &.ex-engineers__column-empty {
+        background: $brandColor;
+      }
       @media (max-width: 767px) {
         padding: 20px;
         min-height: 200px;
         height:auto ;
+        &.ex-engineers__column-empty {
+          display: none;
+        }
       }
       &.heading-section {
         background: $brandColor;
