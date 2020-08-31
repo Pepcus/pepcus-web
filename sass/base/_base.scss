@@ -176,3 +176,17 @@ a:link {
     display: table;
   }
 }
+
+.screen-sm {
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.screen-xs {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

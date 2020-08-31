@@ -151,6 +151,18 @@ a:link {
     content: " ";
     display: table; }
 
+.screen-sm {
+  display: block; }
+  @media (max-width: 767px) {
+    .screen-sm {
+      display: none; } }
+
+.screen-xs {
+  display: none; }
+  @media (max-width: 767px) {
+    .screen-xs {
+      display: block; } }
+
 h1 {
   font-size: 48px;
   line-height: 68px;
@@ -4049,21 +4061,6 @@ canvas {
   .team-footer-image a {
     color: #fff; }
 
-.custom-integrations-page .custom-integrations-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/39290/mother-board-electronics-computer-board-39290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  position: absolute;
-  top: 0; }
-
-.custom-integrations-page .custom-plan-section {
-  background: linear-gradient(rgba(54, 88, 1, 0.75), rgba(55, 88, 1, 0.75)), url(https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg);
-  background-position: center;
-  color: #fff;
-  background-size: cover; }
-
 .microservices-page .microservices-title-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
@@ -5225,3 +5222,264 @@ canvas {
             outline: 0; }
           .api-development-page .api-design-development .api-section__logos .api-section-logos__row .api-section-logos__column a img {
             width: 100%; }
+
+.custom-integrations-page .custom-integrations-title-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/39290/mother-board-electronics-computer-board-39290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0; }
+
+.custom-integrations-page .custom-plan-section {
+  background: linear-gradient(rgba(54, 88, 1, 0.75), rgba(55, 88, 1, 0.75)), url(https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg);
+  background-position: center;
+  color: #fff;
+  background-size: cover; }
+
+.custom-integrations-page .ci-clients-services {
+  background-image: url("../assets/image/custom-integration/custom-integration-services.jpg");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #FFF;
+  background-position: 50% 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .custom-integrations-page .ci-clients-services {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  .custom-integrations-page .ci-clients-services:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.9); }
+    @media (max-width: 767px) {
+      .custom-integrations-page .ci-clients-services:before {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8); } }
+  .custom-integrations-page .ci-clients-services .ci-clients-services__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .custom-integrations-page .ci-clients-services .ci-clients-services__container .col-left {
+        order: 2; } }
+    .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__container-title {
+      width: 70%;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px; }
+      @media (max-width: 767px) {
+        .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__container-title {
+          width: 100%;
+          background: transparent;
+          margin-bottom: 30px; } }
+      .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__container-title h2 {
+        margin: 0;
+        font-size: 36px;
+        line-height: 70px;
+        text-align: center;
+        text-align: left; }
+        @media (max-width: 767px) {
+          .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__container-title h2 {
+            font-size: 32px;
+            line-height: 45px;
+            color: #fff; } }
+        .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__container-title h2 strong {
+          font-weight: 800;
+          text-transform: uppercase; }
+    .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row {
+      display: flex;
+      margin-bottom: 20px; }
+      .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row .ci-clients-services__column {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 44%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 26px;
+        color: #FFF;
+        border: 1px solid #FFF;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all .2s ease;
+        margin-left: 4%; }
+        .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row .ci-clients-services__column:hover {
+          border: 1px solid rgba(255, 255, 255, 0.4); }
+        .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row .ci-clients-services__column .ci-clients-services__column-wrapper {
+          display: table;
+          width: 100%; }
+          .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row .ci-clients-services__column .ci-clients-services__column-wrapper .ci-clients-services__column-wrapper-item {
+            display: table-row;
+            vertical-align: middle; }
+            .custom-integrations-page .ci-clients-services .ci-clients-services__container .ci-clients-services__row .ci-clients-services__column .ci-clients-services__column-wrapper .ci-clients-services__column-wrapper-item h2 {
+              font-size: 16px;
+              line-height: 26px;
+              text-align: center;
+              font-width: 400; }
+
+.custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column h2 {
+    font-size: 36px;
+    line-height: 48px;
+    position: relative;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column h2 {
+        font-size: 32px; } }
+  .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column p {
+    display: inline-block;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px; }
+  .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img {
+    max-width: 1000px; }
+    .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img.small-img {
+      max-width: 600px; }
+    .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img.right-img {
+      margin-left: 50px; }
+    .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img.left-img {
+      margin-right: 50px; }
+    @media (max-width: 767px) {
+      .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img {
+        max-width: 100%;
+        margin-bottom: 30px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0; }
+        .custom-integrations-page .ci-integration-section .ci-integration-section__container .ci-integration-section__row .ci-integration-section__column .ci-integration-section__img.small-img {
+          max-width: 100%;
+          margin-bottom: 30px;
+          margin-top: 0; } }
+
+.custom-integrations-page .ci-integration-container {
+  position: relative;
+  box-sizing: border-box;
+  clear: both;
+  height: 100%;
+  width: 100%; }
+  .custom-integrations-page .ci-integration-container .ci-integration-container-inner {
+    padding-top: 35px;
+    padding-left: 0;
+    padding-right: 0; }
+    .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row {
+      margin-left: 0;
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 80px; }
+      .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row.right-image__row {
+        margin-bottom: 40px; }
+        @media (max-width: 767px) {
+          .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row.right-image__row {
+            margin-bottom: 0; } }
+      @media (max-width: 767px) {
+        .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row {
+          margin-bottom: 0; } }
+      .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column {
+        display: flex;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        position: relative;
+        overflow: hidden; }
+        @media (max-width: 767px) {
+          .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column {
+            margin-bottom: 30px; }
+            .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column.ci-integration-container-inner__left-column {
+              order: 2; } }
+        .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner {
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          -o-flex-direction: column;
+          flex-direction: column;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          z-index: 1;
+          justify-content: center;
+          padding-left: 0;
+          padding-right: 0;
+          box-sizing: border-box;
+          width: 100%;
+          overflow: hidden; }
+          .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__image-container {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            z-index: 1;
+            max-width: 100%; }
+            @media (max-width: 767px) {
+              .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__image-container.right-image {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end; } }
+            .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__image-container img {
+              max-width: 100%;
+              min-height: 1px;
+              height: auto; }
+              @media (max-width: 767px) {
+                .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__image-container img {
+                  max-width: 90%;
+                  margin: 0 auto; } }
+          .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content {
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto; }
+            .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content .ci-integration-container-inner__content-heading {
+              font-size: 36px;
+              line-height: 48px;
+              position: relative;
+              font-weight: 700;
+              margin: 0px;
+              margin-bottom: 20px;
+              margin-bottom: 30px; }
+              @media (max-width: 767px) {
+                .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content .ci-integration-container-inner__content-heading {
+                  font-size: 32px;
+                  text-align: center; } }
+            .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content .ci-integration-container-inner__content-body {
+              display: inline-block;
+              max-width: 500px;
+              font-size: 18px;
+              font-weight: 500;
+              margin-bottom: 30px; }
+              @media (max-width: 767px) {
+                .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content .ci-integration-container-inner__content-body {
+                  text-align: center;
+                  font-size: 16px; } }
