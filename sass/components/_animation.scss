@@ -161,3 +161,32 @@
   }
 }
 
+//----------------------- Pulse start ------------------------
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%,-50%) scale(.5);
+    transform: translate(-50%,-50%) scale(.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%) scale(4);
+    transform: translate(-50%,-50%) scale(4);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%,-50%) scale(.5);
+    transform: translate(-50%,-50%) scale(.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%) scale(4);
+    transform: translate(-50%,-50%) scale(4);
+  }
+}
+
+//----------------------- Pulse end --------------------------
