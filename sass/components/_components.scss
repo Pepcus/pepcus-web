@@ -1859,6 +1859,40 @@ form {
   }
 }
 
+.small-slider-item__card {
+  width: 160px;
+  margin: 0 auto;
+  a {
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #ececec;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    padding: 10px;
+    height: 170px;
+    line-height: 130px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    img {
+      display: inline-block;
+      max-width: 80%;
+    }
+    &:hover {
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      text-decoration: none;
+      outline: 0;
+    }
+  }
+}
 
 .owl-dots {
   .owl-dot {

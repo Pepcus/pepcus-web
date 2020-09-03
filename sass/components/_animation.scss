@@ -92,6 +92,42 @@
   }
 }
 
+.zoom-out-banner {
+  -webkit-animation: zoom-out-banner 40s ease-out both;
+  animation: zoom-out-banner 40s ease-out both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes zoom-out-banner {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.45) translateY(-15px);
+    transform: scale(1.45) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes zoom-out-banner {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.60) translateY(-15px);
+    transform: scale(1.60) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
 //animation title zoom
 
 .text-animation-01 {

@@ -148,6 +148,22 @@ $(function() {
     }
   });
 
+  $("#tools-expertise").owlCarousel({
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 3
+      }
+    }
+  });
   //owl carousel end
 
 
