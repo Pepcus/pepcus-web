@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <!--//for animation on scroll css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" >
 </head>
 
@@ -30,15 +32,163 @@
 <div id="headerContent"></div>
 <main class="microservices-page">
   <section class="title-banner title-banner-big">
-    <div class="microservices-title-bg"></div>
+    <div class="microservices-title-bg zoom-out-banner"></div>
     <div class="container">
       <div class="row">
-        <div class="title-banner-name">
+        <div class="title-banner-name"
+             data-aos="fade-up"
+             data-aos-easing="ease-in-out">
           <h1>An on-demand marketplace for top Microservices engineers</h1>
           <p></p>
           <p></p>
         </div>
         <div class="button-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <section  class="section">
+    <div class="container">
+      <div class="section-title"
+           data-aos="fade-up"
+           data-aos-easing="ease-in-out">
+        <p class="big">The Microservices approach is a huge shift for the enterprise, essentially "breaking down" monolithic application into small, highly scalable, modular pieces that have the freedom to act independently. Get help of our experts in migrating your monolithic apps to microservice based architectures. </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-dark ms-howwork-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out">
+        <h2>How it works ?</h2>
+      </div>
+    </div>
+    <div class="container">
+      <section class="ms-timeline">
+        <div class="ms-timeline-block">
+          <span class="ms-step-number">1</span>
+          <div class="row">
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <h2>Assessment</h2>
+              <p>Complete assessment of your enterprise web solution and create a strategic roadmap along with selecting best-in-class framework, tools and process for easy adoption of microservices.   </p>
+            </div>
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <img src="https://cdn.pixabay.com/photo/2019/10/25/10/49/audit-4576720_960_720.jpg" data-uhd="" alt="Pepcus - Assessment">
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-timeline-block">
+          <span class="ms-step-number">2</span>
+          <div class="row">
+            <div class="col-sm-6 ms-timeline-content__col col-right-img" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <img src="https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" data-uhd="" alt="Pepcus - Migration">
+            </div>
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <h2>Migration</h2>
+              <p>Help in the seamless migration of your monolithic apps and legacy systems to a microservices-based architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-timeline-block">
+          <span class="ms-step-number">3</span>
+          <div class="row">
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <h2>Integration</h2>
+              <p>Build and manage microservices effectively by integrating APIs to make application databases and legacy apps more flexible and agile.</p>
+            </div>
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <img src="https://cdn.pixabay.com/photo/2019/06/06/16/02/technology-4256272_960_720.jpg" data-uhd="" alt="Pepcus - Integration">
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-timeline-block">
+          <div class="ms-timeline-img">
+          </div>
+          <span class="ms-step-number">4</span>
+          <div class="row">
+            <div class="col-sm-6 ms-timeline-content__col col-right-img" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <img src="https://cdn.pixabay.com/photo/2015/05/11/13/28/software-762486_960_720.jpg" data-uhd="" alt="Pepcus - Testing">
+            </div>
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <h2>Testing</h2>
+              <p>Help you to verify the workflow of the entire work process along with all the services and integrations. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-timeline-block">
+          <div class="ms-timeline-img">
+          </div>
+          <span class="ms-step-number">5</span>
+          <div class="row">
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <h2>DevOps</h2>
+              <p>Increase your ROI of cloud deployments. Microservices fit perfectly into the DevOps ideals and empowers the implementation of small teams to collaborate together.  </p>
+            </div>
+            <div class="col-sm-6 ms-timeline-content__col" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
+              <img src="assets/image/microservices/devops-final.png" data-uhd="" alt="Pepcus - DevOps">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section section-light ms-tools-expertise__section">
+    <div class="container">
+      <div class="section-title"
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out">
+        <h2>Tools Expertise</h2>
+      </div>
+      <div>
+        <div id="tools-expertise" class="owl-carousel owl-theme">
+          <div class="small-slider-item__card"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out">
+            <a href="" title="Kubernetes"><img src="assets/image/tools-expertise/kubernetes.png" alt="Pepcus-Kubernetes"></a>
+          </div>
+          <div class="small-slider-item__card"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out">
+            <a href="" title="Docker"><img src="assets/image/tools-expertise/docker.png" alt="Pepcus-Docker"></a>
+          </div>
+          <div class="small-slider-item__card"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out">
+            <a href="" title="APIGateway"><img src="assets/image/tools-expertise/apiGateway.png" alt="Pepcus-APIGateway"></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -49,6 +199,8 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!--//for animation on scroll js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
   $(function () {

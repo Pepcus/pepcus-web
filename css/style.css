@@ -905,12 +905,12 @@ footer {
       margin-bottom: .5em;
       padding-left: 20px;
       padding-right: 20px;
-      line-height: 60px;
+      line-height: 80px;
       text-transform: uppercase;
       font-weight: 300; }
       @media (max-width: 768px) {
         .title-banner.title-banner-big .title-banner-name h1 {
-          line-height: 50px; } }
+          line-height: 60px; } }
     .title-banner.title-banner-big .title-banner-name p {
       font-size: 26px;
       line-height: 40px;
@@ -2657,6 +2657,37 @@ form {
       display: inline-block;
       max-width: 100%; }
 
+.small-slider-item__card {
+  width: 160px;
+  margin: 0 auto; }
+  .small-slider-item__card a {
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #ececec;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 170px;
+    line-height: 130px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .small-slider-item__card a img {
+      display: inline-block;
+      max-width: 80%; }
+    .small-slider-item__card a:hover {
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      text-decoration: none;
+      outline: 0; }
+
 .owl-dots {
   display: inline-block;
   width: 100%;
@@ -2892,6 +2923,36 @@ form {
     transform-origin: top; } }
 
 @keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%; }
+  100% {
+    -webkit-transform: scale(1.6) translateY(-15px);
+    transform: scale(1.6) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top; } }
+
+.zoom-out-banner {
+  -webkit-animation: zoom-out-banner 40s ease-out both;
+  animation: zoom-out-banner 40s ease-out both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes zoom-out-banner {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%; }
+  100% {
+    -webkit-transform: scale(1.45) translateY(-15px);
+    transform: scale(1.45) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top; } }
+
+@keyframes zoom-out-banner {
   0% {
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
@@ -4060,15 +4121,6 @@ canvas {
         font-size: 36px; } }
   .team-footer-image a {
     color: #fff; }
-
-.microservices-page .microservices-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  position: absolute;
-  top: 0; }
 
 .legacy-app-page .legacy-app-title-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1574027542338-98e75acfd385?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
@@ -5483,3 +5535,166 @@ canvas {
                 .custom-integrations-page .ci-integration-container .ci-integration-container-inner .ci-integration-container-inner__row .ci-integration-container-inner__column .ci-integration-container-inner__column-inner .ci-integration-container-inner__content .ci-integration-container-inner__content-body {
                   text-align: center;
                   font-size: 16px; } }
+
+.microservices-page .microservices-title-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg) center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0; }
+
+.microservices-page .ms-tools-expertise__section .container {
+  max-width: 800px; }
+
+.microservices-page .ms-howwork-section {
+  margin-top: 0;
+  text-align: left; }
+  .microservices-page .ms-howwork-section .ms-timeline {
+    margin-top: 50px;
+    padding-left: 10px; }
+    @media only screen and (min-width: 767px) {
+      .microservices-page .ms-howwork-section .ms-timeline {
+        padding-left: 0; } }
+    .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block {
+      position: relative;
+      padding-left: 4rem;
+      text-align: left;
+      padding-top: 0;
+      padding-bottom: 4rem; }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:after {
+        content: ' ';
+        position: absolute;
+        left: 26px;
+        margin-left: 0;
+        width: 4px;
+        border-radius: 4px;
+        background-color: #c9d0d8;
+        top: calc(50px + 1rem);
+        bottom: 1rem; }
+        @media only screen and (min-width: 767px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:after {
+            left: 50%;
+            margin-left: -2px;
+            top: calc(50% + (25px + 1rem));
+            bottom: -1rem; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:before {
+        content: ' ';
+        position: absolute;
+        left: 26px;
+        margin-left: 0;
+        width: 4px;
+        border-radius: 4px;
+        background-color: #c9d0d8;
+        top: -1rem;
+        bottom: calc(50% + (25px + 1rem));
+        display: none; }
+        @media (min-width: 768px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:before {
+            display: block;
+            left: 50%;
+            margin-left: -2px; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:first-child:before {
+        content: none; }
+      @media only screen and (min-width: 767px) {
+        .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:first-child {
+          margin-top: -2rem; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:last-child:after {
+        content: none; }
+      @media only screen and (min-width: 767px) {
+        .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:last-child {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 767px) {
+        .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block {
+          padding-left: 0;
+          padding-top: 2rem;
+          padding-bottom: 2rem; }
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block:nth-child(even) .esd-timeline-content {
+            float: right; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-step-number {
+        position: absolute;
+        top: 10px;
+        left: .8rem;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        z-index: 2;
+        border-radius: 100%;
+        background: linear-gradient(45deg, #c31212 0%, #ff0000 100%); }
+        @media (min-width: 768px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-step-number {
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.8rem; } }
+        .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-step-number:before {
+          border-radius: 100%;
+          content: ' ';
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: 50px;
+          height: 50px;
+          opacity: 0.25;
+          z-index: -1;
+          background: linear-gradient(45deg, #c31212 0%, #ff0000 100%); }
+          @media (min-width: 768px) {
+            .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-step-number:before {
+              width: 60px;
+              height: 60px;
+              top: -10px;
+              left: -10px; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block h2 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 18px; }
+        @media only screen and (min-width: 767px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block h2 {
+            font-size: 20px;
+            font-size: 1.25rem; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block p {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 1.6; }
+        @media only screen and (min-width: 768px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block p {
+            font-size: 15px;
+            font-size: 1rem; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem; }
+        @media only screen and (min-width: 767px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col {
+            padding-left: 6rem;
+            padding-right: 6rem; }
+            .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col:nth-child(1) {
+              margin-bottom: 0; } }
+        .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col img {
+          width: 100%;
+          height: auto;
+          max-width: 445px;
+          border-radius: 10px; }
+          @media (max-width: 767px) {
+            .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col img {
+              max-width: 300px; } }
+        @media (max-width: 767px) {
+          .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .ms-timeline-content__col.col-right-img {
+            order: 2; } }
+      .microservices-page .ms-howwork-section .ms-timeline .ms-timeline-block .row {
+        display: flex;
+        flex-wrap: wrap; }
