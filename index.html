@@ -674,14 +674,14 @@
 
   </section>
 
-  <section id="smaller-contact-form" class="contact-form-small contact-form-small--bg">
+  <section class="contact-form-small contact-form-small--bg">
     <div class="container">
       <div class="section-title" data-aos="fade-up"
            data-aos-duration="3000">
         <h2>Tell us your <strong>requirement</strong> right now</h2>
       </div>
       <div class="contact-form-small--body">
-        <form id="myform" name="cform" class="clearfix"  method="post">
+        <form id="smaller-contact-form" name="cform" class="clearfix"  method="post">
           <div class="form-row">
             <input type="input" class="form_input" placeholder="Email*" name="email" id='email' required autocomplete="off" />
             <span class="email-missing">Please enter your E-mail</span>
@@ -716,44 +716,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <!--//for animation on scroll js-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript">
-  (function(){
-    emailjs.init("user_QjC9ZSKm2Rl96TpEZy1Ov");
-  })();
-  var myform = $("form#myform");
-  myform.submit(function(event){
-    event.preventDefault();
-
-    // Change to your service ID, or keep using the default service
-    var service_id = "default_service";
-    var template_id = "pepcusHome";
-    $('#submit').prop('disabled',true);
-    myform.find("button").text("Sending...");
-    $('.loading').addClass('show');
-    emailjs.sendForm(service_id,template_id,myform[0])
-      .then(function(){
-        bootbox.alert({
-          message: "Thank you for contacting us – we will get back to you soon!",
-          backdrop: true,
-          className: 'rubberBand animated'
-        });
-        myform.find("input").val("");
-        myform.find("textarea").val("");
-        myform.find("button").text("Send");
-        $('.loading').removeClass('show');
-        $('#submit').prop('disabled',false);
-      }, function(err) {
-        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-        myform.find("input").val("");
-        myform.find("textarea").val("");
-        myform.find("button").text("Send");
-        $('.loading').removeClass('show');
-        $('#submit').prop('disabled',false);
-      });
-    return false;
-  });
-</script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contactForm.js"></script>
 <script type="text/javascript">
   $(function () {
     $("#headerContent").load("header.html");
@@ -849,10 +813,6 @@
             easing: "easeOutExpo",
             delay: 1000
           });
-
-
-
-
           // $('.text-animation-01').addClass('show');
           // anime.timeline({loop: false})
           //   .add({
