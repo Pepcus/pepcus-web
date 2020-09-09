@@ -2,15 +2,19 @@
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #234;
   text-align: center;
   &.contact-form-small--bg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    color: #fff;
+    background-image: url(//images.pexels.com/photos/1029622/pexels-photo-1029622.jpeg);
+    &.contact-form-small--bg__company-page {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      color: #fff;
+      background-position: center center;
+    }
   }
+
   .contact-form-small--body {
     background: #fff;
     max-width: 860px;
