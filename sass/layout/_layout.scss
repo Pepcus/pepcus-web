@@ -53,6 +53,9 @@
   &.title-banner-big {
     .title-banner-name {
       text-shadow: 0 0 15px rgba(0,0,0,.7);
+      @media (max-width: 767px) {
+        padding: 0 15px;
+      }
       h1 {
         margin-bottom: .5em;
         padding-left: 20px;

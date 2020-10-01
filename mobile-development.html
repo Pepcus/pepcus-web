@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <!--//for animation on scroll css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" >
 </head>
 
@@ -33,144 +35,126 @@
     <div class="mobile-development-title-bg"></div>
     <div class="container">
       <div class="row">
-        <div class="title-banner-name">
+        <div class="title-banner-name"
+             data-aos="fade-up"
+             data-aos-easing="ease-in-out">
           <h1>Mobile application development</h1>
-          <p></p>
+          <p>Our high-end mobile Services from ideation and concept to delivery and to ongoing support </p>
           <p></p>
         </div>
         <div class="button-container"></div>
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section mobile-development__expertise">
     <div class="container">
       <div class="section-title">
         <h2></h2>
-        <p class="big">End-to-end mobile application development for consumer-facing and corporate environments.</p>
+        <p data-aos="fade-up"
+           data-aos-easing="ease-in-out" class="big">We bring top-notch mobile application development expertise to the table with following differentiation  </p>
       </div>
-    </div>
-  </section>
-  <section class="section section-cross-native">
-    <img src="assets/image/mobile-development/tab-cross.png" class="tab-cross">
-    <img src="assets/image/mobile-development/mobile-native.png" class="mobile-native">
-    <div class="container">
       <div class="row">
-        <div class="col-sm-5 col-xs-12 cards7__card">
-          <div class="cards7__card-name">
-            Cross-platform
+        <div class="col-sm-7 mobile-development__section-content">
+          <div class="col-sm-6 col-xs-6 mobile-development__expertise-col">
+            <span class="ux" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+              <svg viewBox="0 0 992 1024">
+                <path d="M6.752 180.672c-27.104 27.136-21.312 65.344 0.256 86.88 0.864 0.832 87.488 83.584 209.312 205.408 3.136 3.136 7.232 4.672 11.328 4.672s8.192-1.568 11.328-4.672c6.24-6.24 6.24-16.384 0-22.624-18.368-18.368-35.84-35.744-52.416-52.192l50.848-50.848c6.24-6.24 6.24-16.384 0-22.624s-16.384-6.24-22.624 0l-50.976 50.976c-28.512-28.16-53.632-52.736-74.080-72.672l115.68-115.68c6.24-6.24 6.24-16.384 0-22.624s-16.384-6.24-22.624 0l-116.032 116.032c-23.552-22.816-37.12-35.776-37.344-36-6.752-6.752-15.616-25.76 0-41.376l160-160c6.176-6.272 22.624-18.72 40.672-0.768 0.8 0.896 81.6 92.672 204.928 216 6.24 6.24 16.384 6.24 22.624 0s6.24-16.384 0-22.624c-122.56-122.528-202.752-213.6-204.224-215.264-29.824-29.76-65.792-20.832-86.624 0l-160.032 160zM685.408 772.672c-6.24-6.24-16.384-6.24-22.624 0l-50.912 50.88c-15.52-15.712-31.808-32.16-48.96-49.312-6.24-6.24-16.384-6.24-22.624 0s-6.24 16.384 0 22.624c118.528 118.496 201.312 207.008 202.496 208.288 10.976 11.008 26.016 17.056 42.336 17.056v0c16.8 0 33.792-6.56 44.32-17.12l159.936-161.824c20.128-20.128 21.28-54.272 2.496-73.12l-214.592-214.56c-6.24-6.24-16.384-6.24-22.624 0s-6.24 16.384 0 22.624l214.592 214.56c6.4 6.4 5.184 20.224-2.528 27.936l-159.968 161.824c-3.68 3.712-12.032 7.68-21.632 7.68 0 0 0 0 0 0-5.504 0-13.376-1.344-19.328-7.328-0.32-0.352-13.728-14.656-36.992-39.008l116.608-116.608c6.24-6.24 6.24-16.384 0-22.624s-16.384-6.24-22.624 0l-116.128 116.128c-19.968-20.768-44.448-46.016-72.32-74.432l51.072-51.072c6.24-6.208 6.24-16.32 0-22.592zM-9.376 1018.528c3.072 3.136 7.2 4.8 11.456 4.8 1.536 0 3.072-0.224 4.576-0.672l320-95.328c2.592-0.768 4.896-2.144 6.784-4.064l546.88-550.56c0.768-0.768 1.152-1.76 1.728-2.624l116.992-116.992c9.408-9.44 14.624-21.952 14.624-35.296 0-13.312-5.216-25.824-14.624-35.2l-167.52-167.488c-18.816-18.816-51.68-18.816-70.496 0l-119.648 119.648c-0.768 0.768-1.184 1.76-1.76 2.656l-547.712 547.744c-1.792 1.792-3.136 3.968-3.904 6.368l-101.12 310.88c-1.856 5.664-0.416 11.84 3.744 16.128zM653.6 168.672l33.248 33.248-496.736 498.080-55.264-12.544 518.752-518.784zM210.080 725.312l499.424-500.736 77.952 77.952-503.936 497.472h-73.44v-74.688zM846.368 361.472l-519.808 523.328-18.464-64.064 501.984-495.584 36.288 36.32zM113.856 715.488l64.224 14.592v85.92c0 8.832 7.168 16 16 16h83.968l20.288 70.4-271.616 80.928 87.136-267.84zM783.68 37.728c6.752-6.752 18.496-6.752 25.248 0l167.52 167.52c3.36 3.36 5.216 7.84 5.216 12.608 0 4.736-1.856 9.248-5.248 12.64l-107.872 107.904-192.736-192.736 107.872-107.936z">
+                </path>
+              </svg>
+            </span>
+            <h2>User Experience <br/>Design</h2>
           </div>
-          <p class="cards7__card-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          </p>
-        </div>
-        <div class="col-sm-2 col-xs-12">
-          <div class="center-image">
-            <img src="assets/image/mobile-development/pot-cross-native.png">
+          <div class="col-sm-6 col-xs-6 mobile-development__expertise-col">
+            <span class="cross-platform" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+             <svg viewBox="0 0 1024 1024">
+                <path d="M588.8 716.8h-409.6c-42.347 0-76.8-34.451-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h665.6c42.349 0 76.8 34.453 76.8 76.8v51.2c0 14.138-11.461 25.6-25.6 25.6s-25.6-11.462-25.6-25.6v-51.2c0-14.115-11.485-25.6-25.6-25.6h-665.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h409.6c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M588.8 921.6h-512c-42.347 0-76.8-34.453-76.8-76.8v-51.2c0-14.139 11.462-25.6 25.6-25.6h563.2c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6h-537.6v25.6c0 14.115 11.485 25.6 25.6 25.6h512c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path3" d="M947.2 921.6h-204.8c-42.347 0-76.8-34.453-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h204.8c42.347 0 76.8 34.453 76.8 76.8v409.6c0 42.347-34.453 76.8-76.8 76.8zM742.4 409.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h204.8c14.115 0 25.6-11.485 25.6-25.6v-409.6c0-14.115-11.485-25.6-25.6-25.6h-204.8z"></path><path class="path4" d="M844.8 819.2c-6.736 0-13.328-2.736-18.098-7.504-4.766-4.768-7.502-11.36-7.502-18.096s2.736-13.344 7.502-18.098c4.754-4.766 11.362-7.502 18.098-7.502s13.344 2.736 18.096 7.502c4.768 4.754 7.504 11.346 7.504 18.098 0 6.736-2.736 13.344-7.504 18.096-4.768 4.768-11.36 7.504-18.096 7.504z">
+              </path>
+              </svg>
+            </span>
+            <h2>Cross-Platform <br/>Coverage</h2>
+          </div>
+          <div class="col-sm-6 col-xs-6 mobile-development__expertise-col">
+            <span class="scalability" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+              <svg viewBox="0 0 1024 1024">
+                <path d="M256 192.672v-96.672c0-52.928-43.072-96-96-96s-96 43.072-96 96v96.672c-38.656 29.28-64 75.136-64 127.328s25.344 98.048 64 127.264v480.736c0 52.928 43.072 96 96 96s96-43.072 96-96v-480.736c38.656-29.184 64-75.072 64-127.264s-25.344-98.048-64-127.328zM128 96c0-17.696 14.304-32 32-32s32 14.304 32 32v67.2c-10.336-2.080-21.024-3.2-32-3.2s-21.664 1.12-32 3.2v-67.2zM192 928c0 17.696-14.304 32-32 32s-32-14.304-32-32v-451.264c10.336 2.144 21.024 3.264 32 3.264s21.664-1.12 32-3.264v451.264zM251.68 346.88c-0.512 1.696-0.96 3.36-1.568 5.056-3.040 8.448-6.944 16.448-12.096 23.552-0.128 0.192-0.32 0.32-0.448 0.512-5.568 7.616-12.192 14.368-19.712 20.064-0.128 0.128-0.224 0.192-0.32 0.256-7.712 5.824-16.32 10.496-25.568 13.76-10.016 3.616-20.672 5.92-31.968 5.92s-21.952-2.304-32-5.952c-9.248-3.264-17.856-7.936-25.568-13.76-0.096-0.064-0.192-0.128-0.32-0.256-7.52-5.696-14.144-12.448-19.712-20.064-0.128-0.192-0.32-0.32-0.448-0.512-5.152-7.136-9.056-15.136-12.096-23.552-0.608-1.696-1.056-3.36-1.568-5.056-2.528-8.544-4.288-17.472-4.288-26.848 0-9.44 1.76-18.368 4.32-26.944 0.512-1.696 0.96-3.36 1.568-4.992 3.008-8.448 6.912-16.448 12.096-23.616 0.128-0.192 0.32-0.32 0.448-0.512 5.568-7.552 12.192-14.368 19.712-20.064 0.128-0.064 0.224-0.192 0.32-0.256 7.68-5.728 16.288-10.432 25.536-13.728 10.048-3.584 20.704-5.888 32-5.888s21.952 2.304 32 5.888c9.248 3.328 17.856 8 25.568 13.76 0.096 0.064 0.192 0.192 0.32 0.256 7.52 5.696 14.144 12.512 19.712 20.064 0.128 0.192 0.32 0.32 0.448 0.512 5.152 7.136 9.056 15.136 12.064 23.584 0.608 1.632 1.088 3.296 1.568 4.992 2.56 8.576 4.32 17.504 4.32 26.944 0 9.376-1.76 18.304-4.32 26.88zM960 192.672v-96.672c0-52.928-43.072-96-96-96s-96 43.072-96 96v96.672c-38.688 29.28-64 75.136-64 127.328s25.312 98.048 64 127.264v480.736c0 52.928 43.072 96 96 96s96-43.072 96-96v-480.736c38.624-29.184 64-75.072 64-127.264s-25.376-98.048-64-127.328zM832 96c0-17.696 14.304-32 32-32s32 14.304 32 32v67.2c-10.368-2.080-21.056-3.2-32-3.2-11.008 0-21.696 1.12-32 3.2v-67.2zM896 928c0 17.696-14.304 32-32 32s-32-14.304-32-32v-451.264c10.304 2.144 20.992 3.264 32 3.264 10.944 0 21.632-1.12 32-3.264v451.264zM955.68 346.88c-0.512 1.696-0.992 3.36-1.568 5.056-3.072 8.448-6.944 16.448-12.128 23.552-0.128 0.192-0.32 0.32-0.448 0.512-5.568 7.616-12.192 14.368-19.68 20.064-0.128 0.128-0.256 0.192-0.32 0.256-7.744 5.824-16.32 10.496-25.568 13.76-10.016 3.616-20.704 5.92-31.968 5.92-11.328 0-21.952-2.304-32-5.952-9.248-3.264-17.888-7.936-25.568-13.76-0.128-0.064-0.192-0.128-0.32-0.256-7.552-5.696-14.176-12.448-19.744-20.064-0.128-0.192-0.32-0.32-0.448-0.512-5.12-7.136-9.056-15.136-12.064-23.552-0.64-1.696-1.056-3.36-1.568-5.056-2.528-8.544-4.288-17.472-4.288-26.848 0-9.44 1.76-18.368 4.32-26.944 0.512-1.696 0.928-3.36 1.568-4.992 3.008-8.448 6.944-16.448 12.064-23.616 0.128-0.192 0.32-0.32 0.448-0.512 5.568-7.552 12.192-14.368 19.744-20.064 0.128-0.064 0.192-0.192 0.32-0.256 7.68-5.76 16.32-10.432 25.568-13.76 10.016-3.552 20.64-5.856 31.968-5.856 11.264 0 21.952 2.304 32 5.888 9.248 3.328 17.824 8 25.568 13.76 0.064 0.064 0.192 0.192 0.32 0.256 7.488 5.696 14.112 12.512 19.68 20.064 0.128 0.192 0.32 0.32 0.448 0.512 5.184 7.2 9.056 15.2 12.128 23.616 0.576 1.632 1.056 3.328 1.568 4.992 2.528 8.544 4.288 17.472 4.288 26.912 0 9.376-1.76 18.304-4.32 26.88zM608 576.672v-480.672c0-52.928-43.072-96-96-96s-96 43.072-96 96v480.672c-38.656 29.248-64 75.136-64 127.328s25.344 98.048 64 127.264v96.736c0 52.928 43.072 96 96 96s96-43.072 96-96v-96.736c38.624-29.184 64-75.072 64-127.264s-25.376-98.048-64-127.328zM480 96c0-17.696 14.304-32 32-32s32 14.304 32 32v451.2c-10.368-2.048-21.056-3.2-32-3.2-10.976 0-21.664 1.12-32 3.2v-451.2zM544 928c0 17.696-14.304 32-32 32s-32-14.304-32-32v-67.264c10.336 2.144 21.024 3.264 32 3.264 10.944 0 21.632-1.12 32-3.264v67.264zM603.68 730.88c-0.512 1.696-0.992 3.36-1.568 5.056-3.072 8.448-6.944 16.448-12.128 23.552-0.128 0.192-0.32 0.32-0.448 0.512-5.568 7.616-12.192 14.368-19.68 20.064-0.128 0.128-0.256 0.192-0.32 0.256-7.744 5.824-16.32 10.496-25.568 13.76-10.016 3.616-20.704 5.92-31.968 5.92-11.296 0-21.952-2.304-32-5.952-9.248-3.264-17.856-7.936-25.568-13.76-0.096-0.064-0.192-0.128-0.32-0.256-7.52-5.696-14.144-12.448-19.712-20.064-0.128-0.192-0.32-0.32-0.448-0.512-5.152-7.136-9.056-15.136-12.096-23.552-0.608-1.696-1.056-3.36-1.568-5.056-2.528-8.544-4.288-17.472-4.288-26.848 0-9.44 1.76-18.368 4.32-26.944 0.512-1.696 0.96-3.36 1.568-4.992 3.040-8.448 6.944-16.448 12.096-23.616 0.128-0.192 0.32-0.32 0.448-0.512 5.568-7.552 12.192-14.368 19.712-20.064 0.128-0.064 0.224-0.192 0.32-0.256 7.712-5.76 16.32-10.432 25.568-13.76 10.016-3.552 20.672-5.856 31.968-5.856 11.264 0 21.952 2.304 32 5.888 9.248 3.328 17.824 8 25.568 13.76 0.064 0.064 0.192 0.192 0.32 0.256 7.488 5.696 14.112 12.512 19.68 20.064 0.128 0.192 0.32 0.32 0.448 0.512 5.184 7.2 9.056 15.2 12.128 23.616 0.576 1.632 1.056 3.328 1.568 4.992 2.528 8.544 4.288 17.472 4.288 26.912 0 9.376-1.76 18.304-4.32 26.88z">
+                </path>
+              </svg>
+            </span>
+            <h2>Scalability & <br/>Interoperability</h2>
+          </div>
+          <div class="col-sm-6 col-xs-6 mobile-development__expertise-col">
+            <span class="security" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+              <svg  viewBox="0 0 1024 1024">
+                <path d="M224 736h608v-191.813c0-35.45-28.51-64.187-63.918-64.187h-480.165c-35.301 0-63.918 28.706-63.918 64.187v191.813zM224 768v64h24l48-64h-72zM224 864c0.1 35.364 28.572 64 63.917 64h480.165c35.238 0 63.817-28.605 63.917-64h-607.999zM832 832v-64h-24l-48 64h72zM288 448v-112.025c0-132.561 107.452-239.976 240-239.976 132.279 0 240 107.441 240 239.976v112.025c53.093 0.152 96 43.21 96 96.303v319.393c0 53.531-43.107 96.303-96.281 96.303h-479.438c-53.222 0-96.281-43.116-96.281-96.303v-319.393c0-53.437 42.955-96.152 96-96.303v0 0zM280 832h64l48-64h-64l-48 64zM376 832h64l48-64h-64l-48 64zM472 832h64l48-64h-64l-48 64zM568 832h64l48-64h-64l-48 64zM664 832h64l48-64h-64l-48 64zM320 448h32v-111.71c0-97.525 78.798-176.29 176-176.29 97.004 0 176 78.928 176 176.29v111.71h32v-112.21c0-114.759-93.359-207.79-208-207.79-114.875 0-208 93.061-208 207.79v112.21zM384 448h288v-111.973c0-79.544-64.633-144.027-144-144.027-79.529 0-144 64.296-144 144.027v111.973z">
+                </path>
+              </svg>
+            </span>
+            <h2>Security & <br/>Compliance </h2>
+          </div>
+          <div class="col-sm-6 col-xs-12 mobile-development__expertise-col">
+            <span class="accelerated" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+              <svg viewBox="0 0 1024 1024">
+                <path d="M247.343 352.716c48.95-44.891 110.085-76.707 177.873-89.914-25.155-20.538-41.216-51.794-41.216-86.801 0-61.856 50.144-112 112-112s112 50.144 112 112c0 35.007-16.061 66.263-41.216 86.801v0c67.788 13.208 128.924 45.023 177.873 89.914v0l39.343-39.343-22.627-22.627 22.627-22.627 67.882 67.882-22.627 22.627-22.627-22.627-39.343 39.343c60.060 65.49 96.716 152.793 96.716 248.657 0 203.241-164.759 368-368 368s-368-164.759-368-368c0-95.864 36.656-183.167 96.716-248.657l-39.343-39.343-22.627 22.627-22.627-22.627 67.882-67.882 22.627 22.627-22.627 22.627 39.343 39.343zM516.695 580.678l99.796-99.796c6.121-6.121 16.456-6.326 22.705-0.077 6.066 6.066 6.214 16.414-0.077 22.705l-99.796 99.796c2.999 6.266 4.678 13.284 4.678 20.695 0 26.51-21.49 48-48 48-7.41 0-14.428-1.679-20.695-4.678l-35.796 35.796c-6.121 6.121-16.456 6.326-22.705 0.077-6.066-6.066-6.214-16.414 0.077-22.705l35.796-35.796c-2.999-6.266-4.678-13.284-4.678-20.695 0-26.51 21.49-48 48-48 7.41 0 14.428 1.679 20.695 4.678v0 0zM512 254.4c36.516-7.412 64-39.696 64-78.4 0-44.183-35.817-80-80-80s-80 35.817-80 80c0 38.703 27.484 70.987 64 78.4v-62.4h-32v-32h96v32h-32v62.4zM256.52 639.928h79.857c8.668 0 15.695-7.422 15.695-16 0-8.837-6.882-16-15.695-16h-79.847c7.919-119.766 103.694-215.519 223.47-223.403v79.78c0 8.668 7.422 15.695 16 15.695 8.837 0 16-6.882 16-15.695v-79.78c119.776 7.884 215.551 103.636 223.47 223.403h-79.847c-8.668 0-15.695 7.422-15.695 16 0 8.837 6.882 16 15.695 16h79.857c-7.852 119.834-103.656 215.661-223.48 223.547v-79.924c0-8.668-7.422-15.695-16-15.695-8.837 0-16 6.882-16 15.695v79.924c-119.824-7.887-215.628-103.714-223.48-223.547zM496 960c185.568 0 336-150.432 336-336s-150.432-336-336-336c-185.568 0-336 150.432-336 336s150.432 336 336 336v0zM496 896c150.221 0 272-121.779 272-272s-121.779-272-272-272c-150.221 0-272 121.779-272 272s121.779 272 272 272v0zM496 640c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16v0z">
+                </path>
+              </svg>
+            </span>
+            <h2>Accelerated <br/>Delivery </h2>
           </div>
         </div>
-        <div class="col-sm-5 col-xs-12 cards7__card">
+        <div class="col-sm-5 mobile-development__section-image">
+          <img data-aos="fade-left"
+               data-aos-offset="100"
+               data-aos-easing="ease-in-sine" class="mobile-img" src="assets/image/mobile-development/mobile-expertise.png">
+        </div>
 
-          <div class="cards7__card-name">
-            Native-app
-          </div>
-          <p class="cards7__card-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          </p>
-        </div>
       </div>
     </div>
   </section>
-
-  <section class="section dark-graph-bg">
+  <section class="section no-padding-top">
     <div class="container">
-      <div class="row">
-        <div class="statistics__card">
-          <div class="col-sm-4 col-xs-12 statistics__card-col">
-            <div class="statistics__card-item">
-              <div class="statistics__card-number">
-                80%
-              </div>
-              <div class="statistics__card-description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 statistics__card-col">
-            <div class="statistics__card-item">
-              <div class="statistics__card-number">
-                80%
-              </div>
-              <div class="statistics__card-description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 statistics__card-col">
-            <div class="statistics__card-item">
-              <div class="statistics__card-number">
-                80%
-              </div>
-              <div class="statistics__card-description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="section-title"
+           data-aos="fade-up"
+           data-aos-duration="1000">
+        <h2><strong>Platforms</strong></h2>
       </div>
-    </div>
-  </section>
-<section class="section no-padding-bottom section-dark">
-  <div class="container">
-    <div class="section-title">
-      <h2>platforms</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.</p>
-    </div>
-  </div>
-  <div class="cards6__card">
-
-    <div class="cards6__card-item">
-
-      <div class="cards6__card-bg" style="background-image: url(https://images.unsplash.com/photo-1512578659172-63a4634c05ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)"></div>
-
-      <div class="cards6__card-icon">
-        <p>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 132.6 154.7" enable-background="new 0 0 132.6 154.7" xml:space="preserve" class="icon">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M128.1,51.9c-8-9.9-19.1-15.7-29.6-15.7c-13.9,0-19.8,6.6-29.5,6.6
+      <div class="row mobile-section-cards">
+        <div class="col-sm-3 mobile-section-cards__col">
+          <a href="javascript:void(0)" class="mobile-section-cards-item" title="iOS App Development" data-aos="fade-up"
+             data-aos-easing="ease-in-out">
+            <div class="mobile-section-cards-wrapper">
+              <div class="mobile-section-cards-item-link-image ios"></div>
+              <div class="mobile-section-cards-icon">
+                <svg viewBox="0 0 132.6 154.7">
+                  <path d="M128.1,51.9c-8-9.9-19.1-15.7-29.6-15.7c-13.9,0-19.8,6.6-29.5,6.6
 												c-10,0-17.5-6.6-29.6-6.6c-11.8,0-24.4,7.2-32.4,19.5c-11.2,17.3-9.3,49.9,8.9,77.7c6.5,9.9,15.2,21.1,26.6,21.2
 												c10.1,0.1,13-6.5,26.7-6.5c13.7-0.1,16.3,6.6,26.4,6.5c11.4-0.1,20.5-12.5,27-22.4c4.7-7.1,6.4-10.7,10-18.8
 												C106.3,103.5,102,66.2,128.1,51.9z M87.9,25.1c5.1-6.5,8.9-15.7,7.5-25.1c-8.3,0.6-17.9,5.8-23.6,12.7c-5.1,6.2-9.4,15.5-7.7,24.5
 												C73.1,37.5,82.5,32.1,87.9,25.1z">
-          </path>
-          </svg>
-        </p>
-      </div>
-      <div class="cards6__card-name">iOS</div>
-
-      <div class="cards6__card-content">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book.
-        </p>
-        <ul>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cards6__card-item">
-      <div class="cards6__card-bg" style="background-image: url(https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-      <div class="cards6__card-icon">
-        <p>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 140.6 165" enable-background="new 0 0 140.6 165" xml:space="preserve">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M130.8,115.7c-5.4,0-9.7-4.8-9.7-10.6V64.8
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-section-cards-item-name">iOS</div>
+          </a>
+        </div>
+        <div class="col-sm-3 mobile-section-cards__col">
+          <a href="javascript:void(0)" class="mobile-section-cards-item" title="Android App Development" data-aos="fade-up"
+             data-aos-easing="ease-in-out">
+            <div class="mobile-section-cards-wrapper">
+              <div class="mobile-section-cards-item-link-image android"></div>
+              <div class="mobile-section-cards-icon">
+                <svg viewBox="0 0 140.6 165">
+                  <path d="M130.8,115.7c-5.4,0-9.7-4.8-9.7-10.6V64.8
 												c0-5.9,4.4-10.6,9.7-10.6c5.4,0,9.7,4.8,9.7,10.6v40.3C140.6,110.9,136.2,115.7,130.8,115.7z M108.3,131.2H97.6v23.2
 												c0,5.9-4.4,10.6-9.8,10.6c-5.4,0-9.7-4.8-9.7-10.6v-23.2H62.5v23.2c0,5.9-4.3,10.6-9.7,10.6c-5.4,0-9.7-4.8-9.7-10.6v-23.2H32.2
 												c-3.4,0-7.5-4.4-7.5-7.8V55.5h91.1v67.9C115.8,126.8,111.7,131.2,108.3,131.2z M25.1,50.3c0-15.4,9.6-28.9,23.7-35.7L41,1.2h0
@@ -179,131 +163,42 @@
 												c-2.4,0-4.3,1.9-4.3,4.3s1.9,4.2,4.3,4.2c2.4,0,4.3-1.9,4.3-4.2S51.2,27.1,48.8,27.1z M91.8,35.6c2.4,0,4.3-1.9,4.3-4.2
 												s-1.9-4.3-4.3-4.3c-2.4,0-4.3,1.9-4.3,4.3S89.4,35.6,91.8,35.6z M9.7,115.7c-5.4,0-9.7-4.8-9.7-10.6V64.8c0-5.9,4.4-10.6,9.7-10.6
 												c5.4,0,9.7,4.8,9.7,10.6v40.3C19.5,110.9,15.1,115.7,9.7,115.7z">
-          </path>
-          </svg>
-        </p>
-      </div>
-      <div class="cards6__card-name">Android</div>
-      <div class="cards6__card-content">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book.
-        </p>
-        <ul>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cards6__card-item">
-      <div class="cards6__card-bg" style="background-image: url(https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-      <div class="cards6__card-icon">
-        <p>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 191 160" enable-background="new 0 0 191 160" xml:space="preserve" class="icon">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M178.5,128.8h-37.4v-4.2v-4.2v-18.7h41.5V12.5
-												c0-2.3-1.9-4.2-4.2-4.2H12.5c-2.3,0-4.2,1.9-4.2,4.2v89.3h6.2v18.7v4.2v4.2h-2.1c-6.9,0-12.5-5.6-12.5-12.5V12.5C0,5.6,5.6,0,12.5,0
-												h166.1c6.9,0,12.5,5.6,12.5,12.5v103.9C191,123.2,185.4,128.8,178.5,128.8z M22.8,71.7c1.2-0.7,2.6-1.1,4.2-1.1h16.6h2.1h2.1h8.3
-												h2.1h6.4c1.5,0,2.8,0.4,4,1c2.5,1.3,4.2,3.9,4.2,7v23.2v18.7v4.2v4.2v10.4v2.1v10.4c0,2.5-1.1,4.7-2.8,6.2c-1.4,1.3-3.3,2.1-5.4,2.1
-												H54.2h-5.9H27c-4.6,0-8.3-3.7-8.3-8.3v-22.9v-4.2v-4.2v-18.7V78.6C18.7,75.6,20.4,73.1,22.8,71.7z M44.2,154.1
-												c0.4,0.1,0.8,0.2,1.2,0.2c0.4,0,0.7-0.1,1.1-0.2c0.7-0.2,1.3-0.7,1.7-1.3c0.5-0.6,0.7-1.4,0.7-2.3c0-1.1-0.4-2.1-1.1-2.8
-												c-0.1-0.1-0.1-0.1-0.2-0.2c-0.5-0.5-1.2-0.8-1.9-0.8c-0.1,0-0.2,0-0.3,0c-0.6,0-1.2,0.2-1.7,0.5c-0.2,0.1-0.4,0.2-0.5,0.4
-												c-0.8,0.7-1.3,1.8-1.3,2.9C41.8,152.1,42.8,153.5,44.2,154.1z M27,101.8v18.7v4.2v4.2v12.5h16.6h2.1h2.1h8.3h8.3v-2.1v-10.4v-4.2
-												v-4.2v-18.7V79h-6.2h-2.1h-8.3h-2.1h-2.1H27V101.8z M76.8,143.4h51.9v-12.5v-4.2v-4.2v-18.7V51.9H56.1v14.5h-8.3V49.9
-												c0-3.4,3-6.2,6.5-6.2h76.7c3.4,0,6.1,2.8,6.1,6.2v54v18.7v4.2v4.2v21.8c0,3.4-2.6,7.3-6,7.3H73.6c2-2.2,3.2-5.1,3.2-8.3V143.4z
-												M93.1,154.3c2,0,3.5-1.7,3.5-3.8c0-2.1-1.6-3.8-3.5-3.8c-2,0-3.5,1.7-3.5,3.8C89.5,152.6,91.1,154.3,93.1,154.3z M145.3,147.5
-												c2.1,6.2,14.5,6.2,14.5,8.3c0,2.1,0,2.1,0,2.1s-12.5,0-18.7,0c0,0,0-5,0-7.3v-1v-4.2C141.2,145.5,143.2,141.3,145.3,147.5z">
-          </path>
-          </svg>
-        </p>
-      </div>
-      <div class="cards6__card-name">Xamarin</div>
-      <div class="cards6__card-content">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book.
-        </p>
-        <ul>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>expertise</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book.</p>
-      </div>
-      <div id="mobile-expertise-carousel" class="owl-carousel owl-theme">
-        <div class="carousel-item">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 89" enable-background="new 0 0 72 89">
-            <path d="M0,88.1h71.6L57.8,60.4H46.9c5-7.7,10.3-15.9,12.9-20.4c2-3.4,3.1-7.8,3.1-12.6C62.9,12.3,50.6,0,35.5,0
-	                  C20.4,0,8.1,12.3,8.1,27.4c0,4.7,0.9,8.6,2.6,11.7c2.6,4.6,8.1,13.2,13.4,21.3H13.8L0,88.1z M9.1,27.4C9.1,12.8,20.9,1,35.5,1
-	                  C50,1,61.9,12.8,61.9,27.4c0,4.6-1,8.8-2.9,12.1c-4.9,8.4-19.5,30.4-23.4,36.2c-6-8.9-19.4-29-24-37.1C9.9,35.7,9.1,31.9,9.1,27.4z
-	                  M24.6,61.4v-0.3c4.1,6.2,8,12.1,10.5,15.8l0.4,0.6l0.4-0.6c1.4-2.2,5.7-8.5,10.3-15.5h10.9L70,87.1H1.6l12.8-25.7H24.6z M48.7,28.4
-	                  c0-7.3-5.9-13.2-13.2-13.2c-7.3,0-13.2,5.9-13.2,13.2c0,7.3,5.9,13.2,13.2,13.2C42.8,41.6,48.7,35.7,48.7,28.4z M35.5,40.6
-	                  c-6.7,0-12.2-5.5-12.2-12.2c0-6.7,5.5-12.2,12.2-12.2c6.7,0,12.2,5.5,12.2,12.2C47.7,35.1,42.2,40.6,35.5,40.6z">
-            </path>
-          </svg>
-          <p class="carousel-text">User Experience Design</p>
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-section-cards-item-name">Android</div>
+          </a>
         </div>
-        <div class="carousel-item">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 89" enable-background="new 0 0 72 89">
-            <path d="M0,88.1h71.6L57.8,60.4H46.9c5-7.7,10.3-15.9,12.9-20.4c2-3.4,3.1-7.8,3.1-12.6C62.9,12.3,50.6,0,35.5,0
-	                  C20.4,0,8.1,12.3,8.1,27.4c0,4.7,0.9,8.6,2.6,11.7c2.6,4.6,8.1,13.2,13.4,21.3H13.8L0,88.1z M9.1,27.4C9.1,12.8,20.9,1,35.5,1
-	                  C50,1,61.9,12.8,61.9,27.4c0,4.6-1,8.8-2.9,12.1c-4.9,8.4-19.5,30.4-23.4,36.2c-6-8.9-19.4-29-24-37.1C9.9,35.7,9.1,31.9,9.1,27.4z
-	                  M24.6,61.4v-0.3c4.1,6.2,8,12.1,10.5,15.8l0.4,0.6l0.4-0.6c1.4-2.2,5.7-8.5,10.3-15.5h10.9L70,87.1H1.6l12.8-25.7H24.6z M48.7,28.4
-	                  c0-7.3-5.9-13.2-13.2-13.2c-7.3,0-13.2,5.9-13.2,13.2c0,7.3,5.9,13.2,13.2,13.2C42.8,41.6,48.7,35.7,48.7,28.4z M35.5,40.6
-	                  c-6.7,0-12.2-5.5-12.2-12.2c0-6.7,5.5-12.2,12.2-12.2c6.7,0,12.2,5.5,12.2,12.2C47.7,35.1,42.2,40.6,35.5,40.6z">
-            </path>
-          </svg>
-          <p class="carousel-text">Cross-Platform Coverage</p>
+        <div class="col-sm-3 mobile-section-cards__col">
+          <a href="javascript:void(0)" class="mobile-section-cards-item" title="Cross Platform App Development" data-aos="fade-up"
+             data-aos-easing="ease-in-out">
+          <div class="mobile-section-cards-wrapper">
+            <div class="mobile-section-cards-item-link-image cross-platform"></div>
+            <div class="mobile-section-cards-icon">
+              <svg viewBox="0 0 1024 1024">
+                <path d="M588.8 716.8h-409.6c-42.347 0-76.8-34.451-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h665.6c42.349 0 76.8 34.453 76.8 76.8v51.2c0 14.138-11.461 25.6-25.6 25.6s-25.6-11.462-25.6-25.6v-51.2c0-14.115-11.485-25.6-25.6-25.6h-665.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h409.6c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M588.8 921.6h-512c-42.347 0-76.8-34.453-76.8-76.8v-51.2c0-14.139 11.462-25.6 25.6-25.6h563.2c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6h-537.6v25.6c0 14.115 11.485 25.6 25.6 25.6h512c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path3" d="M947.2 921.6h-204.8c-42.347 0-76.8-34.453-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h204.8c42.347 0 76.8 34.453 76.8 76.8v409.6c0 42.347-34.453 76.8-76.8 76.8zM742.4 409.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h204.8c14.115 0 25.6-11.485 25.6-25.6v-409.6c0-14.115-11.485-25.6-25.6-25.6h-204.8z"></path><path class="path4" d="M844.8 819.2c-6.736 0-13.328-2.736-18.098-7.504-4.766-4.768-7.502-11.36-7.502-18.096s2.736-13.344 7.502-18.098c4.754-4.766 11.362-7.502 18.098-7.502s13.344 2.736 18.096 7.502c4.768 4.754 7.504 11.346 7.504 18.098 0 6.736-2.736 13.344-7.504 18.096-4.768 4.768-11.36 7.504-18.096 7.504z">
+              </path>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-section-cards-item-name">Cross Platform</div>
+        </a>
         </div>
-        <div class="carousel-item">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 89" enable-background="new 0 0 72 89">
-            <path d="M0,88.1h71.6L57.8,60.4H46.9c5-7.7,10.3-15.9,12.9-20.4c2-3.4,3.1-7.8,3.1-12.6C62.9,12.3,50.6,0,35.5,0
-	                  C20.4,0,8.1,12.3,8.1,27.4c0,4.7,0.9,8.6,2.6,11.7c2.6,4.6,8.1,13.2,13.4,21.3H13.8L0,88.1z M9.1,27.4C9.1,12.8,20.9,1,35.5,1
-	                  C50,1,61.9,12.8,61.9,27.4c0,4.6-1,8.8-2.9,12.1c-4.9,8.4-19.5,30.4-23.4,36.2c-6-8.9-19.4-29-24-37.1C9.9,35.7,9.1,31.9,9.1,27.4z
-	                  M24.6,61.4v-0.3c4.1,6.2,8,12.1,10.5,15.8l0.4,0.6l0.4-0.6c1.4-2.2,5.7-8.5,10.3-15.5h10.9L70,87.1H1.6l12.8-25.7H24.6z M48.7,28.4
-	                  c0-7.3-5.9-13.2-13.2-13.2c-7.3,0-13.2,5.9-13.2,13.2c0,7.3,5.9,13.2,13.2,13.2C42.8,41.6,48.7,35.7,48.7,28.4z M35.5,40.6
-	                  c-6.7,0-12.2-5.5-12.2-12.2c0-6.7,5.5-12.2,12.2-12.2c6.7,0,12.2,5.5,12.2,12.2C47.7,35.1,42.2,40.6,35.5,40.6z">
-            </path>
-          </svg>
-          <p class="carousel-text">Scalability & Interoperability</p>
-        </div>
-        <div class="carousel-item">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 89" enable-background="new 0 0 72 89">
-            <path d="M0,88.1h71.6L57.8,60.4H46.9c5-7.7,10.3-15.9,12.9-20.4c2-3.4,3.1-7.8,3.1-12.6C62.9,12.3,50.6,0,35.5,0
-	                  C20.4,0,8.1,12.3,8.1,27.4c0,4.7,0.9,8.6,2.6,11.7c2.6,4.6,8.1,13.2,13.4,21.3H13.8L0,88.1z M9.1,27.4C9.1,12.8,20.9,1,35.5,1
-	                  C50,1,61.9,12.8,61.9,27.4c0,4.6-1,8.8-2.9,12.1c-4.9,8.4-19.5,30.4-23.4,36.2c-6-8.9-19.4-29-24-37.1C9.9,35.7,9.1,31.9,9.1,27.4z
-	                  M24.6,61.4v-0.3c4.1,6.2,8,12.1,10.5,15.8l0.4,0.6l0.4-0.6c1.4-2.2,5.7-8.5,10.3-15.5h10.9L70,87.1H1.6l12.8-25.7H24.6z M48.7,28.4
-	                  c0-7.3-5.9-13.2-13.2-13.2c-7.3,0-13.2,5.9-13.2,13.2c0,7.3,5.9,13.2,13.2,13.2C42.8,41.6,48.7,35.7,48.7,28.4z M35.5,40.6
-	                  c-6.7,0-12.2-5.5-12.2-12.2c0-6.7,5.5-12.2,12.2-12.2c6.7,0,12.2,5.5,12.2,12.2C47.7,35.1,42.2,40.6,35.5,40.6z">
-            </path>
-          </svg>
-          <p class="carousel-text">Security & Compliance</p>
-        </div>
-        <div class="carousel-item">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 89" enable-background="new 0 0 72 89">
-            <path d="M0,88.1h71.6L57.8,60.4H46.9c5-7.7,10.3-15.9,12.9-20.4c2-3.4,3.1-7.8,3.1-12.6C62.9,12.3,50.6,0,35.5,0
-	                  C20.4,0,8.1,12.3,8.1,27.4c0,4.7,0.9,8.6,2.6,11.7c2.6,4.6,8.1,13.2,13.4,21.3H13.8L0,88.1z M9.1,27.4C9.1,12.8,20.9,1,35.5,1
-	                  C50,1,61.9,12.8,61.9,27.4c0,4.6-1,8.8-2.9,12.1c-4.9,8.4-19.5,30.4-23.4,36.2c-6-8.9-19.4-29-24-37.1C9.9,35.7,9.1,31.9,9.1,27.4z
-	                  M24.6,61.4v-0.3c4.1,6.2,8,12.1,10.5,15.8l0.4,0.6l0.4-0.6c1.4-2.2,5.7-8.5,10.3-15.5h10.9L70,87.1H1.6l12.8-25.7H24.6z M48.7,28.4
-	                  c0-7.3-5.9-13.2-13.2-13.2c-7.3,0-13.2,5.9-13.2,13.2c0,7.3,5.9,13.2,13.2,13.2C42.8,41.6,48.7,35.7,48.7,28.4z M35.5,40.6
-	                  c-6.7,0-12.2-5.5-12.2-12.2c0-6.7,5.5-12.2,12.2-12.2c6.7,0,12.2,5.5,12.2,12.2C47.7,35.1,42.2,40.6,35.5,40.6z">
-            </path>
-          </svg>
-          <p class="carousel-text">Accelerated Delivery</p>
+        <div class="col-sm-3 mobile-section-cards__col">
+          <a href="javascript:void(0)" class="mobile-section-cards-item" title="Progressive App Development" data-aos="fade-up"
+             data-aos-easing="ease-in-out">
+            <div class="mobile-section-cards-wrapper">
+              <div class="mobile-section-cards-item-link-image progressive"></div>
+              <div class="mobile-section-cards-icon">
+                <svg viewBox="0 0 1024 1024">
+                  <path d="M537.6 921.6h-51.2c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h51.2c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M742.4 1024h-460.8c-42.347 0-76.8-34.451-76.8-76.8v-870.4c0-42.347 34.453-76.8 76.8-76.8h460.8c42.349 0 76.8 34.453 76.8 76.8v870.4c0 42.349-34.451 76.8-76.8 76.8zM281.6 51.2c-14.115 0-25.6 11.485-25.6 25.6v870.4c0 14.115 11.485 25.6 25.6 25.6h460.8c14.115 0 25.6-11.485 25.6-25.6v-870.4c0-14.115-11.485-25.6-25.6-25.6h-460.8z"></path><path class="path3" d="M691.2 819.2h-358.4c-14.138 0-25.6-11.461-25.6-25.6v-665.6c0-14.138 11.462-25.6 25.6-25.6h358.4c14.139 0 25.6 11.462 25.6 25.6v665.6c0 14.139-11.461 25.6-25.6 25.6zM358.4 768h307.2v-614.4h-307.2v614.4z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-section-cards-item-name">Progressive Web App</div>
+          </a>
         </div>
       </div>
     </div>
@@ -342,6 +237,8 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!--//for animation on scroll js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
