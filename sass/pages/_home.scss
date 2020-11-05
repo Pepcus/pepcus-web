@@ -522,12 +522,7 @@ canvas {
   position: relative;
   box-sizing: border-box;
   clear: both;
-  //background: url(https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/Polygon-1-copy-61.png);
-  //background-size: contain;
-  //background-position: center center;
   height: 100%;
-  width: 100%;
-  //background-repeat: no-repeat;
   .ps-container-inner {
     padding-top: 35px;
     padding-left: 0;
@@ -536,12 +531,14 @@ canvas {
       margin-left: 0;
       margin-right: 0;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 80px;
       &.right-image__row {
-        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         @media (max-width: 767px) {
           margin-bottom: 0;
         }
@@ -580,26 +577,38 @@ canvas {
           box-sizing: border-box;
           width: 100%;
           overflow: hidden;
+          height: 100%;
+          margin: 16px 0 0 auto;
+          position: relative;
+          width: 82%;
           .ps-container-inner__image-container {
             position: relative;
             overflow: hidden;
             display: inline-block;
             z-index: 1;
             max-width: 100%;
-            &.right-image {
-              img {
-                transform: rotate(180deg);
-              }
+            margin: 48px 101px 0 0;
+            @media (max-width: 767px) {
+              margin: 0;
+              display: flex;
+              justify-content: center;
+            }
+            &.right-image-section {
+              margin:  48px 0 0 101px;
+              display: flex;
+              justify-content: flex-end;
               @media (max-width: 767px) {
+                margin: 0;
                 display: flex;
-                width: 100%;
-                justify-content: flex-end;
+                justify-content: center;
               }
             }
             img {
               max-width: 100%;
               min-height: 1px;
               height: auto;
+              border-radius: 10px;
+              box-shadow: 0px 0px 30px #ddd;
               @media (max-width: 767px) {
                 max-width: 90%;
               }
@@ -628,7 +637,7 @@ canvas {
               line-height: 24px;
               font-size: 18px;
               color: #7a7a7a;
-              margin: 0px 0px 15px 0px;
+              margin: 0;
               margin-top: 40px;
               @media (max-width: 767px) {
                 margin-top: 20px;

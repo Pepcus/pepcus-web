@@ -30,7 +30,7 @@ footer {
       }
       h4 {
         padding: 0 0 0 15px;
-        color: #eee;
+        color: #fff;
         margin-bottom: 30px;
         @media (max-width: 767px) {
           margin-top: 30px;
@@ -41,7 +41,7 @@ footer {
       }
       p {
         font-size: 14px;
-        color: #999;
+        color: #fff;
         @media (max-width: 767px) {
           padding: 1px 5px;
           margin-bottom: 20px;
@@ -62,7 +62,7 @@ footer {
           }
           a {
             font-size: 14px;
-            color: #bbb;
+            color: #fff;
             text-decoration: none;
             line-height: 1.5em;
             border-bottom: 1px solid transparent;
@@ -87,10 +87,9 @@ footer {
           text-align: center;
         }
         span {
-          color: #eee;
+          color: #fff;
           margin-bottom: 30px;
           font-size: 14px;
-          color: #bbb;
           text-decoration: none;
           line-height: 1.5em;
           font-weight: 300;
@@ -102,8 +101,9 @@ footer {
             justify-content: center;
           }
           a {
-            color: #bbb;
+            color: #fff;
             opacity: .8;
+            font-weight: 400;
             &:hover {
               opacity: 1;
             }
@@ -161,7 +161,7 @@ footer {
           }
           a {
             font-size: 14px;
-            color: #bbb;
+            color: #fff;
             text-decoration: none;
             line-height: 1.5em;
             font-weight: 300;
@@ -202,7 +202,7 @@ footer {
             justify-content: center;
           }
           a {
-            color: #bbb;
+            color: #fff;
             opacity: .8;
             &:hover {
               opacity: 1;
