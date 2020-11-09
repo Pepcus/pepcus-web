@@ -3228,9 +3228,9 @@ form {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(//images.pexels.com/photos/1029622/pexels-photo-1029622.jpeg); }
+    background-image: url("../assets/image/contact/contact-bg.jpeg"); }
     .contact-form-small.contact-form-small--bg.contact-form-small--bg__company-page {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/image/contact/contact-bg-company.jpeg");
       color: #fff;
       background-position: center center; }
   .contact-form-small .contact-form-small--body {
@@ -3273,7 +3273,7 @@ form {
     .header-banner {
       display: flex; } }
   .header-banner .header-banner__title-banner {
-    background: linear-gradient(rgba(237, 8, 8, 0.5), rgba(105, 7, 7, 0.5)), url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029__340.jpg);
+    background: linear-gradient(rgba(237, 8, 8, 0.5), rgba(105, 7, 7, 0.5)), url("../assets/image/company/company-banner.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -3428,7 +3428,7 @@ form {
     border: 2px solid #ffffff !important; }
 
 .expert-team-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/company/engineers-bg.jpeg");
   box-shadow: 0 0 black;
   min-height: 600px;
   background-size: cover;
@@ -3440,7 +3440,7 @@ form {
 
 .process-section {
   background: #ffffff;
-  background-image: url(https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url("../assets/image/company/process-bg.jpeg");
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3453,7 +3453,7 @@ form {
 .testimonial-section {
   position: relative;
   overflow: hidden;
-  background: url(https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: url("../assets/image/company/testimonial-bg.jpeg");
   background-position: bottom; }
   .testimonial-section .section-title {
     position: relative; }
@@ -3923,7 +3923,7 @@ canvas {
               font-size: 17px; } }
 
 .contact-page .contact-title-bg {
-  background: url(https://images.pexels.com/photos/1029622/pexels-photo-1029622.jpeg) !important;
+  background: url("../assets/image/contact/contact-bg.jpeg") !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4236,7 +4236,7 @@ canvas {
     color: #fff; }
 
 .legacy-app-page .legacy-app-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1574027542338-98e75acfd385?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/legacy-app/legacy-app.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4246,7 +4246,7 @@ canvas {
   background-position: center center; }
 
 .mobile-development-page .mobile-development-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/mobile-development/mobile-development-banner.jpeg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4258,7 +4258,7 @@ canvas {
   margin-top: 50px; }
 
 .mobile-development-page .section-cross-native {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/image/mobile-development/mobile-development-banner.jpeg");
   background-repeat: repeat; }
   .mobile-development-page .section-cross-native .tab-cross {
     position: absolute;
@@ -4300,7 +4300,6 @@ canvas {
       width: 95%; } }
 
 .cloud-infrastructure-page .cloud-infrastructure-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4310,7 +4309,6 @@ canvas {
   background-position: left; }
 
 .partner-integrations-page .partner-integrations-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924_960_720.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4320,7 +4318,6 @@ canvas {
   background-position: left; }
 
 .partner-integrations-page .partner-integration-half {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-position: center center;
   color: #fff;
   min-height: 500px;
@@ -4361,7 +4358,6 @@ canvas {
       background-position: center center; }
 
 .hr-compliances-page .hr-compliances-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4371,7 +4367,6 @@ canvas {
   background-position: left; }
 
 .wealth-management-page .wealth-management-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/129492/pexels-photo-129492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4381,7 +4376,7 @@ canvas {
   background-position: left; }
 
 .technology-partnership-page .technology-partnership-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/technology-partnership/technology-partnership-banner.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4391,7 +4386,6 @@ canvas {
   background-position: left; }
 
 .software-development-page .software-development-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4401,7 +4395,7 @@ canvas {
   background-position: left; }
 
 .dev-and-cloud-page .dev-and-cloud-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/dev-cloud/dev-cloud-banner.jpeg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4411,7 +4405,7 @@ canvas {
   background-position: left; }
 
 .dev-and-cloud-page .compare-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url(https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url("../assets/image/dev-cloud/dev-cloud-dev&cloud-bg.jpg");
   background-position: center center;
   color: #fff;
   background-repeat: no-repeat;
@@ -4420,7 +4414,6 @@ canvas {
   z-index: -1; }
 
 .support-and-maintenance-page .support-and-maintenance-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4430,7 +4423,7 @@ canvas {
   background-position: left; }
 
 .careers-page .careers-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/career/career-banner.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4855,7 +4848,7 @@ canvas {
     background: #686868 !important; }
 
 .enterprise-software-page .enterprise-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/enterprise-software-development/enterprise-software-development.jpeg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -4864,9 +4857,12 @@ canvas {
   top: 0; }
 
 .enterprise-software-page .expertise-to-build {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/2855294/pexels-photo-2855294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/image/enterprise-software-development/enterprise-to-build.jpg");
   background-position: center center;
-  color: #fff; }
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .performance-container .performance-wrapper__content {
   width: 100%;
@@ -5153,7 +5149,7 @@ canvas {
         left: -10px; } }
 
 .api-development-page .api-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1506878206813-92402b8ded23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/api-development/api-banner.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -5365,7 +5361,7 @@ canvas {
             width: 100%; }
 
 .custom-integrations-page .custom-integrations-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/39290/mother-board-electronics-computer-board-39290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/custom-integration/custom-integration-baaner.jpeg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -5374,7 +5370,7 @@ canvas {
   top: 0; }
 
 .custom-integrations-page .custom-plan-section {
-  background: linear-gradient(rgba(54, 88, 1, 0.75), rgba(55, 88, 1, 0.75)), url(https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg);
+  background: linear-gradient(rgba(54, 88, 1, 0.75), rgba(55, 88, 1, 0.75)), url("../assets/image/custom-integration/custom-integration-plan.jpeg");
   background-position: center;
   color: #fff;
   background-size: cover; }
@@ -5626,7 +5622,7 @@ canvas {
                   font-size: 16px; } }
 
 .microservices-page .microservices-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/image/microservices/microservices-banner.jpg") center center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -5789,7 +5785,7 @@ canvas {
         flex-wrap: wrap; }
 
 .technology-spectrum .technology-spectrum-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/technology-spectrum/technology-spectrum-baaner.jpg") center center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -5945,7 +5941,7 @@ canvas {
                 line-height: 24px; } }
 
 .technology-spectrum .ts__frontend-technologies {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/technology-spectrum/ts-frontend-bg.jpg") center center; }
   .technology-spectrum .ts__frontend-technologies .ts__frontend-technologies-container {
     position: relative; }
     .technology-spectrum .ts__frontend-technologies .ts__frontend-technologies-container .section-title {
@@ -6409,13 +6405,13 @@ canvas {
         background-size: cover;
         background-position: 50% 50%; }
         .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-wrapper .mobile-section-cards-item-link-image.ios {
-          background-image: url(https://images.unsplash.com/photo-1512578659172-63a4634c05ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); }
+          background-image: url("../assets/image/mobile-development/mobile-platforms/mobile-apple.jpg"); }
         .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-wrapper .mobile-section-cards-item-link-image.android {
-          background-image: url(https://cdn.pixabay.com/photo/2013/10/22/07/56/android-199225_960_720.jpg); }
+          background-image: url("../assets/image/mobile-development/mobile-platforms/mobile-android.jpg"); }
         .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-wrapper .mobile-section-cards-item-link-image.cross-platform {
-          background-image: url(https://images.pexels.com/photos/3946005/pexels-photo-3946005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+          background-image: url("../assets/image/mobile-development/mobile-platforms/mobile-cross.jpg"); }
         .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-wrapper .mobile-section-cards-item-link-image.progressive {
-          background-image: url(https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+          background-image: url("../assets/image/mobile-development/mobile-platforms/mobile-progressive.jpg"); }
       .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-wrapper .mobile-section-cards-icon {
         position: relative;
         display: inline-block;
@@ -6602,7 +6598,7 @@ canvas {
                   font-size: 17px; } }
 
 .qa-test-page .qa-test-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/94651/pexels-photo-94651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/qa-and-testing/qa-test-banner.jpeg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -6612,7 +6608,7 @@ canvas {
   background-position: left; }
 
 .qa-test-page .qa-software-security {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3714318/pexels-photo-3714318.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/qa-and-testing/qa-test-brings.jpeg");
   background-position: center center;
   color: #fff; }
 
@@ -6680,7 +6676,7 @@ canvas {
       background-image: none; }
 
 .qa-test-page .qa-quality-experts {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3714318/pexels-photo-3714318.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/qa-and-testing/qa-test-brings.jpeg");
   background-position: center center;
   color: #fff; }
   .qa-test-page .qa-quality-experts .cards13__card-heading {

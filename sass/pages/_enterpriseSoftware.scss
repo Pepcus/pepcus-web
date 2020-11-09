@@ -5,7 +5,7 @@
                             rgba(0, 0, 0, 0.75),
                             rgba(0, 0, 0, 0.75)
             ),
-            url(https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            url('../assets/image/enterprise-software-development/enterprise-software-development.jpeg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -14,12 +14,12 @@
     top: 0;
   }
   .expertise-to-build {
-    background:
-            linear-gradient(rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.2)),
-            url(https://images.pexels.com/photos/2855294/pexels-photo-2855294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/image/enterprise-software-development/enterprise-to-build.jpg');
     background-position: center center;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
