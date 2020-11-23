@@ -11,8 +11,7 @@
     display: flex;
   }
   .header-banner__title-banner {
-    //background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(https://cdn.pixabay.com/photo/2016/09/24/04/35/texture-1691037_1280.jpg);
-    background: linear-gradient(rgba(237,8,8,0.5), rgba(105,7,7,0.5)), url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029__340.jpg);
+    background: linear-gradient(rgba(237,8,8,0.5), rgba(105,7,7,0.5)), url('../assets/image/company/company-banner.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -276,7 +275,7 @@
 }
 
 .expert-team-section  {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../assets/image/company/engineers-bg.jpeg');
   box-shadow: 0 0 black;
   min-height: 600px;
   background-size: cover;
@@ -290,7 +289,7 @@
 
 .process-section {
   background: #ffffff;
-  background-image: url(https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url('../assets/image/company/process-bg.jpeg');
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -306,7 +305,7 @@
 .testimonial-section {
   position: relative;
   overflow: hidden;
-  background: url(https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: url('../assets/image/company/testimonial-bg.jpeg');
   background-position: bottom;
   .section-title {
     position: relative;

@@ -2,7 +2,7 @@
 
 .legacy-app-page {
   .legacy-app-title-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1574027542338-98e75acfd385?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../assets/image/legacy-app/legacy-app.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -20,7 +20,7 @@
                             rgba(0, 0, 0, 0.2),
                             rgba(0, 0, 0, 0.2)
             ),
-            url(https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            url('../assets/image/mobile-development/mobile-development-banner.jpeg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -32,7 +32,7 @@
     margin-top: 50px;
   }
   .section-cross-native {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/image/mobile-development/mobile-development-banner.jpeg');
     background-repeat: repeat;
     .tab-cross {
       position: absolute;
@@ -88,12 +88,12 @@
 
 .cloud-infrastructure-page {
   .cloud-infrastructure-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  //  background:
+  //          linear-gradient(
+  //                          rgba(0, 0, 0, 0.75),
+  //                          rgba(0, 0, 0, 0.75)
+  //          ),
+  //          url();
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -106,12 +106,12 @@
 
 .partner-integrations-page {
   .partner-integrations-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924_960_720.jpg);
+    //background:
+    //        linear-gradient(
+    //                        rgba(0, 0, 0, 0.75),
+    //                        rgba(0, 0, 0, 0.75)
+    //        ),
+    //        url();
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -121,7 +121,7 @@
     background-position: left;
   }
   .partner-integration-half {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    //background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url();
     background-position: center center;
     color: #fff;
     min-height: 500px;
@@ -171,12 +171,12 @@
 
 .hr-compliances-page {
   .hr-compliances-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    //background:
+    //        linear-gradient(
+    //                        rgba(0, 0, 0, 0.75),
+    //                        rgba(0, 0, 0, 0.75)
+    //        ),
+    //        url();
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -189,12 +189,12 @@
 
 .wealth-management-page {
   .wealth-management-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/129492/pexels-photo-129492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    //background:
+    //        linear-gradient(
+    //                        rgba(0, 0, 0, 0.75),
+    //                        rgba(0, 0, 0, 0.75)
+    //        ),
+    //        url();
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -212,7 +212,7 @@
                             rgba(0, 0, 0, 0.75),
                             rgba(0, 0, 0, 0.75)
             ),
-            url(https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            url('../assets/image/technology-partnership/technology-partnership-banner.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -225,12 +225,12 @@
 
 .software-development-page {
   .software-development-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url(https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    //background:
+    //        linear-gradient(
+    //                        rgba(0, 0, 0, 0.75),
+    //                        rgba(0, 0, 0, 0.75)
+    //        ),
+    //        url();
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -248,7 +248,7 @@
                             rgba(0, 0, 0, 0.75),
                             rgba(0, 0, 0, 0.75)
             ),
-            url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            url('../assets/image/dev-cloud/dev-cloud-banner.jpeg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -258,7 +258,7 @@
     background-position: left;
   }
   .compare-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url(https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url('../assets/image/dev-cloud/dev-cloud-dev&cloud-bg.jpg');
     background-position: center center;
     color: #fff;
     background-repeat: no-repeat;
@@ -270,12 +270,12 @@
 
 .support-and-maintenance-page {
   .support-and-maintenance-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.3),
-                            rgba(0, 0, 0, 0.3)
-            ),
-            url(https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    //background:
+    //        linear-gradient(
+    //                        rgba(0, 0, 0, 0.3),
+    //                        rgba(0, 0, 0, 0.3)
+    //        ),
+    //        url();
     background-size: cover;
     height: 100%;
     width: 100%;

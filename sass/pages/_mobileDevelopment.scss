@@ -168,16 +168,16 @@
         background-size: cover;
         background-position: 50% 50%;
         &.ios {
-          background-image: url(https://images.unsplash.com/photo-1512578659172-63a4634c05ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+          background-image: url('../assets/image/mobile-development/mobile-platforms/mobile-apple.jpg');
         }
         &.android {
-          background-image: url(https://cdn.pixabay.com/photo/2013/10/22/07/56/android-199225_960_720.jpg);
+          background-image: url('../assets/image/mobile-development/mobile-platforms/mobile-android.jpg');
         }
         &.cross-platform {
-          background-image: url(https://images.pexels.com/photos/3946005/pexels-photo-3946005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+          background-image: url('../assets/image/mobile-development/mobile-platforms/mobile-cross.jpg');
         }
         &.progressive {
-          background-image: url(https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+          background-image: url('../assets/image/mobile-development/mobile-platforms/mobile-progressive.jpg');
         }
       }
       .mobile-section-cards-icon {
