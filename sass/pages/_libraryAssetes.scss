@@ -120,40 +120,866 @@
                 max-width: 90%;
               }
             }
+            .overlay-img {
+              position: absolute;
+              bottom: 70;
+              right: 0;
+              background: #fff;
+              width: 400px;
+              border-radius: 10px;
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &.right {
+                left: 0;
+                right: auto;
+              }
+        }
+      }
+      .las-container-inner__content {
+        width: 100%;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        .las-container-inner__content-heading {
+          font-size: 36px;
+          line-height: 48px!important;
+          font-weight: 300!important;
+          @media (max-width: 767px) {
+            font-size: 32px;
           }
-          .las-container-inner__content {
-            width: 100%;
-            max-width: 450px;
-            margin-left: auto;
-            margin-right: auto;
-            .las-container-inner__content-heading {
-              font-size: 36px;
-              line-height: 48px!important;
-              font-weight: 300!important;
-              @media (max-width: 767px) {
-                font-size: 32px;
-              }
-              span {
-                display: block;
-                strong {
-                  text-transform: uppercase;
-                }
-              }
+          span {
+            display: block;
+            strong {
+              text-transform: uppercase;
             }
-            .las-container-inner__content-body {
-              line-height: 24px;
-              font-size: 18px;
-              color: #7a7a7a;
-              margin: 0px 0px 15px 0px;
-              margin-top: 40px;
-              @media (max-width: 767px) {
-                margin-top: 20px;
-                font-size: 17px;
-              }
-            }
+          }
+        }
+        .las-container-inner__content-body {
+          line-height: 24px;
+          font-size: 18px;
+          color: #7a7a7a;
+          margin: 0px 0px 15px 0px;
+          margin-top: 40px;
+          @media (max-width: 767px) {
+            margin-top: 20px;
+            font-size: 17px;
           }
         }
       }
     }
+  }
+}
+}
+}
+
+
+
+.business-philosophy-section {
+  .left1x3n.blob1U5Q {
+    background-position: 50vw 25px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+  }
+  .intro2RCL {
+    background-image: url('../assets/image/company/business-philosophy/itsbusiness-bg.png');
+    background-size: 731px 550px;
+    .grid178A {
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      grid-template-columns: 475px 1fr;
+    }
+    .buttons1C0r {
+      padding: 9px 0;
+      a {
+        margin-right: 10px;
+      }
+    }
+    video {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 0 0 0.5px rgba(0,0,0,0.15), 0px 12px 24px 0px rgba(0,0,0,0.1), 0px 2px 4px 0px rgba(0,0,0,0.1);
+    }
+    img {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      margin-top: 100px;
+    }
+  }
+  .blob1U5Q {
+    background-repeat: no-repeat;
+  }
+  .glanceKYug {
+    background-image: url('../assets/image/company/business-philosophy/business-value-bg.png');
+    background-size: 893px 511px;
+    background-position: calc(50vw - 893px) 0;
+  }
+  .teamwork1zJz {
+    background-image: url('../assets/image/company/business-philosophy/business-clients-bg.png');
+    background-size: 619px 507px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+  }
+  .grid178A {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 20px;
+    max-width: 1003.75px;
+    padding: 3.125rem 1.875rem;
+    margin: 0 auto;
+  }
+
+  .right3x0m .grid178A {
+    grid-template-columns: 490px 1fr;
+    justify-items: flex-end;
+  }
+
+  .left1x3n {
+    img {
+      border-radius: 4px;
+      background: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+      width: 600px;
+      margin-top: 40px;
+    }
+  }
+
+  .right3x0m {
+    .heroImages1RTg {
+      .img2RPn {
+        right: 0;
+      }
+    }
+    .grid178A > *:first-child {
+      order: 2;
+    }
+    img {
+      border-radius: 4px;
+      background: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+      width: 600px;
+      margin-top: 40px;
+    }
+  }
+
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transform: translateY(5px);
+      transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+      will-change: opacity, transform;
+    }
+  }
+
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn[data-active] {
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.4s;
+    }
+  }
+
+  .buttonYAU- {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    font-weight: 550;
+    border-radius: 2px;
+    padding: 8px 14px;
+    transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+    display: inline-flex;
+  }
+  .buttonYAU-[data-appearance=''] {
+    color: #1988e0;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    line-height: 1.12;
+    font-weight: 600;
+    text-align: left;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 2.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.42;
+    font-weight: normal;
+  }
+  blockquote {
+    margin: 0px;
+    font-size: 1.1025rem;
+    line-height: 1.45;
+  }
+}
+
+.business-philosophy-section1 {
+  .left1x3n.blob1U5Q {
+    background-position: 50vw 25px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+  }
+  .intro2RCL {
+    .grid178A {
+      align-items: center;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      grid-template-columns: 475px 1fr;
+    }
+    .buttons1C0r {
+      padding: 9px 0;
+      a {
+        margin-right: 10px;
+      }
+    }
+    video {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 0 0 0.5px rgba(0,0,0,0.15), 0px 12px 24px 0px rgba(0,0,0,0.1), 0px 2px 4px 0px rgba(0,0,0,0.1);
+    }
+    img {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      margin-top: 100px;
+    }
+  }
+  .blob1U5Q {
+    background-repeat: no-repeat;
+  }
+  .glanceKYug {
+
+    background-size: 893px 511px;
+    background-position: calc(50vw - 893px) 0;
+  }
+  .teamwork1zJz {
+    background-image: url('../assets/image/company/business-philosophy/business-clients-bg.png');
+    background-size: 619px 507px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+  }
+  .grid178A {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 20px;
+    max-width: 1003.75px;
+    padding: 3.125rem 1.875rem;
+    margin: 0 auto;
+  }
+  .right3x0m .grid178A {
+    grid-template-columns: 490px 1fr;
+    justify-items: flex-end;
+  }
+  .left1x3n {
+    img {
+      border-radius: 10px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+      width: 320px;
+      margin-top: 0;
+      z-index: 2;
+    }
+  }
+  .right3x0m {
+    .heroImages1RTg {
+      .img2RPn {
+        right: 0;
+      }
+    }
+    .grid178A > *:first-child {
+      order: 2;
+    }
+    img {
+      border-radius: 4px;
+      background: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+      width: 600px;
+      margin-top: 40px;
+    }
+  }
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transform: translateY(5px);
+      transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+      will-change: opacity, transform;
+    }
+  }
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn[data-active] {
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.4s;
+    }
+  }
+  .buttonYAU- {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    font-weight: 550;
+    border-radius: 2px;
+    padding: 8px 14px;
+    transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+    display: inline-flex;
+  }
+  .buttonYAU-[data-appearance=''] {
+    color: #1988e0;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+  h1 {
+    font-size: 3.125rem;
+    line-height: 1.12;
+    font-weight: 600;
+    text-align: left;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 2.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.42;
+    font-weight: normal;
+  }
+  blockquote {
+    margin: 0px;
+    font-size: 1.1025rem;
+    line-height: 1.45;
+  }
+  .blob {
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 650px;
+      height: 650px;
+      background-image: url('../assets/image/company/business-philosophy/owal-business-bg.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      transform-origin: center center;
+    }
+    &.stacked {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+      &::before {
+        width: 300px;
+        height: 300px;
+        left: auto;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        transform: translate(40%, 30%);
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border: none;
+        &.pluses {
+          &:before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 0px;
+            width: 520px;
+            height: 300px;
+            background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: contain;
+            transform-origin: center center;
+            z-index: 1;
+            transform: translate(-20%, -40%);
+          }
+          .gray {
+            &:before {
+              background-image: url(https://d7jo6xr5g4bhv.cloudfront.net/assets/decorations/pluses_gray-3db7c8c577f19b56e4948d27c6107a45e0803fab2e655bd4b4500716f6c88e7e.svg);
+            }
+          }
+        }
+        .card-inner {
+          background-color: rgb(255, 255, 255);
+          background-clip: border-box;
+          border: none;
+          box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+          border-radius: 10px;
+          width: 380px;
+          padding: 30px 0px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 5;
+        }
+      }
+    }
+    &.first {
+      &.stacked {
+        &:before {
+          transform: translate(40%, -25%);
+        }
+        .card.pluses {
+          &:before {
+            transform: translate(-20%, 30%);
+          }
+        }
+      }
+    }
+
+    &.left {
+      &.stacked {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: row-reverse;
+
+        &:before {
+          transform: translate(-90%, 35%);
+        }
+        .card.pluses {
+          &:before {
+            transform: translate(35%, -40%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.bp-section-old {
+  .left1x3n.blob1U5Q {
+    background-position: 50vw 25px;
+  }
+
+
+
+  .left1x3n.blob1U5Q {
+    background-position: 50vw 25px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+    @media(max-width: 767px) {
+      max-width: 100%;
+      grid-template-columns: auto !important;
+      grid-template-rows: auto !important;
+    }
+  }
+  .intro2RCL {
+    .grid178A {
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      grid-template-columns: 475px 1fr;
+      @media(max-width: 767px) {
+        padding-top: 0;
+      }
+    }
+    .buttons1C0r {
+      padding: 9px 0;
+      a {
+        margin-right: 10px;
+      }
+    }
+    video {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 0 0 0.5px rgba(0,0,0,0.15), 0px 12px 24px 0px rgba(0,0,0,0.1), 0px 2px 4px 0px rgba(0,0,0,0.1);
+    }
+    img {
+      border-radius: 4px;
+      width: 600px;
+      margin-top: 100px;
+    }
+  }
+  .blob1U5Q {
+    background-repeat: no-repeat;
+  }
+  .glanceKYug {
+
+    background-size: 893px 511px;
+    background-position: calc(50vw - 893px) 0;
+  }
+  .teamwork1zJz {
+    background-image: url('../assets/image/company/business-philosophy/business-clients-bg.png');
+    background-size: 619px 507px;
+  }
+  .left1x3n .grid178A {
+    grid-template-columns: 450px 1fr;
+  }
+  .grid178A {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 20px;
+    max-width: 1003.75px;
+    padding: 3.125rem 1.875rem;
+    margin: 0 auto;
+  }
+  .business-content {
+    @media(max-width: 767px) {
+      order: 2;
+    }
+  }
+  .right3x0m .grid178A {
+    grid-template-columns: 490px 1fr;
+    justify-items: flex-end;
+  }
+  .left1x3n {
+    img {
+      border-radius: 10px;
+      /* background: white; */
+      /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; */
+      width: 400px;
+      margin-top: 0;
+      z-index: 2;
+      @media(max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .right3x0m {
+    .heroImages1RTg {
+      .img2RPn {
+        right: 0;
+      }
+    }
+    .grid178A > *:first-child {
+      order: 2;
+    }
+    img {
+      border-radius: 4px;
+      background: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+      width: 600px;
+      margin-top: 40px;
+    }
+  }
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transform: translateY(5px);
+      transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+      will-change: opacity, transform;
+    }
+  }
+  .heroImages1RTg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .img2RPn[data-active] {
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.4s;
+    }
+  }
+  .buttonYAU- {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 8px 14px;
+    transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+    display: inline-flex;
+  }
+  .buttonYAU-[data-appearance=''] {
+    color: #1988e0;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+  .buttonYAU-[data-appearance='primary'] {
+    background: #1988e0;
+    color: #fff;
+  }
+  h1 {
+    font-size: 3.125rem;
+    line-height: 1.12;
+    font-weight: 600;
+    text-align: left;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 2.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 10px;
+    @media(max-width: 767px) {
+      margin-top: 0;
+    }
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.42;
+    font-weight: normal;
+  }
+  blockquote {
+    margin: 0px;
+    font-size: 1.1025rem;
+    line-height: 1.45;
+  }
+  .blob {
+    .blob-img {
+      position: absolute;
+      content: "";
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: contain;
+      transform-origin: center center;
+      transform: translate(80%, 37%);
+      img {
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 650px;
+      height: 650px;
+      background-image: url('../assets/image/company/business-philosophy/owal-business-bg.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      transform-origin: center center;
+    }
+    &.stacked {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+      @media(max-width: 767px) {
+        width: 100%;
+      }
+      &::before {
+        width: 300px;
+        height: 300px;
+        left: auto;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        transform: translate(40%, 30%);
+        @media(max-width: 767px) {
+          content: none;
+        }
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border: none;
+        &.pluses {
+          .pluses-img {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 0px;
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: contain;
+            transform-origin: center center;
+            z-index: 1;
+            animation: 1s ease-out 0s 1 normal none running slideInFromLeft;
+            transform: translate(-35%, -55%);
+            img {
+              width: 100% !important;
+            }
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+          &:before {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 520px;
+            height: 300px;
+            background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: contain;
+            transform-origin: center center;
+            z-index: 1;
+            transform: translate(-20%, -40%);
+            @media(max-width: 767px) {
+              content: none;
+            }
+          }
+          .gray {
+            &:before {
+              background-image: url(https://d7jo6xr5g4bhv.cloudfront.net/assets/decorations/pluses_gray-3db7c8c577f19b56e4948d27c6107a45e0803fab2e655bd4b4500716f6c88e7e.svg);
+            }
+          }
+        }
+        .card-inner {
+          background-color: white;
+          background-clip: border-box;
+          border: none;
+          box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+          border-radius: 10px;
+          width: 420px;
+          height: 320px;
+          padding: 0 0px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 5;
+          @media(max-width: 767px) {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    &.first {
+      .blob-img {
+        transform: translate(80%, -43%);
+      }
+      &.stacked {
+        &:before {
+          transform: translate(40%, -50%);
+        }
+        .card.pluses {
+          .pluses-img {
+            transform: translate(-35%, 50%);
+          }
+          &:before {
+            transform: translate(-20%, 50%);
+          }
+        }
+      }
+    }
+
+    &.left {
+      .blob-img {
+        transform: translate(-40%, 42%);
+      }
+      &.stacked {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: row-reverse;
+        &:before {
+          transform: translate(-90%, 35%);
+        }
+        .card.pluses {
+          .pluses-img {
+            transform: translate(74%, -40%);
+          }
+          &:before {
+            transform: translate(35%, -40%);
+          }
+        }
+      }
+    }
+  }
+  .blob [data-aos-duration='300'] [data-aos='fade-left'] [data-aos-easing='ease-in-sine']{
+    transition-duration: 4000ms;
   }
 }

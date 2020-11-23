@@ -205,23 +205,7 @@
   }
 }
 
-.technology-partnership-page {
-  .technology-partnership-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url('../assets/image/technology-partnership/technology-partnership-banner.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    background-position: left;
-  }
-}
+
 
 .software-development-page {
   .software-development-title-bg {
@@ -241,32 +225,7 @@
   }
 }
 
-.dev-and-cloud-page {
-  .dev-and-cloud-title-bg {
-    background:
-            linear-gradient(
-                            rgba(0, 0, 0, 0.75),
-                            rgba(0, 0, 0, 0.75)
-            ),
-            url('../assets/image/dev-cloud/dev-cloud-banner.jpeg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    background-position: left;
-  }
-  .compare-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url('../assets/image/dev-cloud/dev-cloud-dev&cloud-bg.jpg');
-    background-position: center center;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -1;
-  }
-}
+
 
 .support-and-maintenance-page {
   .support-and-maintenance-title-bg {

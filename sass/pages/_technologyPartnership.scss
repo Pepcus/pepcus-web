@@ -1,0 +1,104 @@
+.technology-partnership-page {
+  .technology-partnership-title-bg {
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.75),
+                            rgba(0, 0, 0, 0.75)
+            ),
+            url('../assets/image/technology-partnership/technology-partnership-banner.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-position: left;
+  }
+  .technology-partnership__need-partner {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    color: #505050;
+    .technology-partnership__need-partner-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .technology-partnership__need-partner-heading {
+        h2 {
+          font-size: 36px;
+          line-height: 48px;
+          position: relative;
+          font-weight: 700;
+          margin: 0px;
+          margin-bottom: 20px;
+          margin-bottom: 30px;
+          @media (max-width: 767px) {
+            text-align: center;
+            font-size: 32px;
+          }
+        }
+        p {
+          display: inline-block;
+          max-width: 500px;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 30px;
+          @media (max-width: 767px) {
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        .technology-partnership__partner-column-left {
+          order: 2;
+        }
+      }
+      .technology-partnership__need-partner-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .technology-partnership__need-partner-img {
+          max-width: 1000px;
+          &.small-img {
+            max-width: 600px;
+          }
+          @media (max-width: 767px) {
+            max-width: 100%;
+            margin-bottom: 30px;
+            margin-top: 0;
+            &.small-img {
+              max-width: 100%;
+              margin-bottom: 30px;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        list-style: none;
+        padding-left: 47px;
+        position: relative;
+        margin-bottom: 24px;
+        &:after {
+          content: "\f00c";
+          font-family: 'Line Awesome Free';
+          font-weight: bold;
+          font-size: 22px;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &:before {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
+}
+

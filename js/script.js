@@ -227,7 +227,7 @@ $(document).ready(function(){
 $(function () {
   $("#footer-contact-action").click(function() {
     $('html,body').animate({
-        scrollTop: $("#smaller-contact-form").offset().top-50},
+        scrollTop: $("#smaller-contact-form-section").offset().top-80},
       1000);
   });
 });
