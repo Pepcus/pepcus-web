@@ -1887,6 +1887,11 @@ form {
   .statistics1__card .statistics1__card-col {
     position: relative;
     width: 20%; }
+    .statistics1__card .statistics1__card-col.statistics1__card-col__col-3 {
+      width: 33.33%; }
+      @media (max-width: 767px) {
+        .statistics1__card .statistics1__card-col.statistics1__card-col__col-3 {
+          width: 100%; } }
     .statistics1__card .statistics1__card-col .statistics1__card-item {
       font-weight: 300; }
       .statistics1__card .statistics1__card-col .statistics1__card-item .statistics1__card-number {
@@ -2059,6 +2064,8 @@ form {
     .cards9__card .cards9__card-text .cards9__card-description {
       font-size: 18px;
       line-height: 28px; }
+      .cards9__card .cards9__card-text .cards9__card-description p {
+        margin-top: 20px; }
       .cards9__card .cards9__card-text .cards9__card-description ul {
         margin-top: 30px; }
         .cards9__card .cards9__card-text .cards9__card-description ul li {
@@ -2080,6 +2087,52 @@ form {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center; }
+      .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style {
+        padding-top: 20px; }
+        .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style p {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 500; }
+        .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 auto; }
+          .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 21%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 26px;
+            color: #555;
+            border: 1px solid #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            transition: all .2s ease;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 40px; }
+            @media (max-width: 767px) {
+              .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column {
+                width: 42%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 10px; }
+                .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column:nth-child(even) {
+                  margin-left: 0; } }
+            .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column .cards9__card-description__tab-style-column__wrapper {
+              display: table;
+              width: 100%; }
+              .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column .cards9__card-description__tab-style-column__wrapper .cards9__card-description__tab-style-column__item {
+                display: table-row;
+                vertical-align: middle; }
+                .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column .cards9__card-description__tab-style-column__wrapper .cards9__card-description__tab-style-column__item h2 {
+                  font-size: 16px;
+                  line-height: 26px;
+                  text-align: center;
+                  font-width: 400; }
 
 .cards10__card {
   margin: 0 20px; }
@@ -2962,6 +3015,154 @@ form {
       width: 50px; }
   .loading.show {
     display: block; }
+
+.business-philosophy .business-philosophy__row {
+  background-position: 50vw 25px;
+  background-repeat: no-repeat; }
+  .business-philosophy .business-philosophy__row .business-philosophy__wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 20px;
+    max-width: 1003.75px;
+    padding: 3.125rem 1.875rem;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    grid-template-columns: 450px 1fr; }
+    @media (max-width: 767px) {
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper {
+        padding-top: 0;
+        max-width: 100%;
+        grid-template-columns: auto !important;
+        grid-template-rows: auto !important; } }
+    @media (max-width: 767px) {
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__wrapper-content {
+        order: 2; } }
+    .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__wrapper-content h2 {
+      margin-top: 30px;
+      font-size: 2.25rem;
+      line-height: 1.4;
+      font-weight: 400;
+      margin-top: 2em;
+      margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__wrapper-content h2 {
+          margin-top: 0; } }
+    .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__wrapper-content blockquote {
+      margin: 0px;
+      font-size: 1.1025rem;
+      line-height: 1.45; }
+    .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative; }
+      @media (max-width: 767px) {
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper {
+          width: 100%; } }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border: none; }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .business-philosophy__img-wrapper-card-img {
+          position: absolute;
+          content: "";
+          left: 0px;
+          top: 0px;
+          width: 300px;
+          height: 300px;
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+          background-size: contain;
+          transform-origin: center center;
+          z-index: 1;
+          animation: 1s ease-out 0s 1 normal none running slideInFromLeft;
+          transform: translate(-35%, -55%); }
+          .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .business-philosophy__img-wrapper-card-img img {
+            width: 100% !important; }
+          @media (max-width: 767px) {
+            .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .business-philosophy__img-wrapper-card-img {
+              display: none; } }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card:before {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 520px;
+          height: 300px;
+          background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+          background-size: contain;
+          transform-origin: center center;
+          z-index: 1;
+          transform: translate(-20%, -40%); }
+          @media (max-width: 767px) {
+            .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card:before {
+              content: none; } }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .card-inner {
+          background-color: white;
+          background-clip: border-box;
+          border: none;
+          box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+          border-radius: 10px;
+          width: 420px;
+          height: 320px;
+          padding: 0 0px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 5; }
+          @media (max-width: 767px) {
+            .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .card-inner {
+              width: 100%;
+              margin-bottom: 30px; } }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-container {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 0px;
+        width: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: contain;
+        transform-origin: center center;
+        transform: translate(80%, 37%); }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-container img {
+          border-radius: 10px;
+          width: 100%;
+          margin-top: 0;
+          z-index: 2; }
+        @media (max-width: 767px) {
+          .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper .business-philosophy__img-wrapper-container {
+            display: none; } }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.first .business-philosophy__img-wrapper-container {
+        transform: translate(80%, -43%); }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.first.business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .business-philosophy__img-wrapper-card-img {
+        transform: translate(-35%, 50%); }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.first.business-philosophy__img-wrapper .business-philosophy__img-wrapper-card:before {
+        transform: translate(-20%, 50%); }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.left .business-philosophy__img-wrapper-container {
+        transform: translate(-40%, 42%); }
+      .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.left.business-philosophy__img-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: row-reverse; }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.left.business-philosophy__img-wrapper .business-philosophy__img-wrapper-card .business-philosophy__img-wrapper-card-img {
+          transform: translate(74%, -40%); }
+        .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper.left.business-philosophy__img-wrapper .business-philosophy__img-wrapper-card:before {
+          transform: translate(35%, -40%); }
+    .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper [data-aos-duration='300'] [data-aos='fade-left'] [data-aos-easing='ease-in-sine'] {
+      transition-duration: 4000ms; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -4055,7 +4256,8 @@ canvas {
           transform: scale(1.1); }
     .team-page .team-members-row .team-members .team-member-name {
       font-weight: 700;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      text-transform: capitalize; }
     .team-page .team-members-row .team-members .designation {
       font-style: italic;
       display: block;
@@ -4198,7 +4400,8 @@ canvas {
           transform: scale(1.1); }
     .team-page .team-members-row .team-members-top-1 .team-member-name {
       font-weight: 700;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      text-transform: capitalize; }
     .team-page .team-members-row .team-members-top-1 .designation {
       font-style: italic;
       display: block;
@@ -4375,16 +4578,6 @@ canvas {
   top: 0;
   background-position: left; }
 
-.technology-partnership-page .technology-partnership-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/technology-partnership/technology-partnership-banner.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  position: absolute;
-  top: 0;
-  background-position: left; }
-
 .software-development-page .software-development-title-bg {
   background-size: cover;
   height: 100%;
@@ -4393,25 +4586,6 @@ canvas {
   position: absolute;
   top: 0;
   background-position: left; }
-
-.dev-and-cloud-page .dev-and-cloud-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/dev-cloud/dev-cloud-banner.jpeg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  position: absolute;
-  top: 0;
-  background-position: left; }
-
-.dev-and-cloud-page .compare-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url("../assets/image/dev-cloud/dev-cloud-dev&cloud-bg.jpg");
-  background-position: center center;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: -1; }
 
 .support-and-maintenance-page .support-and-maintenance-title-bg {
   background-size: cover;
@@ -4848,7 +5022,7 @@ canvas {
     background: #686868 !important; }
 
 .enterprise-software-page .enterprise-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/enterprise-software-development/enterprise-software-development.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/enterprise-software-development/enterprise-software-development.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -6570,6 +6744,20 @@ canvas {
               @media (max-width: 767px) {
                 .las-container .las-container-inner .las-container-inner__row .las-container-inner__column .las-container-inner__column-inner .las-container-inner__image-container img {
                   max-width: 90%; } }
+            .las-container .las-container-inner .las-container-inner__row .las-container-inner__column .las-container-inner__column-inner .las-container-inner__image-container .overlay-img {
+              position: absolute;
+              bottom: 70;
+              right: 0;
+              background: #fff;
+              width: 400px;
+              border-radius: 10px;
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .las-container .las-container-inner .las-container-inner__row .las-container-inner__column .las-container-inner__column-inner .las-container-inner__image-container .overlay-img.right {
+                left: 0;
+                right: auto; }
           .las-container .las-container-inner .las-container-inner__row .las-container-inner__column .las-container-inner__column-inner .las-container-inner__content {
             width: 100%;
             max-width: 450px;
@@ -6596,6 +6784,703 @@ canvas {
                 .las-container .las-container-inner .las-container-inner__row .las-container-inner__column .las-container-inner__column-inner .las-container-inner__content .las-container-inner__content-body {
                   margin-top: 20px;
                   font-size: 17px; } }
+
+.business-philosophy-section .left1x3n.blob1U5Q {
+  background-position: 50vw 25px; }
+
+.business-philosophy-section .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+
+.business-philosophy-section .intro2RCL {
+  background-image: url("../assets/image/company/business-philosophy/itsbusiness-bg.png");
+  background-size: 731px 550px; }
+  .business-philosophy-section .intro2RCL .grid178A {
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    grid-template-columns: 475px 1fr; }
+  .business-philosophy-section .intro2RCL .buttons1C0r {
+    padding: 9px 0; }
+    .business-philosophy-section .intro2RCL .buttons1C0r a {
+      margin-right: 10px; }
+  .business-philosophy-section .intro2RCL video {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1); }
+  .business-philosophy-section .intro2RCL img {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin-top: 100px; }
+
+.business-philosophy-section .blob1U5Q {
+  background-repeat: no-repeat; }
+
+.business-philosophy-section .glanceKYug {
+  background-image: url("../assets/image/company/business-philosophy/business-value-bg.png");
+  background-size: 893px 511px;
+  background-position: calc(50vw - 893px) 0; }
+
+.business-philosophy-section .teamwork1zJz {
+  background-image: url("../assets/image/company/business-philosophy/business-clients-bg.png");
+  background-size: 619px 507px; }
+
+.business-philosophy-section .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+
+.business-philosophy-section .grid178A {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+  grid-row-gap: 20px;
+  max-width: 1003.75px;
+  padding: 3.125rem 1.875rem;
+  margin: 0 auto; }
+
+.business-philosophy-section .right3x0m .grid178A {
+  grid-template-columns: 490px 1fr;
+  justify-items: flex-end; }
+
+.business-philosophy-section .left1x3n img {
+  border-radius: 4px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  width: 600px;
+  margin-top: 40px; }
+
+.business-philosophy-section .right3x0m .heroImages1RTg .img2RPn {
+  right: 0; }
+
+.business-philosophy-section .right3x0m .grid178A > *:first-child {
+  order: 2; }
+
+.business-philosophy-section .right3x0m img {
+  border-radius: 4px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  width: 600px;
+  margin-top: 40px; }
+
+.business-philosophy-section .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .business-philosophy-section .heroImages1RTg .img2RPn {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(5px);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    will-change: opacity, transform; }
+
+.business-philosophy-section .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .business-philosophy-section .heroImages1RTg .img2RPn[data-active] {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 0.4s; }
+
+.business-philosophy-section .buttonYAU- {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  font-weight: 550;
+  border-radius: 2px;
+  padding: 8px 14px;
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+  display: inline-flex; }
+
+.business-philosophy-section .buttonYAU-[data-appearance=''] {
+  color: #1988e0; }
+
+.business-philosophy-section .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.business-philosophy-section .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.business-philosophy-section h1 {
+  font-size: 3.125rem;
+  line-height: 1.12;
+  font-weight: 600;
+  text-align: left; }
+
+.business-philosophy-section h2 {
+  margin-top: 30px;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 10px; }
+
+.business-philosophy-section h4 {
+  font-size: 1.5rem;
+  line-height: 1.42;
+  font-weight: normal; }
+
+.business-philosophy-section blockquote {
+  margin: 0px;
+  font-size: 1.1025rem;
+  line-height: 1.45; }
+
+.business-philosophy-section1 .left1x3n.blob1U5Q {
+  background-position: 50vw 25px; }
+
+.business-philosophy-section1 .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+
+.business-philosophy-section1 .intro2RCL .grid178A {
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  grid-template-columns: 475px 1fr; }
+
+.business-philosophy-section1 .intro2RCL .buttons1C0r {
+  padding: 9px 0; }
+  .business-philosophy-section1 .intro2RCL .buttons1C0r a {
+    margin-right: 10px; }
+
+.business-philosophy-section1 .intro2RCL video {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1); }
+
+.business-philosophy-section1 .intro2RCL img {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin-top: 100px; }
+
+.business-philosophy-section1 .blob1U5Q {
+  background-repeat: no-repeat; }
+
+.business-philosophy-section1 .glanceKYug {
+  background-size: 893px 511px;
+  background-position: calc(50vw - 893px) 0; }
+
+.business-philosophy-section1 .teamwork1zJz {
+  background-image: url("../assets/image/company/business-philosophy/business-clients-bg.png");
+  background-size: 619px 507px; }
+
+.business-philosophy-section1 .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+
+.business-philosophy-section1 .grid178A {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+  grid-row-gap: 20px;
+  max-width: 1003.75px;
+  padding: 3.125rem 1.875rem;
+  margin: 0 auto; }
+
+.business-philosophy-section1 .right3x0m .grid178A {
+  grid-template-columns: 490px 1fr;
+  justify-items: flex-end; }
+
+.business-philosophy-section1 .left1x3n img {
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  width: 320px;
+  margin-top: 0;
+  z-index: 2; }
+
+.business-philosophy-section1 .right3x0m .heroImages1RTg .img2RPn {
+  right: 0; }
+
+.business-philosophy-section1 .right3x0m .grid178A > *:first-child {
+  order: 2; }
+
+.business-philosophy-section1 .right3x0m img {
+  border-radius: 4px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  width: 600px;
+  margin-top: 40px; }
+
+.business-philosophy-section1 .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .business-philosophy-section1 .heroImages1RTg .img2RPn {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(5px);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    will-change: opacity, transform; }
+
+.business-philosophy-section1 .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .business-philosophy-section1 .heroImages1RTg .img2RPn[data-active] {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 0.4s; }
+
+.business-philosophy-section1 .buttonYAU- {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  font-weight: 550;
+  border-radius: 2px;
+  padding: 8px 14px;
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+  display: inline-flex; }
+
+.business-philosophy-section1 .buttonYAU-[data-appearance=''] {
+  color: #1988e0; }
+
+.business-philosophy-section1 .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.business-philosophy-section1 .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.business-philosophy-section1 h1 {
+  font-size: 3.125rem;
+  line-height: 1.12;
+  font-weight: 600;
+  text-align: left; }
+
+.business-philosophy-section1 h2 {
+  margin-top: 30px;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 10px; }
+
+.business-philosophy-section1 h4 {
+  font-size: 1.5rem;
+  line-height: 1.42;
+  font-weight: normal; }
+
+.business-philosophy-section1 blockquote {
+  margin: 0px;
+  font-size: 1.1025rem;
+  line-height: 1.45; }
+
+.business-philosophy-section1 .blob:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 650px;
+  height: 650px;
+  background-image: url("../assets/image/company/business-philosophy/owal-business-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  transform-origin: center center; }
+
+.business-philosophy-section1 .blob.stacked {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative; }
+  .business-philosophy-section1 .blob.stacked::before {
+    width: 300px;
+    height: 300px;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(40%, 30%); }
+  .business-philosophy-section1 .blob.stacked .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: none; }
+    .business-philosophy-section1 .blob.stacked .card.pluses:before {
+      position: absolute;
+      content: "";
+      left: 0px;
+      top: 0px;
+      width: 520px;
+      height: 300px;
+      background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: contain;
+      transform-origin: center center;
+      z-index: 1;
+      transform: translate(-20%, -40%); }
+    .business-philosophy-section1 .blob.stacked .card.pluses .gray:before {
+      background-image: url(https://d7jo6xr5g4bhv.cloudfront.net/assets/decorations/pluses_gray-3db7c8c577f19b56e4948d27c6107a45e0803fab2e655bd4b4500716f6c88e7e.svg); }
+    .business-philosophy-section1 .blob.stacked .card .card-inner {
+      background-color: white;
+      background-clip: border-box;
+      border: none;
+      box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+      border-radius: 10px;
+      width: 380px;
+      padding: 30px 0px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5; }
+
+.business-philosophy-section1 .blob.first.stacked:before {
+  transform: translate(40%, -25%); }
+
+.business-philosophy-section1 .blob.first.stacked .card.pluses:before {
+  transform: translate(-20%, 30%); }
+
+.business-philosophy-section1 .blob.left.stacked {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  flex-direction: row-reverse; }
+  .business-philosophy-section1 .blob.left.stacked:before {
+    transform: translate(-90%, 35%); }
+  .business-philosophy-section1 .blob.left.stacked .card.pluses:before {
+    transform: translate(35%, -40%); }
+
+.bp-section-old .left1x3n.blob1U5Q {
+  background-position: 50vw 25px; }
+
+.bp-section-old .left1x3n.blob1U5Q {
+  background-position: 50vw 25px; }
+
+.bp-section-old .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+  @media (max-width: 767px) {
+    .bp-section-old .left1x3n .grid178A {
+      max-width: 100%;
+      grid-template-columns: auto !important;
+      grid-template-rows: auto !important; } }
+
+.bp-section-old .intro2RCL .grid178A {
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  grid-template-columns: 475px 1fr; }
+  @media (max-width: 767px) {
+    .bp-section-old .intro2RCL .grid178A {
+      padding-top: 0; } }
+
+.bp-section-old .intro2RCL .buttons1C0r {
+  padding: 9px 0; }
+  .bp-section-old .intro2RCL .buttons1C0r a {
+    margin-right: 10px; }
+
+.bp-section-old .intro2RCL video {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.15), 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.1); }
+
+.bp-section-old .intro2RCL img {
+  border-radius: 4px;
+  width: 600px;
+  margin-top: 100px; }
+
+.bp-section-old .blob1U5Q {
+  background-repeat: no-repeat; }
+
+.bp-section-old .glanceKYug {
+  background-size: 893px 511px;
+  background-position: calc(50vw - 893px) 0; }
+
+.bp-section-old .teamwork1zJz {
+  background-image: url("../assets/image/company/business-philosophy/business-clients-bg.png");
+  background-size: 619px 507px; }
+
+.bp-section-old .left1x3n .grid178A {
+  grid-template-columns: 450px 1fr; }
+
+.bp-section-old .grid178A {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+  grid-row-gap: 20px;
+  max-width: 1003.75px;
+  padding: 3.125rem 1.875rem;
+  margin: 0 auto; }
+
+@media (max-width: 767px) {
+  .bp-section-old .business-content {
+    order: 2; } }
+
+.bp-section-old .right3x0m .grid178A {
+  grid-template-columns: 490px 1fr;
+  justify-items: flex-end; }
+
+.bp-section-old .left1x3n img {
+  border-radius: 10px;
+  /* background: white; */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; */
+  width: 400px;
+  margin-top: 0;
+  z-index: 2; }
+  @media (max-width: 767px) {
+    .bp-section-old .left1x3n img {
+      width: 100%; } }
+
+.bp-section-old .right3x0m .heroImages1RTg .img2RPn {
+  right: 0; }
+
+.bp-section-old .right3x0m .grid178A > *:first-child {
+  order: 2; }
+
+.bp-section-old .right3x0m img {
+  border-radius: 4px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 12px 24px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  width: 600px;
+  margin-top: 40px; }
+
+.bp-section-old .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .bp-section-old .heroImages1RTg .img2RPn {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(5px);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    will-change: opacity, transform; }
+
+.bp-section-old .heroImages1RTg {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .bp-section-old .heroImages1RTg .img2RPn[data-active] {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 0.4s; }
+
+.bp-section-old .buttonYAU- {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 14px;
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+  display: inline-flex; }
+
+.bp-section-old .buttonYAU-[data-appearance=''] {
+  color: #1988e0; }
+
+.bp-section-old .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.bp-section-old .buttonYAU-[data-appearance='primary'] {
+  background: #1988e0;
+  color: #fff; }
+
+.bp-section-old h1 {
+  font-size: 3.125rem;
+  line-height: 1.12;
+  font-weight: 600;
+  text-align: left; }
+
+.bp-section-old h2 {
+  margin-top: 30px;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .bp-section-old h2 {
+      margin-top: 0; } }
+
+.bp-section-old h4 {
+  font-size: 1.5rem;
+  line-height: 1.42;
+  font-weight: normal; }
+
+.bp-section-old blockquote {
+  margin: 0px;
+  font-size: 1.1025rem;
+  line-height: 1.45; }
+
+.bp-section-old .blob .blob-img {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  transform-origin: center center;
+  transform: translate(80%, 37%); }
+  .bp-section-old .blob .blob-img img {
+    width: 100%; }
+  @media (max-width: 767px) {
+    .bp-section-old .blob .blob-img {
+      display: none; } }
+
+.bp-section-old .blob:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 650px;
+  height: 650px;
+  background-image: url("../assets/image/company/business-philosophy/owal-business-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  transform-origin: center center; }
+
+.bp-section-old .blob.stacked {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative; }
+  @media (max-width: 767px) {
+    .bp-section-old .blob.stacked {
+      width: 100%; } }
+  .bp-section-old .blob.stacked::before {
+    width: 300px;
+    height: 300px;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(40%, 30%); }
+    @media (max-width: 767px) {
+      .bp-section-old .blob.stacked::before {
+        content: none; } }
+  .bp-section-old .blob.stacked .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: none; }
+    .bp-section-old .blob.stacked .card.pluses .pluses-img {
+      position: absolute;
+      content: "";
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: contain;
+      transform-origin: center center;
+      z-index: 1;
+      animation: 1s ease-out 0s 1 normal none running slideInFromLeft;
+      transform: translate(-35%, -55%); }
+      .bp-section-old .blob.stacked .card.pluses .pluses-img img {
+        width: 100% !important; }
+      @media (max-width: 767px) {
+        .bp-section-old .blob.stacked .card.pluses .pluses-img {
+          display: none; } }
+    .bp-section-old .blob.stacked .card.pluses:before {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 520px;
+      height: 300px;
+      background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: contain;
+      transform-origin: center center;
+      z-index: 1;
+      transform: translate(-20%, -40%); }
+      @media (max-width: 767px) {
+        .bp-section-old .blob.stacked .card.pluses:before {
+          content: none; } }
+    .bp-section-old .blob.stacked .card.pluses .gray:before {
+      background-image: url(https://d7jo6xr5g4bhv.cloudfront.net/assets/decorations/pluses_gray-3db7c8c577f19b56e4948d27c6107a45e0803fab2e655bd4b4500716f6c88e7e.svg); }
+    .bp-section-old .blob.stacked .card .card-inner {
+      background-color: white;
+      background-clip: border-box;
+      border: none;
+      box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+      border-radius: 10px;
+      width: 420px;
+      height: 320px;
+      padding: 0 0px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5; }
+      @media (max-width: 767px) {
+        .bp-section-old .blob.stacked .card .card-inner {
+          width: 100%;
+          margin-bottom: 30px; } }
+
+.bp-section-old .blob.first .blob-img {
+  transform: translate(80%, -43%); }
+
+.bp-section-old .blob.first.stacked:before {
+  transform: translate(40%, -50%); }
+
+.bp-section-old .blob.first.stacked .card.pluses .pluses-img {
+  transform: translate(-35%, 50%); }
+
+.bp-section-old .blob.first.stacked .card.pluses:before {
+  transform: translate(-20%, 50%); }
+
+.bp-section-old .blob.left .blob-img {
+  transform: translate(-40%, 42%); }
+
+.bp-section-old .blob.left.stacked {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  flex-direction: row-reverse; }
+  .bp-section-old .blob.left.stacked:before {
+    transform: translate(-90%, 35%); }
+  .bp-section-old .blob.left.stacked .card.pluses .pluses-img {
+    transform: translate(74%, -40%); }
+  .bp-section-old .blob.left.stacked .card.pluses:before {
+    transform: translate(35%, -40%); }
+
+.bp-section-old .blob [data-aos-duration='300'] [data-aos='fade-left'] [data-aos-easing='ease-in-sine'] {
+  transition-duration: 4000ms; }
 
 .qa-test-page .qa-test-title-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/qa-and-testing/qa-test-banner.jpeg");
@@ -6689,3 +7574,571 @@ canvas {
         line-height: 36px !important; } }
   .qa-test-page .qa-quality-experts .cards13__card-heading:after {
     background-image: url(data:image/png;base64,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) !important; }
+
+.dev-and-cloud-page .dev-and-cloud-title-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/dev-cloud/dev-cloud-banner.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  background-position: left; }
+
+.dev-and-cloud-page .dev-and-cloud-page__image-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .dev-and-cloud-page .dev-and-cloud-page__image-container img {
+    width: 600px;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page .dev-and-cloud-page__image-container img {
+        width: 100%; } }
+
+.dev-and-cloud-page .compare-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0)), url("../assets/image/dev-cloud/dev-cloud-dev&cloud-bg.jpg");
+  background-position: center center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1; }
+
+.dev-and-cloud-page .dev-and-cloud-page__statistics .section-title strong {
+  text-transform: capitalize; }
+
+.dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-col {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 767px) {
+    .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-col {
+      min-height: 60px;
+      margin-top: 30px; }
+      .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-col:first-child {
+        margin-top: 0; } }
+  .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-col:after {
+    left: -2px; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-col:after {
+        left: 50%;
+        top: -15px; } }
+
+.dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-item .statistics1__card-number {
+  font-size: 26px;
+  line-height: 50px;
+  white-space: normal;
+  letter-spacing: unset; }
+  @media (max-width: 767px) {
+    .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-item .statistics1__card-number {
+      font-size: 22px;
+      line-height: 40px; } }
+  .dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-item .statistics1__card-number > svg {
+    width: 150px;
+    fill: #fff; }
+
+.dev-and-cloud-page .dev-and-cloud-page__statistics .statistics1__card-item .statistics1__card-description {
+  font-size: 18px;
+  font-weight: 500;
+  display: none; }
+
+.dev-and-cloud-page .dev-and-cloud-page__capabilities {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/image/devandcloud/cloud-capabilities-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  top: 0;
+  background-position: left; }
+  .dev-and-cloud-page .dev-and-cloud-page__capabilities .section-title h2 {
+    color: #fff; }
+  .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row {
+        width: 100%; } }
+    .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 21%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 26px;
+      color: #fff;
+      border: 1px solid #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all .2s ease;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-bottom: 40px; }
+      @media (max-width: 767px) {
+        .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column {
+          width: 42%;
+          margin-left: 5%;
+          margin-right: 5%; }
+          .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column:nth-child(even) {
+            margin-left: 0; } }
+      .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column:hover {
+        border: 1px solid rgba(255, 255, 255, 0.4); }
+      .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column .dev-and-cloud-page__capabilities__column-wrapper {
+        display: table;
+        width: 100%; }
+        .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column .dev-and-cloud-page__capabilities__column-wrapper .dev-and-cloud-page__capabilities__column-wrapper-item {
+          display: table-row;
+          vertical-align: middle; }
+          .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column .dev-and-cloud-page__capabilities__column-wrapper .dev-and-cloud-page__capabilities__column-wrapper-item h2 {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            font-width: 400; }
+            @media (max-width: 767px) {
+              .dev-and-cloud-page .dev-and-cloud-page__capabilities .dev-and-cloud-page__capabilities__row .dev-and-cloud-page__capabilities__column .dev-and-cloud-page__capabilities__column-wrapper .dev-and-cloud-page__capabilities__column-wrapper-item h2 {
+                font-size: 14px; } }
+
+.software-logos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media (max-width: 767px) {
+    .software-logos {
+      padding: 20px 0 40px; } }
+  .software-logos .software-logos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 80px; }
+    @media (max-width: 767px) {
+      .software-logos .software-logos__wrapper {
+        width: 100%;
+        margin-top: 20px; } }
+    .software-logos .software-logos__wrapper .software-logos__item {
+      margin: 0 15px 30px;
+      padding: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(50% - 30px);
+      max-width: calc(50% - 30px);
+      min-width: calc(50% - 30px); }
+      @media (max-width: 767px) {
+        .software-logos .software-logos__wrapper .software-logos__item {
+          padding: 10px;
+          margin: 0 10px 10px;
+          width: calc(50% - 20px);
+          max-width: calc(50% - 20px);
+          min-width: calc(50% - 20px); } }
+      .software-logos .software-logos__wrapper .software-logos__item img {
+        margin: 0;
+        display: block;
+        max-width: 100%; }
+
+.info-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.dev-and-cloud-page__expert-devOps {
+  background: linear-gradient(45deg, #e31e24 0%, #b32c30 100%);
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  z-index: 1; }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__heading h2 {
+    font-size: 36px;
+    line-height: 48px;
+    position: relative;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__heading h2 {
+        text-align: center;
+        font-size: 32px; } }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__heading p {
+    display: inline-block;
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__heading p {
+        text-align: center;
+        font-size: 18px; } }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__row .dev-and-cloud-page__expert-devOps__column-left {
+        order: 2; } }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__row .dev-and-cloud-page__expert-devOps__img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .dev-and-cloud-page__expert-devOps ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 150px;
+    text-align: right; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps ul {
+        margin-left: 80px;
+        text-align: left;
+        margin-right: 0; } }
+    .dev-and-cloud-page__expert-devOps ul li {
+      font-weight: 400;
+      margin-bottom: 2.7em;
+      position: relative; }
+      @media (max-width: 767px) {
+        .dev-and-cloud-page__expert-devOps ul li {
+          font-weight: 500;
+          margin-bottom: 1.2em;
+          font-size: 16px;
+          color: #fff; } }
+      .dev-and-cloud-page__expert-devOps ul li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin: -11px 0 0 20px;
+        width: 20px;
+        height: 20px;
+        background-image: url(data:image/png;base64,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) !important;
+        background-size: 20px 20px; }
+        @media (max-width: 767px) {
+          .dev-and-cloud-page__expert-devOps ul li:before {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            margin: -10px 0 0 -30px;
+            left: 0; } }
+      .dev-and-cloud-page__expert-devOps ul li::after {
+        margin: -1px 0 0 40px;
+        width: 70px;
+        height: 1px;
+        border: 1px solid #ebebeb;
+        display: block;
+        position: absolute;
+        left: 100%;
+        top: 50%; }
+        @media (min-width: 767px) {
+          .dev-and-cloud-page__expert-devOps ul li::after {
+            content: ""; } }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    position: relative; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img {
+        display: none; } }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img > div {
+      width: 800px;
+      position: relative;
+      bottom: 30px;
+      left: 15px; }
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img > div img {
+        max-width: 100%;
+        width: 500px;
+        height: auto; }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img .flex-break {
+      flex-basis: 100%;
+      width: 0px;
+      height: 0px;
+      overflow: hidden; }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    position: relative; }
+    @media (min-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos {
+        display: none !important; } }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos > div {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      overflow: hidden;
+      border-radius: 100%;
+      background-color: #fff;
+      transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 7px 15px rgba(0, 9, 128, 0.05), 0 12px 28px rgba(0, 9, 128, 0.075); }
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos > div:hover {
+        box-shadow: 0 12px 22px rgba(0, 9, 128, 0.05), 0 20px 36px rgba(0, 9, 128, 0.075);
+        transform: scale(1.1); }
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos > div img {
+        max-width: 70%;
+        width: 70%;
+        height: auto; }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .flex-break {
+      flex-basis: 100%;
+      width: 0px;
+      height: 0px;
+      overflow: hidden; }
+  .dev-and-cloud-page__expert-devOps.bg-light {
+    background: #fff;
+    color: #505050; }
+    .dev-and-cloud-page__expert-devOps.bg-light ul li:after {
+      color: #505050; }
+  .dev-and-cloud-page__expert-devOps .round-pulse {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+    .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1; }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse > div {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 100%;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 221, 246, 0.1)), color-stop(65%, rgba(227, 221, 246, 0.2)), to(rgba(227, 221, 246, 0.1)));
+        background-image: -webkit-linear-gradient(top, rgba(227, 221, 246, 0.1) 0, rgba(227, 221, 246, 0.2) 65%, rgba(227, 221, 246, 0.1) 100%);
+        background-image: -o-linear-gradient(top, rgba(227, 221, 246, 0.1) 0, rgba(227, 221, 246, 0.2) 65%, rgba(227, 221, 246, 0.1) 100%);
+        background-image: linear-gradient(-180deg, rgba(227, 221, 246, 0.1) 0, rgba(227, 221, 246, 0.2) 65%, rgba(227, 221, 246, 0.1) 100%);
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse .pulse-1 {
+        -webkit-transform: translate(-50%, -50%) scale(0.67);
+        -ms-transform: translate(-50%, -50%) scale(0.67);
+        transform: translate(-50%, -50%) scale(0.67); }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse .pulse-2 {
+        -webkit-transform: translate(-50%, -50%) scale(1.05);
+        -ms-transform: translate(-50%, -50%) scale(1.05);
+        transform: translate(-50%, -50%) scale(1.05); }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse .pulse-3 {
+        -webkit-transform: translate(-50%, -50%) scale(1.63);
+        -ms-transform: translate(-50%, -50%) scale(1.63);
+        transform: translate(-50%, -50%) scale(1.63); }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse .pulse-4 {
+        -webkit-transform: translate(-50%, -50%) scale(2.1);
+        -ms-transform: translate(-50%, -50%) scale(2.1);
+        transform: translate(-50%, -50%) scale(2.1); }
+      .dev-and-cloud-page__expert-devOps .round-pulse .logo-pulse .pulse-expand {
+        will-change: transform;
+        -webkit-animation: pulse 3s infinite;
+        animation: pulse 3s infinite; }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img {
+    max-width: 1000px; }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img.small-img {
+      max-width: 600px; }
+    @media (max-width: 767px) {
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img {
+        max-width: 100%;
+        margin-bottom: 30px;
+        margin-top: 0; }
+        .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__img.small-img {
+          max-width: 100%;
+          margin-bottom: 30px;
+          margin-top: 0; } }
+  .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos {
+    position: relative;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row {
+      padding-right: 60px;
+      margin-bottom: -30px;
+      margin-top: 30px; }
+      @media (max-width: 767px) {
+        .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row {
+          padding-right: 0;
+          display: flex; } }
+      .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row .dev-and-cloud-page__expert-devOps-logos__column {
+        margin-bottom: 30px; }
+        .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row .dev-and-cloud-page__expert-devOps-logos__column a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          background-color: #e8e8e8;
+          -webkit-box-shadow: 0 4px 5px 0 rgba(29, 7, 90, 0.06);
+          box-shadow: 0 4px 5px 0 rgba(29, 7, 90, 0.06);
+          padding: 15px 10px;
+          box-shadow: none;
+          text-decoration: none;
+          -webkit-transition: all .3s linear;
+          -o-transition: all .3s linear;
+          transition: all .3s linear;
+          border-radius: 5px; }
+          @media (max-width: 767px) {
+            .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row .dev-and-cloud-page__expert-devOps-logos__column a {
+              padding: 10px 5px; } }
+          .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row .dev-and-cloud-page__expert-devOps-logos__column a:hover {
+            -webkit-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            transform: scale(1.03);
+            text-decoration: none;
+            outline: 0; }
+          .dev-and-cloud-page__expert-devOps .dev-and-cloud-page__expert-devOps__logos .dev-and-cloud-page__expert-devOps-logos__row .dev-and-cloud-page__expert-devOps-logos__column a img {
+            width: 100%; }
+
+.dev-and-cloud__card-row {
+  margin-top: 74px;
+  display: flex;
+  flex-wrap: wrap; }
+  .dev-and-cloud__card-row .dev-and-cloud__card-item {
+    width: 20%;
+    position: relative; }
+    .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper .dev-and-cloud__card-icon {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px; }
+        .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper .dev-and-cloud__card-icon img {
+          width: 80px; }
+          @media (max-width: 767px) {
+            .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper .dev-and-cloud__card-icon img {
+              width: 40px; } }
+      .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper .dev-and-cloud__card-name h4 {
+        font-weight: 600;
+        font-size: 15px; }
+        @media (max-width: 767px) {
+          .dev-and-cloud__card-row .dev-and-cloud__card-item .dev-and-cloud__card-wrapper .dev-and-cloud__card-name h4 {
+            font-size: 14px; } }
+    .dev-and-cloud__card-row .dev-and-cloud__card-item:first-child:before {
+      content: none; }
+    .dev-and-cloud__card-row .dev-and-cloud__card-item:before {
+      content: "\f30b";
+      font-family: 'Line Awesome Free';
+      font-weight: bold;
+      font-size: 30px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #555;
+      top: 30%; }
+      @media (max-width: 767px) {
+        .dev-and-cloud__card-row .dev-and-cloud__card-item:before {
+          top: 10%;
+          font-size: 20px;
+          left: -15px; } }
+
+.technology-partnership-page .technology-partnership-title-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/image/technology-partnership/technology-partnership-banner.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  background-position: left; }
+
+.technology-partnership-page .technology-partnership__need-partner {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  color: #505050; }
+  .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-heading h2 {
+      font-size: 36px;
+      line-height: 48px;
+      position: relative;
+      font-weight: 700;
+      margin: 0px;
+      margin-bottom: 20px;
+      margin-bottom: 30px; }
+      @media (max-width: 767px) {
+        .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-heading h2 {
+          text-align: center;
+          font-size: 32px; } }
+    .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-heading p {
+      display: inline-block;
+      max-width: 500px;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 30px; }
+      @media (max-width: 767px) {
+        .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-heading p {
+          text-align: center;
+          font-size: 18px; } }
+    @media (max-width: 767px) {
+      .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__partner-column-left {
+        order: 2; } }
+    .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-img-container .technology-partnership__need-partner-img {
+        max-width: 1000px; }
+        .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-img-container .technology-partnership__need-partner-img.small-img {
+          max-width: 600px; }
+        @media (max-width: 767px) {
+          .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-img-container .technology-partnership__need-partner-img {
+            max-width: 100%;
+            margin-bottom: 30px;
+            margin-top: 0; }
+            .technology-partnership-page .technology-partnership__need-partner .technology-partnership__need-partner-row .technology-partnership__need-partner-img-container .technology-partnership__need-partner-img.small-img {
+              max-width: 100%;
+              margin-bottom: 30px;
+              margin-top: 0; } }
+  .technology-partnership-page .technology-partnership__need-partner ul li {
+    list-style: none;
+    padding-left: 47px;
+    position: relative;
+    margin-bottom: 24px; }
+    .technology-partnership-page .technology-partnership__need-partner ul li:after {
+      content: "\f00c";
+      font-family: 'Line Awesome Free';
+      font-weight: bold;
+      font-size: 22px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .technology-partnership-page .technology-partnership__need-partner ul li:before {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }

@@ -808,6 +808,12 @@ form {
   .statistics1__card-col {
     position: relative;
     width: 20%;
+    &.statistics1__card-col__col-3 {
+      width: 33.33%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
     .statistics1__card-item {
       font-weight: 300;
       .statistics1__card-number {
@@ -1011,6 +1017,9 @@ form {
     .cards9__card-description {
       font-size: 18px;
       line-height: 28px;
+      p {
+        margin-top: 20px;
+      }
       ul {
         margin-top: 30px;
         li {
@@ -1033,6 +1042,60 @@ form {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
+          }
+        }
+      }
+      .cards9__card-description__tab-style {
+        padding-top: 20px;
+        p {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+        .cards9__card-description__tab-style-row {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 auto;
+          .cards9__card-description__tab-style-column {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 21%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 26px;
+            color: #555;
+            border: 1px solid #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            transition: all .2s ease;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 40px;
+            @media(max-width: 767px) {
+              width: 42%;
+              margin-left: 5%;
+              margin-right: 5%;
+              margin-bottom: 10px;
+              &:nth-child(even) {
+                margin-left: 0;
+              }
+            }
+            .cards9__card-description__tab-style-column__wrapper {
+              display: table;
+              width: 100%;
+              .cards9__card-description__tab-style-column__item {
+                display: table-row;
+                vertical-align: middle;
+                h2 {
+                  font-size: 16px;
+                  line-height: 26px;
+                  text-align: center;
+                  font-width: 400;
+                }
+              }
+            }
           }
         }
       }
@@ -2146,5 +2209,187 @@ form {
   }
   &.show {
     display: block;
+  }
+}
+
+.business-philosophy {
+  .business-philosophy__row {
+    background-position: 50vw 25px;
+    background-repeat: no-repeat;
+    .business-philosophy__wrapper {
+      display: grid;
+      grid-template-rows: auto;
+      grid-column-gap: 75px;
+      grid-row-gap: 20px;
+      max-width: 1003.75px;
+      padding: 3.125rem 1.875rem;
+      margin: 0 auto;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      grid-template-columns: 450px 1fr;
+      @media(max-width: 767px) {
+        padding-top: 0;
+        max-width: 100%;
+        grid-template-columns: auto !important;
+        grid-template-rows: auto !important;
+      }
+      .business-philosophy__wrapper-content {
+        @media(max-width: 767px) {
+          order: 2;
+        }
+        h2 {
+          margin-top: 30px;
+          font-size: 2.25rem;
+          line-height: 1.4;
+          font-weight: 400;
+          margin-top: 2em;
+          margin-bottom: 10px;
+          @media(max-width: 767px) {
+            margin-top: 0;
+          }
+        }
+        blockquote {
+          margin: 0px;
+          font-size: 1.1025rem;
+          line-height: 1.45;
+        }
+      }
+      .business-philosophy__img-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        @media(max-width: 767px) {
+          width: 100%;
+        }
+        .business-philosophy__img-wrapper-card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-clip: border-box;
+          border: none;
+          .business-philosophy__img-wrapper-card-img {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 0px;
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: contain;
+            transform-origin: center center;
+            z-index: 1;
+            animation: 1s ease-out 0s 1 normal none running slideInFromLeft;
+            transform: translate(-35%, -55%);
+            img {
+              width: 100% !important;
+            }
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+          &:before {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 520px;
+            height: 300px;
+            background-image: url(../assets/image/company/business-philosophy/plus-business-bg.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: contain;
+            transform-origin: center center;
+            z-index: 1;
+            transform: translate(-20%, -40%);
+            @media(max-width: 767px) {
+              content: none;
+            }
+          }
+          .card-inner {
+            background-color: white;
+            background-clip: border-box;
+            border: none;
+            box-shadow: rgba(0, 44, 63, 0.1) 0px 30px 100px;
+            border-radius: 10px;
+            width: 420px;
+            height: 320px;
+            padding: 0 0px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            @media(max-width: 767px) {
+              width: 100%;
+              margin-bottom: 30px;
+            }
+          }
+        }
+        .business-philosophy__img-wrapper-container {
+          position: absolute;
+          content: "";
+          left: 0px;
+          top: 0px;
+          width: 300px;
+          height: 300px;
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+          background-size: contain;
+          transform-origin: center center;
+          transform: translate(80%, 37%);
+          img {
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 0;
+            z-index: 2;
+          }
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+        &.first {
+          .business-philosophy__img-wrapper-container {
+            transform: translate(80%, -43%);
+          }
+          &.business-philosophy__img-wrapper {
+            .business-philosophy__img-wrapper-card {
+              .business-philosophy__img-wrapper-card-img {
+                transform: translate(-35%, 50%);
+              }
+              &:before {
+                transform: translate(-20%, 50%);
+              }
+            }
+          }
+        }
+        &.left {
+          .business-philosophy__img-wrapper-container {
+            transform: translate(-40%, 42%);
+          }
+          &.business-philosophy__img-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            position: relative;
+            flex-direction: row-reverse;
+            .business-philosophy__img-wrapper-card {
+              .business-philosophy__img-wrapper-card-img {
+                transform: translate(74%, -40%);
+              }
+              &:before {
+                transform: translate(35%, -40%);
+              }
+            }
+          }
+        }
+      }
+      .business-philosophy__img-wrapper [data-aos-duration='300'] [data-aos='fade-left'] [data-aos-easing='ease-in-sine']{
+        transition-duration: 4000ms;
+      }
+    }
   }
 }
