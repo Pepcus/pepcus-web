@@ -2323,6 +2323,9 @@ form {
             align-items: center;
             justify-content: center;
             z-index: 5;
+            img {
+              width: 100% !important;
+            }
             @media(max-width: 767px) {
               width: 100%;
               margin-bottom: 30px;
