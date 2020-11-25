@@ -102,6 +102,7 @@
       .team-member-name {
         font-weight: 700;
         margin-bottom: 2px;
+        text-transform: capitalize;
       }
       .designation {
         font-style: italic;
@@ -165,7 +166,7 @@
         grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content 1fr;
         grid-template-columns: 100%;
         float: left;
-        padding: 150px 20px 20px 60px;
+        padding: 80px 20px 20px 60px;
         @media (max-width:786px) {
           width: 100%;
           padding: 20px;
@@ -173,12 +174,8 @@
         .heading {
           font: normal normal bold 38px/1.4em montserrat,sans-serif;
           color: #1D1E21;
-          position: absolute;
-          left: -50px;
-          top: 40px;
           text-transform: capitalize;
           @media(max-width: 768px) {
-            position: static;
             text-align: center;
           }
         }
@@ -278,6 +275,7 @@
       .team-member-name {
         font-weight: 700;
         margin-bottom: 2px;
+        text-transform: capitalize;
       }
       .designation {
         font-style: italic;

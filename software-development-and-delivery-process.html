@@ -389,6 +389,34 @@
       </section>
     </div>
   </section>
+  <section>
+    <div class="contact-form-small contact-form-small--bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up"
+             data-aos-duration="1000">
+          <h2>Tell us your <strong>requirement</strong> right now</h2>
+        </div>
+        <div class="contact-form-small--body">
+          <form id="smaller-contact-form" name="cform" class="clearfix"  method="post">
+            <div class="form-row">
+              <input type="input" class="form_input" placeholder="Email*" name="email" id='email' required autocomplete="off" />
+              <span class="email-missing">Please enter your E-mail</span>
+            </div>
+            <div class="form-row">
+              <textarea id="comment" type="text" class="form_input with-placeholder" name="comment" placeholder="I would like to build a web app & require 2 full stack engineers with Java/React experience."></textarea>
+              <span class="message-missing">Please enter your Message</span>
+            </div>
+            <div class="form-row-button">
+              <div class="button-container">
+                <button type="submit" id="submit" name="submit" class="form-button">Send</button>
+              </div>
+              <!--            <div class="small-description">After submitting this form. One of our sales representatives will contact You ASAP.</div>-->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <section>
   <div id="footerContent"></div>
@@ -396,7 +424,11 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" src="js/contactForm.js"></script>
 <script type="text/javascript">
   $(function () {
     $("#headerContent").load("header.html");

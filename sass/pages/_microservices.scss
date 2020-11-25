@@ -1,0 +1,193 @@
+.microservices-page {
+  .microservices-title-bg {
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../assets/image/microservices/microservices-banner.jpg') center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+  }
+  .ms-tools-expertise__section {
+    .container {
+      max-width: 800px;
+    }
+  }
+
+  .ms-howwork-section {
+    margin-top: 0;
+    text-align: left;
+    .ms-timeline {
+      margin-top: 50px;
+      padding-left: 10px;
+      @media only screen and (min-width: 767px) {
+        padding-left: 0;
+      }
+      .ms-timeline-block {
+        position: relative;
+        padding-left: 4rem;
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 4rem;
+        &:after {
+          content: ' ';
+          position: absolute;
+          left: 26px;
+          margin-left: 0;
+          width: 4px;
+          border-radius: 4px;
+          background-color: #c9d0d8;
+          top: calc(50px + 1rem);
+          bottom: 1rem;
+          @media only screen and (min-width: 767px) {
+            left: 50%;
+            margin-left: -2px;
+            top: calc(50% + (25px + 1rem));
+            bottom: -1rem;
+          }
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          left: 26px;
+          margin-left: 0;
+          width: 4px;
+          border-radius: 4px;
+          background-color: #c9d0d8;
+          top: -1rem;
+          bottom: calc(50% + (25px + 1rem));
+          display: none;
+          @media(min-width: 768px) {
+            display: block;
+            left: 50%;
+            margin-left: -2px;
+          }
+        }
+        &:first-child {
+          &:before {
+            content:none;
+          }
+          @media only screen and (min-width: 767px) {
+            margin-top: -2rem;
+          }
+        }
+        &:last-child {
+          &:after {
+            content:none;
+          }
+          @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+          }
+        }
+        @media only screen and (min-width: 767px) {
+          padding-left: 0;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          &:nth-child(even) {
+            .esd-timeline-content {
+              float: right;
+            }
+          }
+        }
+        .ms-step-number {
+          position: absolute;
+          top: 10px;
+          left: .8rem;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1rem;
+          font-weight: 600;
+          text-align: center;
+          z-index: 2;
+          border-radius: 100%;
+          background: linear-gradient(45deg, #c31212 0%, #ff0000 100%);
+          @media (min-width: 768px) {
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.8rem;
+          }
+          &:before {
+            border-radius: 100%;
+            content: ' ';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 50px;
+            height: 50px;
+            opacity: 0.25;
+            z-index: -1;
+            background: linear-gradient(45deg, #c31212 0%, #ff0000 100%);
+            @media (min-width: 768px) {
+              width: 60px;
+              height: 60px;
+              top: -10px;
+              left: -10px;
+            }
+          }
+        }
+        h2 {
+          margin-top: 0;
+          margin-bottom: 5px;
+          font-weight: 700;
+          font-size: 18px;
+          @media only screen and (min-width: 767px) {
+            font-size: 20px;
+            font-size: 1.25rem;
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          line-height: 1.6;
+          @media only screen and (min-width: 768px) {
+            font-size: 15px;
+            font-size: 1rem;
+          }
+        }
+        .ms-timeline-content__col {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 1rem;
+          padding-right: 2rem;
+          margin-bottom: 2rem;
+          @media only screen and (min-width: 767px) {
+            padding-left: 6rem;
+            padding-right: 6rem;
+            &:nth-child(1) {
+              margin-bottom: 0;
+            }
+          }
+          img {
+            width: 100%;
+            height: auto;
+            max-width: 445px;
+            border-radius: 10px;
+            @media (max-width: 767px) {
+              max-width: 300px;
+            }
+          }
+          &.col-right-img {
+            @media (max-width: 767px) {
+              order: 2;
+            }
+          }
+        }
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

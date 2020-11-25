@@ -1,5 +1,4 @@
 $(function() {
-  console.log( "ready!" );
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 90) {
@@ -36,29 +35,27 @@ $(function() {
 
   //owl carousel start
 
-  $('#customers-testimonials').owlCarousel({
-      loop: true,
-      center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots:true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        1170: {
-          items: 3
-        }
-      }
-    });
-
   $("#clients").owlCarousel({
+    autoplay: false,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 5
+      }
+    }
+  });
+
+  $("#techepecTools").owlCarousel({
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 5000,
+    loop:true,
     responsive: {
       0: {
         items: 2
@@ -89,12 +86,12 @@ $(function() {
     }
   });
 
-  $('#owl').owlCarousel({
+  $('#customers-testimonials').owlCarousel({
     loop: true,
     center: true,
     items: 1,
     margin: 0,
-    autoplay: true,
+    autoplay: false,
     dots:true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
@@ -152,6 +149,39 @@ $(function() {
     }
   });
 
+  $("#performance-tools").owlCarousel({
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 3
+      }
+    }
+  });
+
+  $("#tools-expertise").owlCarousel({
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1170: {
+        items: 3
+      }
+    }
+  });
   //owl carousel end
 
 
@@ -191,3 +221,25 @@ $(document).ready(function(){
 })
 
 // ------------------------------------ tabs end-------------------------------------------
+
+
+// ------------------------------------ scroll to spacific section start-------------------------------------------
+$(function () {
+  $("#footer-contact-action").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#smaller-contact-form-section").offset().top-80},
+      1000);
+  });
+});
+// ------------------------------------ scroll to spacific section end-------------------------------------------
+
+// ------------------------------------ animation on scroll start-------------------------------------------
+AOS.init();
+// ------------------------------------ animation on scroll end-------------------------------------------
+
+
+$(function () {
+  setTimeout(function() {
+    $('.loading-wrapper').addClass('hide');
+  },1000);
+});

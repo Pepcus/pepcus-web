@@ -23,13 +23,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
+  <!--//for animation on scroll css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" >
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="contact-page">
-<div class="loading">
-  <div class="loading-image"><img src="./assets/image/loader.gif" alt="loader" /></div>
-</div>
 <div id="headerContent"></div>
 <main>
   <section id="contacts" class="contact-title-bg">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="contact-page-body">
-        <form id="myform" name="cform" class="clearfix"  method="post">
+        <form id="contact-form" name="cform" class="clearfix"  method="post">
           <div class="row form-row">
             <input type="input" class="form_input" placeholder="full Name*" name="fullName" id="name" required />
           </div>
@@ -55,7 +55,7 @@
             <input type="input" class="form_input" placeholder="Company Name*" name="company" id="company" required />
           </div>
           <div class="row form-row">
-            <textarea  type="text" class="form_input" name="description" id="textarea" placeholder="Project Description"></textarea>
+            <textarea  type="text" class="form_input" name="description" id="description" placeholder="Project Description"></textarea>
           </div>
           <div class="row form-row">
             <div class="input-file-container">
@@ -85,61 +85,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
-<script type="text/javascript">
-  $('#myform').on('submit', function(event) {
-    event.preventDefault(); // prevent reload
-    let service_id = "default_service";
-    let template_id = "pepcuscontact";
-    let user_id = "user_QjC9ZSKm2Rl96TpEZy1Ov"
-    let formData = new FormData();
-    let fullName = $('#name').val();
-    let email = $('#email').val();
-    let phone = $('#phone').val();
-    let company = $('#company').val();
-    let description = $('#textarea').val();
-    let attachment = $('#attachment')[0].files[0];
-    $('#submit').prop('disabled',true);
-    $("#submit").text("Sending...");
-    $('.loading').addClass('show');
-    formData.append('service_id', service_id );
-    formData.append('template_id', template_id );
-    formData.append('user_id', user_id);
-    formData.append('fullName', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('company', company);
-    formData.append('description', description);
-    formData.append('attachment', attachment);
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
-      type: 'POST',
-      data: formData,
-      contentType: false, // auto-detection
-      processData: false // no need to parse formData to string
-    }).done(function() {
-      bootbox.alert({
-        message: "Thank you for contacting us – we will get back to you soon!",
-        backdrop: true,
-        className: 'rubberBand animated'
-      });
-      $("input").val("");
-      $("textarea").val("");
-      $("p").html("");
-      $("#submit").text("Send");
-      $('.loading').removeClass('show');
-      $('#submit').prop('disabled',false);
-    }).fail(function(error) {
-      $("#submit").text("Send");
-      $('.loading').removeClass('show');
-      $('#submit').prop('disabled',false);
-      bootbox.alert({
-        message: JSON.stringify(error),
-        backdrop: true,
-        className: 'rubberBand animated'
-      });
-    });
-  });
-</script>
+<!--//for animation on scroll js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/script.js"></script>
+<script src="js/contactForm.js"></script>
 <script type="text/javascript">
   $(function () {
     $("#headerContent").load("header.html");

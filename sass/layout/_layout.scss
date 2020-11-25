@@ -20,7 +20,7 @@
 .cards {
   margin-top: 74px;
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 0;
   }
   .cards-row {
     display: flex;
@@ -53,15 +53,18 @@
   &.title-banner-big {
     .title-banner-name {
       text-shadow: 0 0 15px rgba(0,0,0,.7);
+      @media (max-width: 767px) {
+        padding: 0 15px;
+      }
       h1 {
         margin-bottom: .5em;
         padding-left: 20px;
         padding-right: 20px;
-        line-height: 60px;
+        line-height: 80px;
         text-transform: uppercase;
         font-weight: 300;
         @media(max-width: 768px) {
-          line-height: 50px;
+          line-height: 60px;
         }
       }
       p {
@@ -120,17 +123,15 @@
   h2 {
     font-size: 38px;
     line-height: 70px;
-    text-transform: uppercase;
     margin: 0;
     position: relative;
     font-weight: 300;
     @media(max-width: 768px) {
-      font-size: 28px;
-      line-height: 42px;
-    }
-    @media(max-width: 768px) {
       font-size: 32px;
       line-height: 39px;
+    }
+    span.big {
+      font-weight: 600;
     }
   }
   p {
