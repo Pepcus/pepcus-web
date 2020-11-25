@@ -3476,7 +3476,8 @@ form {
     .header-banner {
       display: flex; } }
   .header-banner .header-banner__title-banner {
-    background: linear-gradient(rgba(237, 8, 8, 0.5), rgba(105, 7, 7, 0.5)), url("../assets/image/company/company-banner.jpg");
+    background-size: cover;
+    background: linear-gradient(rgba(131, 6, 6, 0.9), rgba(255, 0, 0, 0.8)), url(../assets/image/company/company-banner.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
