@@ -43,25 +43,11 @@
       "img2":"assets/image/team/shivaji.jpg"
     },
     {
-      "name":"Sonam Agarwal",
-      "imageURL":"",
-      "role":"Sr. Quality Engineer",
-      "img1":"assets/image/team/sonam.jpg",
-      "img2":"assets/image/team/sonam.jpg"
-    },
-    {
       "name":"Mayur Patidar",
       "imageURL":"",
       "role":"Sr. QA Engineer",
       "img1":"assets/image/team/mayur.jpg",
       "img2":"assets/image/team/mayur.jpg"
-    },
-    {
-      "name":"Shubham Solanki",
-      "imageURL":"",
-      "role":"Sr. Software Engineer",
-      "img1":"assets/image/team/shubham.jpg",
-      "img2":"assets/image/team/shubham.jpg"
     },
     {
       "name":"Ashutosh Yadav",
@@ -167,13 +153,6 @@
       "role":"QA Engineer",
       "img1":"assets/image/team/priya.jpg",
       "img2":"assets/image/team/priya.jpg"
-    },
-    {
-      "name":"Palak Agrawal",
-      "imageURL":"",
-      "role":"Associate Software Engineer",
-      "img1":"assets/image/team/palak.jpg",
-      "img2":"assets/image/team/palak.jpg"
     }
   ]
 }

@@ -2101,7 +2101,7 @@ form {
             position: relative;
             display: inline-block;
             vertical-align: top;
-            width: 21%;
+            width: 22%;
             padding-top: 15px;
             padding-bottom: 15px;
             font-weight: 500;
@@ -2111,8 +2111,8 @@ form {
             border: 1px solid #fff;
             border: 1px solid rgba(0, 0, 0, 0.15);
             transition: all .2s ease;
-            margin-left: 2%;
-            margin-right: 2%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
             margin-bottom: 40px; }
             @media (max-width: 767px) {
               .cards9__card .cards9__card-text .cards9__card-description .cards9__card-description__tab-style .cards9__card-description__tab-style-row .cards9__card-description__tab-style-column {
@@ -3476,7 +3476,6 @@ form {
     .header-banner {
       display: flex; } }
   .header-banner .header-banner__title-banner {
-    background-size: cover;
     background: linear-gradient(rgba(131, 6, 6, 0.9), rgba(255, 0, 0, 0.8)), url(../assets/image/company/company-banner.jpg);
     background-size: cover;
     height: 100%;
@@ -6532,12 +6531,21 @@ canvas {
       transform: translate(-50%, 0); } }
 
 .mobile-section-cards {
-  padding-top: 30px; }
-  @media (max-width: 767px) {
-    .mobile-section-cards .mobile-section-cards__col {
-      width: 80%;
-      margin: 0 auto;
-      margin-bottom: 80px; } }
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap; }
+  .mobile-section-cards .mobile-section-cards__col {
+    width: 25%; }
+    @media (max-width: 1024px) {
+      .mobile-section-cards .mobile-section-cards__col {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 80px; } }
+    @media (max-width: 767px) {
+      .mobile-section-cards .mobile-section-cards__col {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 80px; } }
   .mobile-section-cards .mobile-section-cards-item {
     display: block;
     height: 250px;
@@ -6619,6 +6627,12 @@ canvas {
       font-weight: 500;
       transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       box-shadow: 0 7px 15px rgba(0, 9, 128, 0.05), 0 12px 28px rgba(0, 9, 128, 0.075); }
+      @media (max-width: 1200px) {
+        .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-item-name {
+          width: 90%; } }
+      @media (max-width: 1024px) {
+        .mobile-section-cards .mobile-section-cards-item .mobile-section-cards-item-name {
+          width: 80%; } }
 
 .ModalContent-stsb3j-0 {
   -webkit-align-items: flex-start;
