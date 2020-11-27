@@ -11,15 +11,16 @@
     display: flex;
   }
   .header-banner__title-banner {
-    background: linear-gradient(rgba(131, 6, 6, .9), rgba(255, 0, 0,.8)), url(../assets/image/company/company-banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) 0% 0% / cover, url(../assets/image/company/company-banner.jpg);
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     z-index: 1000;
     position: absolute;
     top: 0;
     @media(max-width: 767px) {
-      background-position: right center;
+      background-position: center center;
     }
   }
   .header-banner__container {
@@ -63,7 +64,7 @@
         p {
           font-size: 16px;
           line-height: 27px;
-          font-weight: 300;
+          font-weight: 500;
           color: #ffffff;
           margin-bottom: 100px;
           @media (max-width: 767px) {
