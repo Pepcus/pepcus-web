@@ -25,18 +25,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
   <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
+  <!--//for animation on scroll css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" >
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <div id="headerContent"></div>
 <main class="careers-page">
   <section class="title-banner title-banner-big">
     <div class="careers-title-bg kenburns-top"></div>
     <div class="container">
       <div class="row">
-        <div class="title-banner-name">
-          <h1>Let's Join us, Let's Grow Together</h1>
+        <div class="title-banner-name" data-aos="fade-up"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out">
+          <h1>LET'S JOIN US, LET'S GROW TOGETHER</h1>
           <p></p>
           <p></p>
         </div>
@@ -47,14 +52,20 @@
   <section  class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Join Us & Springboard Your Career to New Heights</h2>
-        <p>We are looking for extraordinary people who are ready to dive into a high growth, fast-paced, super collaborative company. An innovation-driven, a stimulating and fun loving environment and an incredibly talented team are just a small number of reasons why you will love to work here.</p>
+        <h2  data-aos="fade-up"
+             data-aos-duration="300"
+             data-aos-easing="ease-in-out">Join Us & Springboard Your Career to New Heights</h2>
+        <p  data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-easing="ease-in-out">We are looking for extraordinary people who are ready to dive into a high growth, fast-paced, super collaborative company. An innovation-driven, a stimulating and fun loving environment and an incredibly talented team are just a small number of reasons why you will love to work here.</p>
       </div>
     </div>
   </section>
   <section>
     <div class="clearfix">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="300"
+           data-aos-easing="ease-in-out">
         <h2>Current <strong>Openings</strong></h2>
       </div>
       <div id="modal-content-wrapper"></div>
@@ -63,7 +74,9 @@
   </section>
   <section class="section section-dark">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out">
         <h2>Let's Get on to your Dream <strong>Workplace</strong>!</h2>
       </div>
       <div>
@@ -123,7 +136,9 @@
   </section>
   <section class="section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="300"
+           data-aos-easing="ease-in-out">
         <h2>Few Reasons to Love <strong>Pepcus</strong>..</h2>
       </div>
     </div>
@@ -168,7 +183,9 @@
   </section>
   <section class="section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up"
+           data-aos-duration="300"
+           data-aos-easing="ease-in-out">
         <h2>If work isn't <strong>FUN</strong>, you are NOT playing on the right team..</h2>
       </div>
       <div>
@@ -328,21 +345,26 @@
   <div id="footerContent"></div>
 </section>
 
+
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $("#headerContent").load("header.html");
+    $("#footerContent").load("footer.html")
+  });
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.623.0.min.js"></script>
+<!--//for animation on scroll js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/script.js"></script>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.623.0.min.js"></script>
 <script src="js/jsonFetch.js"></script>
 <script src="js/amazonBucket.js"></script>
 <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script type = "text/javascript"> balphoto2019();</script>
-<script type="text/javascript">
-  $(function () {
-    $("#headerContent").load("header.html");
-  });
-  $(function () {
-    $("#footerContent").load("footer.html")
-  });
-</script>
+
 </body>
 </html>
+
