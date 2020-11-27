@@ -17,6 +17,7 @@
       display: block;
       img {
         width: 80px;
+        filter: drop-shadow(30px 30px 200px #fff) drop-shadow(-30px -30px 40px #fff);
         @media (max-width:767px) {
           width: 70px;
         }
