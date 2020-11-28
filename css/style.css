@@ -6042,12 +6042,8 @@ canvas {
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
       .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card:hover .ts__server-side-card-icon {
-        width: 80px !important;
         margin: 0 auto;
         color: #fff !important; }
-        @media (max-width: 767px) {
-          .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card:hover .ts__server-side-card-icon {
-            width: 60px !important; } }
         .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card:hover .ts__server-side-card-icon .ts__server-side-card-icon-color {
           display: none;
           width: 0 !important; }
@@ -6064,7 +6060,8 @@ canvas {
         height: 200px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center; }
+        align-items: center;
+        justify-content: center; }
         @media (max-width: 767px) {
           .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper {
             height: 150px;
@@ -6081,6 +6078,15 @@ canvas {
           background-position: 50% 50%;
           -webkit-transition: all .6s ease;
           transition: all .6s ease; }
+        .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-icon-container {
+          z-index: 5;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-self: center;
+          justify-content: center;
+          height: 100%; }
         .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-icon {
           -webkit-transition: all .4s ease;
           transition: all .4s ease;
@@ -6089,16 +6095,19 @@ canvas {
           z-index: 5;
           width: 100%;
           margin: 0 auto;
+          flex-wrap: wrap;
           display: flex;
           align-self: center;
           justify-content: center; }
           .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-icon .ts__server-side-card-icon-color {
-            width: 130px; }
+            width: 130px;
+            height: 100%; }
             @media (max-width: 767px) {
               .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-icon .ts__server-side-card-icon-color {
                 width: 100px; } }
           .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-icon .ts__server-side-card-icon-w-color {
-            display: none; }
+            display: none;
+            height: 100%; }
         .technology-spectrum .ts__server-side .ts__server-side-container ul li .ts__server-side-card .ts__server-side-card-wrapper .ts__server-side-card-name {
           -webkit-transition: all .4s ease;
           transition: all .4s ease;
