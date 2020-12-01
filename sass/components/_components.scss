@@ -360,7 +360,7 @@ form {
           left: -29px;
           background-repeat: no-repeat;
           background-position: 0 0;
-          background-image: url('../assets/image/card-stairs.webp');
+          background-image: url('../assets/image/card-stairs.png');
           background-size: contain;
           @media (max-width: 786px) {
             left: auto;
@@ -432,6 +432,7 @@ form {
   position: relative;
   @media(max-width: 768px) {
     margin-bottom: 60px;
+    height: auto;
   }
   &:before, &:after {
     content: '';

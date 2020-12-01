@@ -28,15 +28,30 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="loading-wrapper__subpage">
+  <div class="loading-wrapper">
+    <div class="loading-wrapper__container">
+      <div class="loading-wrapper__circle"></div>
+      <div class="loading-wrapper__circle"></div>
+      <div class="loading-wrapper__circle"></div>
+      <div class="loading-wrapper__shadow"></div>
+      <div class="loading-wrapper__shadow"></div>
+      <div class="loading-wrapper__shadow"></div>
+      <span>Loading</span>
+    </div>
+  </div>
+</div>
 <div id="headerContent"></div>
 <main class="team-page">
   <section class="title-banner title-banner-big">
     <div class="team-title-bg"></div>
     <div class="container">
       <div class="row">
-        <div class="title-banner-name">
+        <div class="title-banner-name" data-aos="fade-up"
+             data-aos-easing="ease-in-out">
           <h1>Meet Our Team</h1>
-          <p>Our exceptional team delivers awesome & outstanding results..</p>
+          <p data-aos="fade-up"
+             data-aos-easing="ease-in-out">Our exceptional team delivers awesome & outstanding results..</p>
           <p></p>
         </div>
         <div class="button-container"></div>
@@ -141,10 +156,20 @@
 <script type="text/javascript">
   $(function () {
     $("#headerContent").load("header.html");
-  });
-  $(function () {
     $("#footerContent").load("footer.html")
   });
+
+  window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+  if(!window.isMobile ) {
+    var script = document.createElement('script');
+    script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
+    document.write(script.outerHTML);
+
+    var link = document.createElement('link');
+    link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
+    link.rel="stylesheet"
+    document.write(link.outerHTML);
+  }
 </script>
 
 </body>

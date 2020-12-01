@@ -253,20 +253,20 @@
     }
   }
   .smallMenu-icon {
-    width: 28px;
-    height: 17px;
-    right: 20px;
-    margin-top: -9px;
-    position: absolute;
-    top: 50%;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    margin-top: -35px;
     display: none;
+    align-items: center;
+    justify-content: center;
+    transform: translate3d(0,0,0);
     @media(max-width: 1024px) {
-      display: block;
+      display: flex;
     }
     .smallMenu-icon-item {
-      position: absolute;
-      top: 50%;
-      width: 100%;
+      position: fixed;
+      width: 28px;
       height: 2px;
       margin-top: -1.5px;
       background-color: #ff0000;
@@ -349,9 +349,9 @@
   height: 100%;
   width: 100%;
   z-index: 1024;
-  visibility: hidden;
+  display: none;
   &.active {
-    visibility: visible;
+    display: block;
   }
   &.mobileNavigation-wrap {
     overflow: auto;

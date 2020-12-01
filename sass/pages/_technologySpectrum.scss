@@ -204,6 +204,9 @@
                             rgba(0, 0, 0, 0.6)
             ),
             url('../assets/image/technology-spectrum/ts-frontend-bg.jpg') center center;
+    @media (max-width: 767px) {
+      overflow: hidden;
+    }
     .ts__frontend-technologies-container {
       position: relative;
       .section-title {
@@ -493,6 +496,9 @@
     }
   }
   .ts__quality-test {
+    @media (max-width: 767px) {
+      overflow: hidden;
+    }
     .row {
       display: flex;
       flex-wrap: wrap;
