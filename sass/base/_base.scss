@@ -21,7 +21,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-html {width: 100%}
+html {
+  width: 100%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
 
 body {
   min-width: 320px;

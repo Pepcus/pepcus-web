@@ -1,12 +1,20 @@
 $(function() {
 
+
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 90) {
-      $('.header').addClass("header-small")
-    } else {
-      $('.header').removeClass("header-small")
+    window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+    if(!window.isMobile ) {
+      if ($(this).scrollTop() > 90) {
+        $('.header').addClass("header-small")
+      } else {
+        $('.header').removeClass("header-small")
+      }
     }
   });
+
+
+
+
 
   $(".navigationList-item").hover(function(){
     $(this).addClass("navigationList-item--dropdown--show");
@@ -14,29 +22,32 @@ $(function() {
     $(this).removeClass("navigationList-item--dropdown--show");
   });
 
-  $('.smallMenu-icon').click(function() {
+
+
+  $(".smallMenu-icon").on("click touchstart", function(e){
     $(this).toggleClass('smallMenu-icon--active');
     $('.mobileNavigation-bg').toggleClass('active');
     $('body').toggleClass('no-scroll');
+
+    // When touch event fires, this is needed to prevent the click
+    // event from firing as well as @RyanWheale noted in the comments.
+    e.preventDefault();
+    e.stopPropagation();
   });
-
-
-  $('.mobileNavigationList-item').click(function() {
+  $(".mobileNavigationList-item").on('click touch', function(e) {
     $(this).toggleClass("active");
   });
-
-
-  $(".mobileNavigationList-item").click(function(){
-    console.log('yteshkj')
+  $(".mobileNavigationList-item").on('click touch', function(e){
     $(this).children('div.mobileNavigation__wrapper').addClass("active");
-  }, function(){
+    e.preventDefault();
+  }, function(e){
     $(this).children('div.mobileNavigation__wrapper').removeClass("active");
   });
 
   //owl carousel start
 
   $("#clients").owlCarousel({
-    autoplay: false,
+    autoplay: true,
     loop: true,
     responsive: {
       0: {
@@ -72,6 +83,7 @@ $(function() {
   $("#cloudLogo").owlCarousel({
     autoplay: true,
     dots:true,
+    loop:true,
     autoplayTimeout: 5000,
     responsive: {
       0: {
@@ -152,6 +164,7 @@ $(function() {
   $("#performance-tools").owlCarousel({
     autoplay: true,
     dots:true,
+    loop: true,
     autoplayTimeout: 5000,
     responsive: {
       0: {
@@ -169,6 +182,7 @@ $(function() {
   $("#tools-expertise").owlCarousel({
     autoplay: true,
     dots:true,
+    loop: true,
     autoplayTimeout: 5000,
     responsive: {
       0: {
@@ -234,7 +248,13 @@ $(function () {
 // ------------------------------------ scroll to spacific section end-------------------------------------------
 
 // ------------------------------------ animation on scroll start-------------------------------------------
-AOS.init();
+
+
+
+
+$(function() {
+  AOS.init();
+});
 // ------------------------------------ animation on scroll end-------------------------------------------
 
 
