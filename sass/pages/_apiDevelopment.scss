@@ -19,6 +19,7 @@
     color: rgba(255, 255, 255, 0.85);
     position: relative;
     z-index: 1;
+    overflow: hidden;
     .api-design-development__heading {
       h2 {
         font-size: 36px;

@@ -247,13 +247,6 @@
               display: inline-block;
               z-index: 1;
               max-width: 100%;
-              &.right-image {
-                @media (max-width: 767px) {
-                  display: flex;
-                  width: 100%;
-                  justify-content: flex-end;
-                }
-              }
               img {
                 max-width: 100%;
                 min-height: 1px;

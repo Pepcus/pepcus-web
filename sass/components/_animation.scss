@@ -61,7 +61,26 @@
   animation: kenburns-top 40s ease-out both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  @media (max-width: 767px) {
+    animation: kenburns-top-mobile 40s ease-out both;
+  }
 }
+
+
+
+@-webkit-keyframes kenburns-top-mobile {
+  0% {
+  }
+  100% {
+  }
+}
+@keyframes kenburns-top-mobile {
+  0% {
+  }
+  100% {
+  }
+}
+
 
 @-webkit-keyframes kenburns-top {
   0% {
@@ -92,11 +111,15 @@
   }
 }
 
+
 .zoom-out-banner {
   -webkit-animation: zoom-out-banner 40s ease-out both;
   animation: zoom-out-banner 40s ease-out both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  @media (max-width: 767px) {
+    animation: zoom-out-banner-mobile 40s ease-out both;
+  }
 }
 
 @-webkit-keyframes zoom-out-banner {
@@ -125,6 +148,19 @@
     transform: scale(1.60) translateY(-15px);
     -webkit-transform-origin: top;
     transform-origin: top;
+  }
+}
+
+@-webkit-keyframes zoom-out-banner-mobile {
+  0% {
+  }
+  100% {
+  }
+}
+@keyframes zoom-out-banner-mobile {
+  0% {
+  }
+  100% {
   }
 }
 
