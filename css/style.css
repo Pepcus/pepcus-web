@@ -3173,6 +3173,123 @@ form {
     .business-philosophy .business-philosophy__row .business-philosophy__wrapper .business-philosophy__img-wrapper [data-aos-duration='300'] [data-aos='fade-left'] [data-aos-easing='ease-in-sine'] {
       transition-duration: 4000ms; }
 
+/*------------------------------profile css start-------------------------------------------*/
+#profile {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px !important; }
+  #profile h2 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    color: #c54041;
+    padding: 50px 20px; }
+    @media (max-width: 767px) {
+      #profile h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        color: #c54041;
+        padding: 50px 10px; } }
+  #profile div {
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px 5px #bfbdbd; }
+    #profile div.withLink {
+      position: relative; }
+      #profile div.withLink a {
+        color: #2b4170; }
+        #profile div.withLink a:hover {
+          color: #2b4170;
+          text-decoration: underline; }
+        #profile div.withLink a:focus {
+          color: #2b4170;
+          text-decoration: none; }
+      #profile div.withLink .company-name {
+        position: absolute;
+        bottom: 32%;
+        left: 18.5%;
+        font-size: 140%;
+        font-family: aparaj; }
+        @media (max-width: 1600px) {
+          #profile div.withLink .company-name {
+            font-size: 140%; } }
+        @media (max-width: 1420px) {
+          #profile div.withLink .company-name {
+            font-size: 130%; } }
+        @media (max-width: 1024px) {
+          #profile div.withLink .company-name {
+            font-size: 120%; } }
+        @media (max-width: 768px) {
+          #profile div.withLink .company-name {
+            font-size: 120%; } }
+        @media (max-width: 620px) {
+          #profile div.withLink .company-name {
+            font-size: 100%; } }
+        @media (max-width: 520px) {
+          #profile div.withLink .company-name {
+            font-size: 80%; } }
+        @media (max-width: 360px) {
+          #profile div.withLink .company-name {
+            font-size: 60%; } }
+        @media (max-width: 320px) {
+          #profile div.withLink .company-name {
+            font-size: 50%; } }
+      #profile div.withLink .company-email {
+        position: absolute;
+        bottom: 26%;
+        left: 18.5%;
+        font-size: 140%;
+        font-family: aparaj; }
+        @media (max-width: 1600px) {
+          #profile div.withLink .company-email {
+            font-size: 140%; } }
+        @media (max-width: 1420px) {
+          #profile div.withLink .company-email {
+            font-size: 130%; } }
+        @media (max-width: 1024px) {
+          #profile div.withLink .company-email {
+            font-size: 120%; } }
+        @media (max-width: 768px) {
+          #profile div.withLink .company-email {
+            font-size: 120%; } }
+        @media (max-width: 620px) {
+          #profile div.withLink .company-email {
+            font-size: 100%; } }
+        @media (max-width: 520px) {
+          #profile div.withLink .company-email {
+            font-size: 80%; } }
+        @media (max-width: 360px) {
+          #profile div.withLink .company-email {
+            font-size: 60%; } }
+        @media (max-width: 320px) {
+          #profile div.withLink .company-email {
+            font-size: 50%; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #profile div {
+        margin-bottom: 10px; }
+        #profile div:last-child {
+          margin-bottom: 0px !important; } }
+    @media (max-width: 767px) {
+      #profile div {
+        margin-bottom: 5px; }
+        #profile div:last-child {
+          margin-bottom: 0px !important; } }
+  #profile img {
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    #profile {
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #profile {
+      width: 100%;
+      margin-top: 0px !important; } }
+  @media (max-width: 767px) {
+    #profile {
+      width: 100%;
+      margin-top: 0px !important; } }
+
+/*------------------------------profile css ends-------------------------------------------*/
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
