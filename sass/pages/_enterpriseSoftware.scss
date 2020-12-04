@@ -110,6 +110,14 @@
 
 .progress-container {
   margin-top: 35px;
+  .row::before {
+    display: table !important;
+  }
+
+  .row::after {
+    display: table !important;
+  }
+
   .progress-container__item {
     margin-bottom: 30px;
     .progress-title {

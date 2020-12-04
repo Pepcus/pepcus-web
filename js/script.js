@@ -12,6 +12,17 @@ $(function() {
     }
   });
 
+  //Detect browser
+  var db = navigator.userAgent.toLowerCase();
+  if (db.indexOf('safari') != -1) {
+    if (db.indexOf('chrome') > -1) {
+       // Chrome
+    } else {
+      // Safari
+      $('head').append('<link rel="stylesheet" type="text/css" href="css/safari.css">');
+    }
+  }
+
 
 
 

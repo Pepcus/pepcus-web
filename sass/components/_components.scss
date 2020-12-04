@@ -419,20 +419,18 @@ form {
 
 // boder-card -- ex: use in enterprise-software-development page -- web security section
 
-.cards4__card {
-  border-bottom: 0!important;
-  text-align: center;
-  margin: 0 0 50px;
-  height: calc(100% - 50px);
-  border-bottom: 0!important;
+.cards4__card-col {
   border: 1px solid #ebebeb;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  @media(max-width: 768px) {
-    margin-bottom: 60px;
-    height: auto;
+  border-bottom: 0!important;
+  width: 30.33%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding: 0;
+  margin-bottom: 50px;
+  @media(max-width: 767px) {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
   }
   &:before, &:after {
     content: '';
@@ -453,26 +451,48 @@ form {
     @include transformOrigin (100% 100%);
     @include transform (rotate(-7deg));
   }
+}
+
+
+.cards4__card {
+  height: auto;
+  text-align: center;
+  margin: 0 0 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @media(max-width: 768px) {
+    margin-bottom: 60px;
+    height: auto;
+  }
+
   .cards4__card-wrapper {
     position: relative;
     text-align: left;
-    padding: 36px 30px 20px;
+    padding: 36px 0 0;
     .cards4__card-name {
       color: #fff;
-      margin: -37px -31px 30px;
-      padding: 18px 31px 16px;
+      margin: -37px 0 30px;
+      padding: 10px 31px 16px;
       background: #ff0000;
       text-align: center;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       h4 {
         margin-bottom: 0!important;
         text-transform: none;
         font-size: 22px!important;
+        line-height: 26px;
       }
     }
     .cards4__card-text {
       position: relative;
       font-size: 17px;
       line-height: 30px;
+      padding: 0 20px;
         p {
           line-height: 25px;
         }

@@ -1,0 +1,7 @@
+.row::before {
+    display: inline-block !important;
+}
+
+.row::after {
+   display: inline-block !important;
+}
