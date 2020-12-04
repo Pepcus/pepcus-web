@@ -31,7 +31,7 @@ $(function () {
       processData: false // no need to parse formData to string
     }).done(function () {
       bootbox.alert({
-        message: "Thank you for contacting us – we will get back to you soon!",
+        message: "Thank you for contacting us. We will get back to you shortly.",
         backdrop: true,
         className: 'rubberBand animated'
       });
@@ -79,7 +79,7 @@ $(function () {
     }).done(function () {
 
       bootbox.alert({
-        message: "Thank you for contacting us – we will get back to you soon!",
+        message: "Thank you for contacting us. We will get back to you shortly.",
         backdrop: true,
         className: 'rubberBand animated'
       });

@@ -52,7 +52,7 @@
     {
       "name":"Ashutosh Yadav",
       "imageURL":"",
-      "role":"Sr. Quality Engineer",
+      "role":"Sr. QA Engineer",
       "img1":"assets/image/team/ahutosh.jpg",
       "img2":"assets/image/team/ahutosh.jpg"
     },
@@ -66,7 +66,7 @@
     {
       "name":"Arpit Agrawal",
       "imageURL":"",
-      "role":"Sr. Quality Engineer",
+      "role":"Sr. QA Engineer",
       "img1":"assets/image/team/arpit.jpg",
       "img2":"assets/image/team/arpit.jpg"
     },
@@ -85,13 +85,6 @@
       "img2":"assets/image/team/rahul.jpg"
     },
     {
-      "name":"Mayank Yadav",
-      "imageURL":"",
-      "role":"Sr. QA Engineer",
-      "img1":"assets/image/team/mayank.jpg",
-      "img2":"assets/image/team/mayank.jpg"
-    },
-    {
       "name":"Pratik Kulshreshth",
       "imageURL":"",
       "role":"Sr. Software Engineer",
@@ -99,25 +92,60 @@
       "img2":"assets/image/team/prateek.jpg"
     },
     {
+      "name":"Mayank Yadav",
+      "imageURL":"",
+      "role":"Sr. QA Engineer",
+      "img1":"assets/image/team/mayank.jpg",
+      "img2":"assets/image/team/mayank.jpg"
+    },
+    {
       "name":"Mahesh Namdev",
       "imageURL":"",
-      "role":"Software Engineer",
+      "role":"Sr. Software Engineer",
       "img1":"assets/image/team/mahesh.jpg",
       "img2":"assets/image/team/mahesh.jpg"
     },
     {
       "name":"Vishal Banerjee",
       "imageURL":"",
-      "role":"Quality Engineer",
+      "role":"Sr. QA Engineer",
       "img1":"assets/image/team/vishal.jpg",
       "img2":"assets/image/team/vishal.jpg"
     },
     {
       "name":"Nitin Soni",
       "imageURL":"",
-      "role":"Quality Engineer",
+      "role":"Sr. QA Engineer",
       "img1":"assets/image/team/nitin.jpg",
       "img2":"assets/image/team/nitin.jpg"
+    },
+    {
+      "name":"Chetan Jain",
+      "imageURL":"",
+      "role":"Sr. Software Engineer",
+      "img1":"assets/image/team/ChetanJain.jpg",
+      "img2":"assets/image/team/ChetanJain.jpg"
+    },
+    {
+      "name":"Ashish K Singh",
+      "imageURL":"",
+      "role":"Sr. Software Engineer",
+      "img1":"assets/image/team/AshishKSingh.jpg",
+      "img2":"assets/image/team/AshishKSingh.jpg"
+    },
+    {
+      "name":"Shyammohan Prajapat",
+      "imageURL":"",
+      "role":"Sr. Software Engineer",
+      "img1":"assets/image/team/ShyammohanPrajapat.jpg",
+      "img2":"assets/image/team/ShyammohanPrajapat.jpg"
+    },
+    {
+      "name":"Manish Gurnani",
+      "imageURL":"",
+      "role":"Sr. Software Engineer",
+      "img1":"assets/image/team/ManishGurnani.jpg",
+      "img2":"assets/image/team/ManishGurnani.jpg"
     },
     {
       "name":"Mohit Saladiya",
@@ -143,7 +171,7 @@
     {
       "name":"Ayush Malik",
       "imageURL":"",
-      "role":"Associate Software Engineer",
+      "role":"Software Engineer",
       "img1":"assets/image/team/ayush.jpg",
       "img2":"assets/image/team/ayush.jpg"
     },
@@ -153,6 +181,27 @@
       "role":"QA Engineer",
       "img1":"assets/image/team/priya.jpg",
       "img2":"assets/image/team/priya.jpg"
+    },
+    {
+      "name":"Shantanu Bokre",
+      "imageURL":"",
+      "role":"Software Engineer",
+      "img1":"assets/image/team/ShantanuBokre.jpg",
+      "img2":"assets/image/team/ShantanuBokre.jpg"
+    },
+    {
+      "name":"Himanshu Mandlik",
+      "imageURL":"",
+      "role":"Software Engineer",
+      "img1":"assets/image/team/HimanshuMandlik.jpg",
+      "img2":"assets/image/team/HimanshuMandlik.jpg"
+    },
+    {
+      "name":"Savya Chamarthi",
+      "imageURL":"",
+      "role":"Associate QA Engineer",
+      "img1":"assets/image/team/SavyaChamarthi.jpg",
+      "img2":"assets/image/team/SavyaChamarthi.jpg"
     }
   ]
 }
