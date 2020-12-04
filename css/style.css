@@ -871,7 +871,8 @@ footer {
     footer .footer-container .social-icon {
       text-align: center;
       -webkit-align-content: center;
-      margin-top: 30px; }
+      margin-top: 30px;
+      margin-bottom: 10px; }
       @media (max-width: 767px) {
         footer .footer-container .social-icon {
           margin-top: 20px; } }
@@ -1565,13 +1566,48 @@ form {
   .cards3__card.cards3__card-item-03 {
     padding-top: 20px; } }
 
-.cards4__card {
+.cards4__card-col {
+  border: 1px solid #ebebeb;
   border-bottom: 0 !important;
+  width: 30.33%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding: 0;
+  margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .cards4__card-col {
+      width: 97%;
+      margin-left: 1.5%;
+      margin-right: 1.5%; } }
+  .cards4__card-col:before, .cards4__card-col:after {
+    content: '';
+    display: block;
+    width: 51%;
+    height: 1px;
+    bottom: 0;
+    border-top: 1px solid #ebebeb;
+    position: absolute; }
+  .cards4__card-col:before {
+    left: 0;
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg); }
+  .cards4__card-col:after {
+    right: 0;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg); }
+
+.cards4__card {
+  height: auto;
   text-align: center;
   margin: 0 0 50px;
-  height: calc(100% - 50px);
-  border-bottom: 0 !important;
-  border: 1px solid #ebebeb;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1580,48 +1616,30 @@ form {
     .cards4__card {
       margin-bottom: 60px;
       height: auto; } }
-  .cards4__card:before, .cards4__card:after {
-    content: '';
-    display: block;
-    width: 51%;
-    height: 1px;
-    bottom: 0;
-    border-top: 1px solid #ebebeb;
-    position: absolute; }
-  .cards4__card:before {
-    left: 0;
-    -webkit-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: rotate(7deg);
-    -ms-transform: rotate(7deg);
-    transform: rotate(7deg); }
-  .cards4__card:after {
-    right: 0;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: rotate(-7deg);
-    -ms-transform: rotate(-7deg);
-    transform: rotate(-7deg); }
   .cards4__card .cards4__card-wrapper {
     position: relative;
     text-align: left;
-    padding: 36px 30px 20px; }
+    padding: 36px 0 0; }
     .cards4__card .cards4__card-wrapper .cards4__card-name {
       color: #fff;
-      margin: -37px -31px 30px;
-      padding: 18px 31px 16px;
+      margin: -37px 0 30px;
+      padding: 10px 31px 16px;
       background: #ff0000;
-      text-align: center; }
+      text-align: center;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .cards4__card .cards4__card-wrapper .cards4__card-name h4 {
         margin-bottom: 0 !important;
         text-transform: none;
-        font-size: 22px !important; }
+        font-size: 22px !important;
+        line-height: 26px; }
     .cards4__card .cards4__card-wrapper .cards4__card-text {
       position: relative;
       font-size: 17px;
-      line-height: 30px; }
+      line-height: 30px;
+      padding: 0 20px; }
       .cards4__card .cards4__card-wrapper .cards4__card-text p {
         line-height: 25px; }
       .cards4__card .cards4__card-wrapper .cards4__card-text ul li {
@@ -5267,6 +5285,10 @@ canvas {
 
 .progress-container {
   margin-top: 35px; }
+  .progress-container .row::before {
+    display: table !important; }
+  .progress-container .row::after {
+    display: table !important; }
   .progress-container .progress-container__item {
     margin-bottom: 30px; }
     .progress-container .progress-container__item .progress-title {
