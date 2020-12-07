@@ -83,6 +83,7 @@
           img {
             transition: all ease-in-out 0.4s;
             height: 100%;
+            border-radius: 96px;
           }
           @media(max-width:768px) {
             height: 200px;
@@ -95,6 +96,7 @@
           &:hover {
             img {
               transform: scale(1.1);
+              border-radius: 96px;
             }
           }
         }
