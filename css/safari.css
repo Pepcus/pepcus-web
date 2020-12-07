@@ -3,5 +3,16 @@
 }
 
 .row::after {
-   display: inline-block !important;
+    display: inline-block !important;
+}
+
+
+/*--------------------------------TechnologyPartnership---------------*/
+
+.features_info .dot_img {
+    display: none !important;
+}
+
+.features_info .dot_img.mac {
+    display: block !important;
 }

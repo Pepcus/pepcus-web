@@ -476,6 +476,9 @@
         position: absolute;
         left: 0;
         top: 28px;
+        &.mac {
+          display: none;
+        }
         @media (max-width: 1199px) {
           display: none;
         }
