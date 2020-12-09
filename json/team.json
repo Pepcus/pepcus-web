@@ -1,25 +1,77 @@
 {
-  "thirdTeam":[
+  "ceoTeam":[
+    {
+      "nameHead":"Hi,",
+      "name":"I'm Ajay",
+      "imageURL":"",
+      "role":"CEO & Founder with",
+      "role1":"17+ Years of Client Relationship.",
+      "img1":"assets/image/team/ajayj-2.jpg",
+      "img2":"assets/image/team/ajayj-2.jpg",
+      "description": "With over 17 years of experience in the full spectrum of software development & having a key focus on quality, Ajay has established a stellar reputation & trust with customers. Considering the talented people as the most important assets, Ajay always promoted an employee-friendly work culture & continuously encouraged learning and growth. His open, friendly attitude and mind-blowing ideas of ‘fun @ work’ has turned Pepcus an amazing place to work.",
+      "specialitiesHeading": "Specialities: ",
+      "specialities": "Client Relationship | Delivery Management | Project Management | Solution Architect"
+    }
+  ],
+  "seniorManagerTeam":[
+    {
+      "name":"Ankit Bakliwal",
+      "imageURL":"",
+      "role":"Manager - Technology",
+      "img1":"assets/image/team/ankit.jpg",
+      "img2":"assets/image/team/ankit.jpg",
+      "description": "A profound professional with amazing management skills, a certified scrum master, Ankit is highly experienced in leading large size development teams. He has proved capabilities of producing outstanding results which led Pepcus business scaled exponentially. His personal interest in core technologies and innovation are a great asset to the company.",
+      "specialities": "Specialities: Program Management | Technical Leadership"
+    },
+    {
+      "name":"Kapilesh Israni",
+      "imageURL":"",
+      "role":"Manager - Technology",
+      "img1":"assets/image/team/kapilesh.jpg",
+      "img2":"assets/image/team/kapilesh.jpg",
+      "description": "Particularly prompt with the advanced Java stack and client management skills, Kapilesh is a proficient technical manager having profound experience in developing software. His amazing presentation skills, determination & persistence are creating miracles at Pepcus.",
+      "specialities": "Specialities: Research & Development | Advanced JAVA | Analytics"
+    },
+    {
+      "name":"Surabhi Bhawsar",
+      "imageURL":"",
+      "role":"Chief Solution Architect",
+      "img1":"assets/image/team/surabhi.jpg",
+      "img2":"assets/image/team/surabhi.jpg",
+      "description": "Surabhi is a diligent professional having over 13+ years of experience in the Enterprise Application Architecture and Software Development. She is passionate about technology and uses her vast experience in architecting rock solid software. Her strong logical mind & problem solving skills adds tremendous business value.",
+      "specialities": "Specialities: Solution Architect | Research & Development"
+    }
+  ],
+  "managerTeam":[
+    {
+      "name":"Sharad Namdeo",
+      "imageURL":"",
+      "role":"Manager – Development",
+      "img1":"assets/image/team/sharad.jpg",
+      "img2":"assets/image/team/sharad.jpg"
+    },
+    {
+      "name":"Mayur Patidar",
+      "imageURL":"",
+      "role":"Manager - Quality",
+      "img1":"assets/image/team/mayur.jpg",
+      "img2":"assets/image/team/mayur.jpg"
+    },
+    {
+      "name":"Purvi Jain",
+      "imageURL":"",
+      "role":"Manager - HR",
+      "img1":"assets/image/team/purvi.jpg",
+      "img2":"assets/image/team/purvi.jpg"
+    }
+  ],
+  "employeeTeam":[
     {
       "name":"Vinay Jain",
       "imageURL":"",
       "role":"Administration Head",
       "img1":"assets/image/team/vinay.jpg",
       "img2":"assets/image/team/vinay.jpg"
-    },
-    {
-      "name":"Purvi Jain",
-      "imageURL":"",
-      "role":"HR Operations",
-      "img1":"assets/image/team/purvi.jpg",
-      "img2":"assets/image/team/purvi.jpg"
-    },
-    {
-      "name":"Sharad Namdeo",
-      "imageURL":"",
-      "role":"Sr. Software Engineer",
-      "img1":"assets/image/team/sharad.jpg",
-      "img2":"assets/image/team/sharad.jpg"
     },
     {
       "name":"Amit Jain",
@@ -41,13 +93,6 @@
       "role":"Sr. Software Engineer",
       "img1":"assets/image/team/shivaji.jpg",
       "img2":"assets/image/team/shivaji.jpg"
-    },
-    {
-      "name":"Mayur Patidar",
-      "imageURL":"",
-      "role":"Sr. QA Engineer",
-      "img1":"assets/image/team/mayur.jpg",
-      "img2":"assets/image/team/mayur.jpg"
     },
     {
       "name":"Ashutosh Yadav",
