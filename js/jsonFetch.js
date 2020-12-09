@@ -1,8 +1,12 @@
 let renderJson = function (data) {
-  renderThirdTeam(data.thirdTeam);
+  renderCEOTeam(data.ceoTeam);
+  renderSeniorManagerTeam(data.seniorManagerTeam);
+  renderManagerTeam(data.managerTeam);
+  renderEmployeeTeam(data.employeeTeam);
   renderOpeningSection(data.currentOpeningSection);
   renderModalContent(data.currentOpeningsModalWrapper);
-}
+};
+
 let fetchTeamJson = () => {
   $.ajax({
     url: 'json/team.json',
@@ -17,7 +21,62 @@ let fetchTeamJson = () => {
   });
 };
 fetchTeamJson();
-let renderThirdTeam = (data) => {
+
+let renderCEOTeam = (data) => {
+  $.each(data, function(key, value) {
+    let htmlRender = "<div class='team-members-top'>"+
+      "<div class='team-top-image'>"+
+      "<img src='"+value.img1+"' alt='"+value+"'>"+
+      "</div>"+
+      "<div class='team-top-info'>"+
+      "<div class='heading'>"+value.nameHead+"<br/> "+value.name+"</div>"+
+      "<p class='p-heading'>"+value.role+"<br/>"+value.role1+" </p>"+
+      "<p>"+value.description+"</p>"+
+      "<p><b>"+value.specialitiesHeading+ "</b>"+value.specialities+"</p>"+
+      "</div>"+
+      "</div>";
+    $(htmlRender).appendTo("#ceoTeamMembers");
+  });
+};
+let renderSeniorManagerTeam = (data) => {
+  $.each(data, function(key, value) {
+      let htmlRender =  "<div class='team-members three'>" +
+        "<div class='team-member-img'>" +
+        "<div class='team-img-border'>" +
+        "<div class='team-member-image'>" +
+        "<img src='"+value.img1+"' alt='"+value+"'>" +
+        "</div>"+
+        "</div>"+
+        "</div>"+
+        "<div class='team-member-info'>" +
+        "<h4 class='team-member-name'>"+value.name+"</h4>" +
+        "<span class='designation'>"+value.role+"</span>" +
+        "<p class='description'>"+value.description+"</p>"+
+        "<p class='description'>"+value.specialities+"</p>"+
+        "</div>"+
+        "</div>";
+      $(htmlRender).appendTo("#seniorManagerTeamMembers");
+  });
+};
+let renderManagerTeam = (data) => {
+  $.each(data, function(key, value) {
+    let htmlRender =  "<div class='team-members three'>" +
+      "<div class='team-member-img'>" +
+      "<div class='team-img-border'>" +
+      "<div class='team-member-image'>" +
+      "<img src='"+value.img1+"' alt='"+value.name+"'>" +
+      "</div>"+
+      "</div>"+
+      "</div>"+
+      "<div class='team-member-info'>" +
+      "<h4 class='team-member-name'>"+value.name+"</h4>" +
+      "<span class='designation'>"+value.role+"</span>" +
+      "</div>"+
+      "</div>";
+    $(htmlRender).appendTo("#managerTeamMembers");
+  });
+};
+let renderEmployeeTeam = (data) => {
   $.each(data, function(key, value) {
     let htmlRender =  "<div class='team-members'>" +
       "<div class='team-member-img'>" +
@@ -32,7 +91,7 @@ let renderThirdTeam = (data) => {
       "<span class='designation'>"+value.role+"</span>" +
       "</div>"+
       "</div>";
-    $(htmlRender).appendTo("#teamMembers");
+    $(htmlRender).appendTo("#employeeTeamMembers");
   });
 };
 
