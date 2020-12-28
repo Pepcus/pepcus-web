@@ -3904,7 +3904,7 @@ form {
         .testimonial-section article .testimonial .student p {
           position: relative;
           top: 5px;
-          text-transform: uppercase; }
+          text-transform: capitalize; }
           .testimonial-section article .testimonial .student p:nth-child(2) {
             font-size: 16px;
             font-weight: 600;
