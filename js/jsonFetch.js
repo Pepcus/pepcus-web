@@ -9,7 +9,7 @@ let renderJson = function (data) {
 
 let fetchTeamJson = () => {
   $.ajax({
-    url: 'json/team.json',
+    url: 'assets/json/team.json',
     dataType: 'json',
     success: function (data) {
       renderJson(data);
