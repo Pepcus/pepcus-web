@@ -60,7 +60,7 @@ let renderSeniorManagerTeam = (data) => {
 };
 let renderManagerTeam = (data) => {
   $.each(data, function(key, value) {
-    let htmlRender =  "<div class='team-members three'>" +
+    let htmlRender =  "<div class='team-members'>" +
       "<div class='team-member-img'>" +
       "<div class='team-img-border'>" +
       "<div class='team-member-image'>" +
