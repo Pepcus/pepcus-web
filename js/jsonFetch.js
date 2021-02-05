@@ -3,9 +3,18 @@ let renderJson = function (data) {
   renderSeniorManagerTeam(data.seniorManagerTeam);
   renderManagerTeam(data.managerTeam);
   renderEmployeeTeam(data.employeeTeam);
-  renderOpeningSection(data.currentOpeningSection);
   renderModalContent(data.currentOpeningsModalWrapper);
+  let currentOpeningsData = data.currentOpeningSection;
+  const currentOpeningsDataUpdated = [];
+  for (let i = 0; i < currentOpeningsData.length; i++) {
+    if(currentOpeningsData[i].jobShow === true) {
+      currentOpeningsDataUpdated.push(currentOpeningsData[i]);
+    }
+  }
+  renderOpeningSection(currentOpeningsDataUpdated);
+  renderOpeningSectionHeading(currentOpeningsDataUpdated.length);
 };
+
 
 let fetchTeamJson = () => {
   $.ajax({
@@ -97,7 +106,7 @@ let renderEmployeeTeam = (data) => {
 
 let fetchCurrentOpening = () => {
   $.ajax({
-    url: 'json/careers.json',
+    url: 'assets/json/careers.json',
     dataType: 'json',
     success: function( data ) {
       renderJson(data);
@@ -123,10 +132,6 @@ let renderModalContent = function(modalContent) {
     $.each(value.keySkills, function(key,desc){
       htmlRenderSkillList += "<li>"+desc+"</li>";
     });
-    var formLink = "https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUNjJZMVhDRTg4WEdTWEZIUlQ0MExDR0tPTy4u";
-    if(value.modalContentId === "java-engineer"){
-      formLink = "https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUQUhHWTNTQURYWElHV0hBOVgzUVZaR0VLWC4u";
-    }
 
     var htmlRender = "<div id=\""+value.modalContentId+"\" class=\"modal\">" +
       " <div class=\"modal-content clearfix\">" +
@@ -157,12 +162,12 @@ let renderModalContent = function(modalContent) {
       "  </div>" +
       "  </div>" +
       "<div>" +
-      "<h3 class = \"\">"+value.KeySkillsTitle+"</h3>" +
+      "<h3 class = \"modal-wrapper__heading\">"+value.KeySkillsTitle+"</h3>" +
       " <div class = \"\">" +
       " <ul class = \"\">" +htmlRenderSkillList+
       " </ul>" +
       "<div class=\"modal__button-container\">\n" +
-      "<a href = "+formLink+" class = \"button button__border-button-base\" target = \"_blank\">Apply now</a>"+"</div>"+
+      "<a href = "+value.jobFormLink+" class = \"button button__border-button-base\" target = \"_blank\">Apply now</a>"+"</div>"+
       "</div>"+
       "</div>" +
       "</div>" +
@@ -189,7 +194,6 @@ let renderModalContent = function(modalContent) {
     };
   });
 };
-
 function toChunkArray(array, chunkSize){
   let arrayLength = array.length;
   let chunkArray = [];
@@ -231,12 +235,21 @@ let renderOpeningSection = function(openingBlock) {
             "</div>" +
             "</div>";
           $(htmlRender).appendTo("#jobopening");
-
         }
       );
     }
   );
 };
+
+let renderOpeningSectionHeading = function(openingBlockHeading) {
+  if(openingBlockHeading > 0) {
+    let currentOpeningBlockHeading =  "<div class='section-title' data-aos='fade-up' data-aos-duration='300' data-aos-easing='ease-in-out'>" +
+      "<h2>Current <strong>Openings</strong></h2>"+
+      "</div>";
+    $(currentOpeningBlockHeading).appendTo("#currentOpeningHeading");
+  }
+};
+
 // Get the modal
 // When the user clicks the button, open the modal
 function openModal(clicked_id) {
