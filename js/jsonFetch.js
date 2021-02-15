@@ -167,7 +167,7 @@ let renderModalContent = function(modalContent) {
       " <ul class = \"\">" +htmlRenderSkillList+
       " </ul>" +
       "<div class=\"modal__button-container\">\n" +
-      "<a href = "+value.jobFormLink+" class = \"button button__border-button-base\" target = \"_blank\">Apply now</a>"+"</div>"+
+      "<a href = "+value.jobFormLink+" onclick=\"closeModal(\'"+value.closeModalText+"\')\" class = \"button button__border-button-base\" target = \"_blank\">Apply now</a>"+"</div>"+
       "</div>"+
       "</div>" +
       "</div>" +
